@@ -1,16 +1,170 @@
-# React + Vite
+# 🧠 NeetCode 150 Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive web application to track your progress through the famous NeetCode 150 problems with built-in spaced repetition system for long-term retention.
 
-Currently, two official plugins are available:
+![NeetCode Tracker](https://img.shields.io/badge/React-18.2.0-blue.svg)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4.0-38B2AC.svg)
+![Vite](https://img.shields.io/badge/Vite-5.0.0-646CFF.svg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+### 📊 Progress Tracking
+- **Complete Problem Tracking**: Mark problems as solved with automatic date tracking
+- **Visual Progress Stats**: See your progress across Easy, Medium, and Hard difficulties
+- **Category Filtering**: Filter by problem categories (Arrays & Hashing, Two Pointers, etc.)
+- **Difficulty Filtering**: Filter by Easy, Medium, or Hard problems
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🔄 Spaced Repetition System
+- **Scientifically-Based Intervals**: Review problems at optimal intervals (1, 3, 7, 14, 30 days)
+- **Smart Review Scheduling**: Automatic calculation of review due dates
+- **Due Today Filter**: Quickly see which problems need review today
+- **Visual Review Status**: Color-coded review buttons showing completion status
 
-## Expanding the ESLint configuration
+### 💾 Data Persistence
+- **Local Storage**: All progress automatically saved to browser's local storage
+- **Export/Import**: Backup your progress with JSON export/import functionality
+- **Cross-Session Persistence**: Progress survives browser restarts and refreshes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🎨 Modern UI/UX
+- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
+- **Clean Interface**: Modern, distraction-free design using Tailwind CSS
+- **Interactive Elements**: Hover effects, color-coded status indicators
+- **Informative Tooltips**: Helpful information displayed on hover
+
+## 🚀 Live Demo
+
+[View Live Demo](https://neetcode-tracker.vercel.app/)
+
+## 🛠️ Installation
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Setup
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/neetcode-tracker.git
+   cd neetcode-tracker
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:5173`
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist/` directory, ready for deployment.
+
+## 🎯 How to Use
+
+### Getting Started
+1. **Mark Problems as Solved**: Click the circle icon next to any problem when you complete it
+2. **Review Schedule Appears**: Once solved, you'll see 5 review buttons (R1-R5) with due dates
+3. **Complete Reviews**: Click review buttons when you successfully review the problem
+4. **Track Progress**: Use filters and stats to monitor your overall progress
+
+### Spaced Repetition Schedule
+- **R1**: Review after 1 day
+- **R2**: Review after 3 days  
+- **R3**: Review after 7 days (1 week)
+- **R4**: Review after 14 days (2 weeks)
+- **R5**: Review after 30 days (1 month)
+
+### Color Coding
+- 🟢 **Green**: Review completed
+- 🟡 **Yellow**: Due today
+- 🔴 **Red**: Overdue
+- ⚪ **Gray**: Future review
+
+### Data Management
+- **Export**: Download your progress as a JSON file for backup
+- **Import**: Restore progress from a previously exported file
+- **Clear All**: Reset all progress (with confirmation dialog)
+
+## 🏗️ Project Structure
+
+```
+neetcode-tracker/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── components/
+│   │   ├── ExportImportControls.jsx
+│   │   ├── Filters.jsx
+│   │   ├── ProblemTable.jsx
+│   │   └── StatsCard.jsx
+│   ├── data/
+│   │   └── problems.json
+│   ├── App.jsx
+│   ├── NeetCodeTracker.jsx
+│   ├── main.jsx
+│   └── index.css
+├── index.html
+├── package.json
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
+```
+
+## 🔧 Technologies Used
+
+- **Frontend Framework**: React 19.1.1
+- **Build Tool**: Vite 7.1.7
+- **Styling**: Tailwind CSS 3.4.18
+- **Icons**: Lucide React 0.544.0
+- **Data Storage**: Browser LocalStorage
+- **Language**: JavaScript (ES6+)
+
+## 📱 Browser Compatibility
+
+- ✅ Chrome (recommended)
+- ✅ Firefox
+- ✅ Safari
+- ✅ Edge
+- ✅ Mobile browsers
+
+## 📋 Roadmap
+
+- [ ] Dark mode support
+- [ ] Custom problem sets
+- [ ] Study streaks tracking
+- [ ] Performance analytics
+- [ ] Social features (optional)
+- [ ] Mobile app version
+
+## ❓ FAQ
+
+**Q: Will my progress be lost if I clear browser data?**
+A: Yes, since data is stored in localStorage. Use the export feature to backup your progress.
+
+**Q: Can I access my progress from different devices?**
+A: Currently no, as data is stored locally. You can export from one device and import to another.
+
+**Q: Can I add custom problems?**
+A: Not currently, but this feature is planned for future releases.
+
+## 🙏 Acknowledgments
+
+- **NeetCode**: For the excellent problem curation and learning resources
+- **Spaced Repetition Research**: Based on cognitive science research for optimal learning
+- **React Community**: For the amazing ecosystem and tools
+
+---
+
+⭐ **Star this repository if it helped you ace your coding interviews!**
+
+Made with ❤️ for the coding community
