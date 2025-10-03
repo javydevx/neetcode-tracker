@@ -1,7 +1,9 @@
-import NeetCodeTracker from "./NeetCodeTracker"
+import NeetCodeTracker from "./components/NeetCodeTracker";
 
 const App = () => {
-  return <NeetCodeTracker />;
-}
+  return (
+    <NeetCodeTracker />
+  );
+};
 
-export default App
+export default App;

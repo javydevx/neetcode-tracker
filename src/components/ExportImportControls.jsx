@@ -41,11 +41,11 @@ const ExportImportControls = ({ progress, setProgress }) => {
     <div className="flex flex-wrap gap-2 mb-6">
       <button
         onClick={exportData}
-        className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+        className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded transition-colors"
       >
         <Download size={16} /> Export Progress
       </button>
-      <label className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition cursor-pointer">
+      <label className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded transition-colors cursor-pointer">
         <Upload size={16} /> Import Progress
         <input
           type="file"
@@ -56,7 +56,7 @@ const ExportImportControls = ({ progress, setProgress }) => {
       </label>
       <button
         onClick={clearAllData}
-        className="flex items-center gap-2 px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition"
+        className="flex items-center gap-2 px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded transition-colors"
       >
         <Trash2 size={16} /> Clear All
       </button>
