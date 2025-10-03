@@ -1,4 +1,4 @@
-# 🧠 NeetCode 150 Tracker
+# 🧠 CodeTrack Pro - NeetCode 150 Progress Tracker
 
 A modern, interactive web application to track your progress through the famous NeetCode 150 problems with built-in spaced repetition system for long-term retention.
 
