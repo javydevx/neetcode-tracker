@@ -4,7 +4,7 @@ import StatsCard from "./StatsCard";
 import Filters from "./Filters";
 import ProblemTable from "./ProblemTable";
 import ExportImportControls from "./ExportImportControls";
-import { Info } from "lucide-react";
+import { Info, ExternalLink, Map } from "lucide-react";
 
 // --- Spaced repetition intervals ---
 const intervals = [1, 3, 7, 14, 30];
@@ -122,19 +122,39 @@ const NeetCodeTracker = () => {
     <div className="min-h-screen bg-gray-50 p-4">
       <div className="max-w-7xl mx-auto">
         <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
-          <h1 className="text-3xl font-bold text-gray-800 mb-2">
-            NeetCode 150 Tracker
-          </h1>
-          <p className="text-gray-600 mb-4">
-            Track your progress with spaced repetition
-          </p>
-          <button
-            onClick={() => setShowExplanation(!showExplanation)}
-            className="flex items-center gap-2 text-blue-600 hover:text-blue-800 text-sm"
-          >
-            <Info size={16} />
-            {showExplanation ? "Hide" : "Show"} Spaced Repetition Info
-          </button>
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <h1 className="text-3xl font-bold text-gray-800 mb-2">
+                NeetCode 150 Tracker
+              </h1>
+              <p className="text-gray-600">
+                Track your progress with spaced repetition
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-2">
+              <a
+                href="https://neetcode.io/roadmap"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors"
+                title="View the official NeetCode roadmap"
+              >
+                <Map size={16} />
+                Official Roadmap
+                <ExternalLink size={14} />
+              </a>
+            </div>
+          </div>
+
+          <div className="mt-4">
+            <button
+              onClick={() => setShowExplanation(!showExplanation)}
+              className="flex items-center gap-2 text-blue-600 hover:text-blue-800 text-sm"
+            >
+              <Info size={16} />
+              {showExplanation ? "Hide" : "Show"} Spaced Repetition Info
+            </button>
+          </div>
         </div>
 
         {/* Explanation Section */}
@@ -178,6 +198,7 @@ const NeetCodeTracker = () => {
                       3. Click review buttons when you successfully review
                     </li>
                     <li>4. Use "Due Today" filter to see what needs review</li>
+                    <li>5. Check the Official Roadmap for study guidance</li>
                   </ul>
                 </div>
               </div>
