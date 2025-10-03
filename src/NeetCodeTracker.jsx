@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import problemsData from "./problems.json";
 import StatsCard from "./StatsCard";
 import Filters from "./Filters";
@@ -10,12 +10,30 @@ import { Info } from "lucide-react";
 const intervals = [1, 3, 7, 14, 30];
 
 const NeetCodeTracker = () => {
-  // --- Local state ---
-  const [progress, setProgress] = useState({});
+  // --- Local state with localStorage ---
+  const [progress, setProgress] = useState(() => {
+    try {
+      const savedProgress = localStorage.getItem("neetcode-progress");
+      return savedProgress ? JSON.parse(savedProgress) : {};
+    } catch (error) {
+      console.error("Error loading progress from localStorage:", error);
+      return {};
+    }
+  });
+
   const [filterCategory, setFilterCategory] = useState("All");
   const [filterDifficulty, setFilterDifficulty] = useState("All");
   const [showOnlyDueToday, setShowOnlyDueToday] = useState(false);
   const [showExplanation, setShowExplanation] = useState(false);
+
+  // Save progress to localStorage whenever it changes
+  useEffect(() => {
+    try {
+      localStorage.setItem("neetcode-progress", JSON.stringify(progress));
+    } catch (error) {
+      console.error("Error saving progress to localStorage:", error);
+    }
+  }, [progress]);
 
   // --- Helpers ---
   const today = new Date().toISOString().split("T")[0];
