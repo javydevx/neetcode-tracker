@@ -1,5 +1,5 @@
 import React from "react";
-import { CheckCircle2, Circle, Calendar } from "lucide-react";
+import { CheckCircle2, Circle, Calendar, ExternalLink } from "lucide-react";
 
 const difficultyColor = {
   Easy: "text-green-600",
@@ -88,7 +88,18 @@ const ProblemTable = ({
                     {problem.id}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                    {problem.name}
+                    <div className="flex items-center gap-2">
+                      <a
+                        href={problem.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1"
+                        title={`Open ${problem.name} on NeetCode`}
+                      >
+                        {problem.name}
+                        <ExternalLink size={14} className="flex-shrink-0" />
+                      </a>
+                    </div>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                     {problem.category}
