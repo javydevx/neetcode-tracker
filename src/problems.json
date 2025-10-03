@@ -253,7 +253,7 @@
     "category": "Binary Search",
     "difficulty": "Medium",
     "day": 30,
-    "url": "https://neetcode.io/problems/search-in-rotated-sorted-array"
+    "url": "https://neetcode.io/problems/find-target-in-rotated-sorted-array"
   },
   {
     "id": 33,
@@ -421,7 +421,7 @@
     "category": "Trees",
     "difficulty": "Medium",
     "day": 45,
-    "url": "https://neetcode.io/problems/binary-tree-level-order-traversal"
+    "url": "https://neetcode.io/problems/level-order-traversal-of-binary-tree"
   },
   {
     "id": 54,
@@ -461,7 +461,7 @@
     "category": "Trees",
     "difficulty": "Medium",
     "day": 48,
-    "url": "https://neetcode.io/problems/build-binary-tree-from-preorder-and-inorder-traversal"
+    "url": "https://neetcode.io/problems/binary-tree-from-preorder-and-inorder-traversal"
   },
   {
     "id": 59,
@@ -641,14 +641,6 @@
   },
   {
     "id": 81,
-    "name": "Clone Graph",
-    "category": "Graphs",
-    "difficulty": "Medium",
-    "day": 64,
-    "url": "https://neetcode.io/problems/clone-graph"
-  },
-  {
-    "id": 82,
     "name": "Max Area of Island",
     "category": "Graphs",
     "difficulty": "Medium",
@@ -656,23 +648,23 @@
     "url": "https://neetcode.io/problems/max-area-of-island"
   },
   {
-    "id": 83,
-    "name": "Pacific Atlantic Water Flow",
+    "id": 82,
+    "name": "Clone Graph",
     "category": "Graphs",
     "difficulty": "Medium",
-    "day": 65,
-    "url": "https://neetcode.io/problems/pacific-atlantic-water-flow"
+    "day": 64,
+    "url": "https://neetcode.io/problems/clone-graph"
+  },
+  {
+    "id": 83,
+    "name": "Walls and Gates",
+    "category": "Graphs",
+    "difficulty": "Medium",
+    "day": 66,
+    "url": "https://neetcode.io/problems/islands-and-treasure"
   },
   {
     "id": 84,
-    "name": "Surrounded Regions",
-    "category": "Graphs",
-    "difficulty": "Medium",
-    "day": 65,
-    "url": "https://neetcode.io/problems/surrounded-regions"
-  },
-  {
-    "id": 85,
     "name": "Rotting Oranges",
     "category": "Graphs",
     "difficulty": "Medium",
@@ -680,12 +672,20 @@
     "url": "https://neetcode.io/problems/rotting-fruit"
   },
   {
-    "id": 86,
-    "name": "Walls and Gates",
+    "id": 85,
+    "name": "Pacific Atlantic Water Flow",
     "category": "Graphs",
     "difficulty": "Medium",
-    "day": 66,
-    "url": "https://neetcode.io/problems/islands-and-treasure"
+    "day": 65,
+    "url": "https://neetcode.io/problems/pacific-atlantic-water-flow"
+  },
+  {
+    "id": 86,
+    "name": "Surrounded Regions",
+    "category": "Graphs",
+    "difficulty": "Medium",
+    "day": 65,
+    "url": "https://neetcode.io/problems/surrounded-regions"
   },
   {
     "id": 87,
@@ -705,14 +705,22 @@
   },
   {
     "id": 89,
-    "name": "Number of Connected Components",
+    "name": "Graph Valid Tree",
+    "category": "Graphs",
+    "difficulty": "Medium",
+    "day": 68,
+    "url": "https://leetcode.com/problems/graph-valid-tree/"
+  },
+  {
+    "id": 90,
+    "name": "Number of Connected Components In An Undirected Graph",
     "category": "Graphs",
     "difficulty": "Medium",
     "day": 68,
     "url": "https://neetcode.io/problems/count-connected-components"
   },
   {
-    "id": 90,
+    "id": 91,
     "name": "Redundant Connection",
     "category": "Graphs",
     "difficulty": "Medium",
@@ -720,7 +728,7 @@
     "url": "https://neetcode.io/problems/redundant-connection"
   },
   {
-    "id": 91,
+    "id": 92,
     "name": "Word Ladder",
     "category": "Graphs",
     "difficulty": "Hard",
@@ -728,23 +736,7 @@
     "url": "https://neetcode.io/problems/word-ladder"
   },
   {
-    "id": 92,
-    "name": "Reconstruct Itinerary",
-    "category": "Advanced Graphs",
-    "difficulty": "Hard",
-    "day": 71,
-    "url": "https://neetcode.io/problems/reconstruct-flight-path"
-  },
-  {
     "id": 93,
-    "name": "Min Cost to Connect All Points",
-    "category": "Advanced Graphs",
-    "difficulty": "Medium",
-    "day": 71,
-    "url": "https://neetcode.io/problems/minimum-cost-to-connect-points"
-  },
-  {
-    "id": 94,
     "name": "Network Delay Time",
     "category": "Advanced Graphs",
     "difficulty": "Medium",
@@ -752,7 +744,23 @@
     "url": "https://neetcode.io/problems/network-delay-time"
   },
   {
+    "id": 94,
+    "name": "Reconstruct Itinerary",
+    "category": "Advanced Graphs",
+    "difficulty": "Hard",
+    "day": 71,
+    "url": "https://neetcode.io/problems/reconstruct-flight-path"
+  },
+  {
     "id": 95,
+    "name": "Min Cost to Connect All Points",
+    "category": "Advanced Graphs",
+    "difficulty": "Medium",
+    "day": 71,
+    "url": "https://neetcode.io/problems/min-cost-to-connect-points"
+  },
+  {
+    "id": 96,
     "name": "Swim in Rising Water",
     "category": "Advanced Graphs",
     "difficulty": "Hard",
@@ -760,7 +768,7 @@
     "url": "https://neetcode.io/problems/swim-in-rising-water"
   },
   {
-    "id": 96,
+    "id": 97,
     "name": "Alien Dictionary",
     "category": "Advanced Graphs",
     "difficulty": "Hard",
@@ -768,7 +776,7 @@
     "url": "https://neetcode.io/problems/foreign-dictionary"
   },
   {
-    "id": 97,
+    "id": 98,
     "name": "Cheapest Flights Within K Stops",
     "category": "Advanced Graphs",
     "difficulty": "Medium",
@@ -776,7 +784,7 @@
     "url": "https://neetcode.io/problems/cheapest-flight-path"
   },
   {
-    "id": 98,
+    "id": 99,
     "name": "Climbing Stairs",
     "category": "1-D DP",
     "difficulty": "Easy",
@@ -784,7 +792,7 @@
     "url": "https://neetcode.io/problems/climbing-stairs"
   },
   {
-    "id": 99,
+    "id": 100,
     "name": "Min Cost Climbing Stairs",
     "category": "1-D DP",
     "difficulty": "Easy",
@@ -792,7 +800,7 @@
     "url": "https://neetcode.io/problems/min-cost-climbing-stairs"
   },
   {
-    "id": 100,
+    "id": 101,
     "name": "House Robber",
     "category": "1-D DP",
     "difficulty": "Medium",
@@ -800,7 +808,7 @@
     "url": "https://neetcode.io/problems/house-robber"
   },
   {
-    "id": 101,
+    "id": 102,
     "name": "House Robber II",
     "category": "1-D DP",
     "difficulty": "Medium",
@@ -808,7 +816,7 @@
     "url": "https://neetcode.io/problems/house-robber-ii"
   },
   {
-    "id": 102,
+    "id": 103,
     "name": "Longest Palindromic Substring",
     "category": "1-D DP",
     "difficulty": "Medium",
@@ -816,7 +824,7 @@
     "url": "https://neetcode.io/problems/longest-palindromic-substring"
   },
   {
-    "id": 103,
+    "id": 104,
     "name": "Palindromic Substrings",
     "category": "1-D DP",
     "difficulty": "Medium",
@@ -824,7 +832,7 @@
     "url": "https://neetcode.io/problems/palindromic-substrings"
   },
   {
-    "id": 104,
+    "id": 105,
     "name": "Decode Ways",
     "category": "1-D DP",
     "difficulty": "Medium",
@@ -832,7 +840,7 @@
     "url": "https://neetcode.io/problems/decode-ways"
   },
   {
-    "id": 105,
+    "id": 106,
     "name": "Coin Change",
     "category": "1-D DP",
     "difficulty": "Medium",
@@ -840,7 +848,7 @@
     "url": "https://neetcode.io/problems/coin-change"
   },
   {
-    "id": 106,
+    "id": 107,
     "name": "Maximum Product Subarray",
     "category": "1-D DP",
     "difficulty": "Medium",
@@ -848,7 +856,7 @@
     "url": "https://neetcode.io/problems/maximum-product-subarray"
   },
   {
-    "id": 107,
+    "id": 108,
     "name": "Word Break",
     "category": "1-D DP",
     "difficulty": "Medium",
@@ -856,7 +864,7 @@
     "url": "https://neetcode.io/problems/word-break"
   },
   {
-    "id": 108,
+    "id": 109,
     "name": "Longest Increasing Subsequence",
     "category": "1-D DP",
     "difficulty": "Medium",
@@ -864,7 +872,7 @@
     "url": "https://neetcode.io/problems/longest-increasing-subsequence"
   },
   {
-    "id": 109,
+    "id": 110,
     "name": "Partition Equal Subset Sum",
     "category": "1-D DP",
     "difficulty": "Medium",
@@ -872,7 +880,7 @@
     "url": "https://neetcode.io/problems/partition-equal-subset-sum"
   },
   {
-    "id": 110,
+    "id": 111,
     "name": "Unique Paths",
     "category": "2-D DP",
     "difficulty": "Medium",
@@ -880,7 +888,7 @@
     "url": "https://neetcode.io/problems/count-paths"
   },
   {
-    "id": 111,
+    "id": 112,
     "name": "Longest Common Subsequence",
     "category": "2-D DP",
     "difficulty": "Medium",
@@ -888,7 +896,7 @@
     "url": "https://neetcode.io/problems/longest-common-subsequence"
   },
   {
-    "id": 112,
+    "id": 113,
     "name": "Best Time to Buy and Sell Stock with Cooldown",
     "category": "2-D DP",
     "difficulty": "Medium",
@@ -896,7 +904,7 @@
     "url": "https://neetcode.io/problems/buy-and-sell-crypto-with-cooldown"
   },
   {
-    "id": 113,
+    "id": 114,
     "name": "Coin Change II",
     "category": "2-D DP",
     "difficulty": "Medium",
@@ -904,7 +912,7 @@
     "url": "https://neetcode.io/problems/coin-change-ii"
   },
   {
-    "id": 114,
+    "id": 115,
     "name": "Target Sum",
     "category": "2-D DP",
     "difficulty": "Medium",
@@ -912,15 +920,15 @@
     "url": "https://neetcode.io/problems/target-sum"
   },
   {
-    "id": 115,
+    "id": 116,
     "name": "Interleaving String",
     "category": "2-D DP",
     "difficulty": "Medium",
     "day": 87,
-    "url": "https://neetcode.io/problems/interleaving-strings"
+    "url": "https://neetcode.io/problems/interleaving-string"
   },
   {
-    "id": 116,
+    "id": 117,
     "name": "Longest Increasing Path in a Matrix",
     "category": "2-D DP",
     "difficulty": "Hard",
@@ -928,15 +936,15 @@
     "url": "https://neetcode.io/problems/longest-increasing-path-in-matrix"
   },
   {
-    "id": 117,
+    "id": 118,
     "name": "Distinct Subsequences",
     "category": "2-D DP",
     "difficulty": "Hard",
     "day": 88,
-    "url": "https://neetcode.io/problems/distinct-subsequences"
+    "url": "https://neetcode.io/problems/count-subsequences"
   },
   {
-    "id": 118,
+    "id": 119,
     "name": "Edit Distance",
     "category": "2-D DP",
     "difficulty": "Medium",
@@ -944,7 +952,7 @@
     "url": "https://neetcode.io/problems/edit-distance"
   },
   {
-    "id": 119,
+    "id": 120,
     "name": "Burst Balloons",
     "category": "2-D DP",
     "difficulty": "Hard",
@@ -952,7 +960,7 @@
     "url": "https://neetcode.io/problems/burst-balloons"
   },
   {
-    "id": 120,
+    "id": 121,
     "name": "Regular Expression Matching",
     "category": "2-D DP",
     "difficulty": "Hard",
@@ -960,7 +968,7 @@
     "url": "https://neetcode.io/problems/regular-expression-matching"
   },
   {
-    "id": 121,
+    "id": 122,
     "name": "Maximum Subarray",
     "category": "Greedy",
     "difficulty": "Medium",
@@ -968,7 +976,7 @@
     "url": "https://neetcode.io/problems/maximum-subarray"
   },
   {
-    "id": 122,
+    "id": 123,
     "name": "Jump Game",
     "category": "Greedy",
     "difficulty": "Medium",
@@ -976,7 +984,7 @@
     "url": "https://neetcode.io/problems/jump-game"
   },
   {
-    "id": 123,
+    "id": 124,
     "name": "Jump Game II",
     "category": "Greedy",
     "difficulty": "Medium",
@@ -984,7 +992,7 @@
     "url": "https://neetcode.io/problems/jump-game-ii"
   },
   {
-    "id": 124,
+    "id": 125,
     "name": "Gas Station",
     "category": "Greedy",
     "difficulty": "Medium",
@@ -992,7 +1000,7 @@
     "url": "https://neetcode.io/problems/gas-station"
   },
   {
-    "id": 125,
+    "id": 126,
     "name": "Hand of Straights",
     "category": "Greedy",
     "difficulty": "Medium",
@@ -1000,7 +1008,7 @@
     "url": "https://neetcode.io/problems/hand-of-straights"
   },
   {
-    "id": 126,
+    "id": 127,
     "name": "Merge Triplets",
     "category": "Greedy",
     "difficulty": "Medium",
@@ -1008,7 +1016,7 @@
     "url": "https://neetcode.io/problems/merge-triplets-to-form-target"
   },
   {
-    "id": 127,
+    "id": 128,
     "name": "Partition Labels",
     "category": "Greedy",
     "difficulty": "Medium",
@@ -1016,7 +1024,7 @@
     "url": "https://neetcode.io/problems/partition-labels"
   },
   {
-    "id": 128,
+    "id": 129,
     "name": "Valid Parenthesis String",
     "category": "Greedy",
     "difficulty": "Medium",
@@ -1024,7 +1032,7 @@
     "url": "https://neetcode.io/problems/valid-parenthesis-string"
   },
   {
-    "id": 129,
+    "id": 130,
     "name": "Insert Interval",
     "category": "Intervals",
     "difficulty": "Medium",
@@ -1032,7 +1040,7 @@
     "url": "https://neetcode.io/problems/insert-new-interval"
   },
   {
-    "id": 130,
+    "id": 131,
     "name": "Merge Intervals",
     "category": "Intervals",
     "difficulty": "Medium",
@@ -1040,7 +1048,7 @@
     "url": "https://neetcode.io/problems/merge-intervals"
   },
   {
-    "id": 131,
+    "id": 132,
     "name": "Non-overlapping Intervals",
     "category": "Intervals",
     "difficulty": "Medium",
@@ -1048,7 +1056,7 @@
     "url": "https://neetcode.io/problems/non-overlapping-intervals"
   },
   {
-    "id": 132,
+    "id": 133,
     "name": "Meeting Rooms",
     "category": "Intervals",
     "difficulty": "Easy",
@@ -1056,7 +1064,7 @@
     "url": "https://neetcode.io/problems/meeting-schedule"
   },
   {
-    "id": 133,
+    "id": 134,
     "name": "Meeting Rooms II",
     "category": "Intervals",
     "difficulty": "Medium",
@@ -1064,7 +1072,7 @@
     "url": "https://neetcode.io/problems/meeting-schedule-ii"
   },
   {
-    "id": 134,
+    "id": 135,
     "name": "Minimum Interval to Include Each Query",
     "category": "Intervals",
     "difficulty": "Hard",
@@ -1072,7 +1080,7 @@
     "url": "https://neetcode.io/problems/minimum-interval-including-query"
   },
   {
-    "id": 135,
+    "id": 136,
     "name": "Rotate Image",
     "category": "Math & Geometry",
     "difficulty": "Medium",
@@ -1080,7 +1088,7 @@
     "url": "https://neetcode.io/problems/rotate-matrix"
   },
   {
-    "id": 136,
+    "id": 137,
     "name": "Spiral Matrix",
     "category": "Math & Geometry",
     "difficulty": "Medium",
@@ -1088,23 +1096,23 @@
     "url": "https://neetcode.io/problems/spiral-matrix"
   },
   {
-    "id": 137,
+    "id": 138,
     "name": "Set Matrix Zeroes",
     "category": "Math & Geometry",
     "difficulty": "Medium",
     "day": 99,
-    "url": "https://neetcode.io/problems/set-matrix-zeros"
+    "url": "https://neetcode.io/problems/set-zeroes-in-matrix"
   },
   {
-    "id": 138,
+    "id": 139,
     "name": "Happy Number",
     "category": "Math & Geometry",
     "difficulty": "Easy",
     "day": 100,
-    "url": "https://neetcode.io/problems/happy-number"
+    "url": "https://neetcode.io/problems/non-cyclical-number"
   },
   {
-    "id": 139,
+    "id": 140,
     "name": "Plus One",
     "category": "Math & Geometry",
     "difficulty": "Easy",
@@ -1112,15 +1120,15 @@
     "url": "https://neetcode.io/problems/plus-one"
   },
   {
-    "id": 140,
+    "id": 141,
     "name": "Pow(x, n)",
     "category": "Math & Geometry",
     "difficulty": "Medium",
     "day": 101,
-    "url": "https://neetcode.io/problems/powx-n"
+    "url": "https://neetcode.io/problems/pow-x-n"
   },
   {
-    "id": 141,
+    "id": 142,
     "name": "Multiply Strings",
     "category": "Math & Geometry",
     "difficulty": "Medium",
@@ -1128,15 +1136,15 @@
     "url": "https://neetcode.io/problems/multiply-strings"
   },
   {
-    "id": 142,
+    "id": 143,
     "name": "Detect Squares",
     "category": "Math & Geometry",
     "difficulty": "Medium",
     "day": 102,
-    "url": "https://neetcode.io/problems/detect-squares"
+    "url": "https://neetcode.io/problems/count-squares"
   },
   {
-    "id": 143,
+    "id": 144,
     "name": "Single Number",
     "category": "Bit Manipulation",
     "difficulty": "Easy",
@@ -1144,7 +1152,7 @@
     "url": "https://neetcode.io/problems/single-number"
   },
   {
-    "id": 144,
+    "id": 145,
     "name": "Number of 1 Bits",
     "category": "Bit Manipulation",
     "difficulty": "Easy",
@@ -1152,7 +1160,7 @@
     "url": "https://neetcode.io/problems/number-of-one-bits"
   },
   {
-    "id": 145,
+    "id": 146,
     "name": "Counting Bits",
     "category": "Bit Manipulation",
     "difficulty": "Easy",
@@ -1160,7 +1168,7 @@
     "url": "https://neetcode.io/problems/counting-bits"
   },
   {
-    "id": 146,
+    "id": 147,
     "name": "Reverse Bits",
     "category": "Bit Manipulation",
     "difficulty": "Easy",
@@ -1168,7 +1176,7 @@
     "url": "https://neetcode.io/problems/reverse-bits"
   },
   {
-    "id": 147,
+    "id": 148,
     "name": "Missing Number",
     "category": "Bit Manipulation",
     "difficulty": "Easy",
@@ -1176,7 +1184,7 @@
     "url": "https://neetcode.io/problems/missing-number"
   },
   {
-    "id": 148,
+    "id": 149,
     "name": "Sum of Two Integers",
     "category": "Bit Manipulation",
     "difficulty": "Medium",
@@ -1184,19 +1192,11 @@
     "url": "https://neetcode.io/problems/sum-of-two-integers"
   },
   {
-    "id": 149,
+    "id": 150,
     "name": "Reverse Integer",
     "category": "Bit Manipulation",
     "difficulty": "Medium",
     "day": 105,
     "url": "https://neetcode.io/problems/reverse-integer"
-  },
-  {
-    "id": 150,
-    "name": "Divide Two Integers",
-    "category": "Bit Manipulation",
-    "difficulty": "Medium",
-    "day": 106,
-    "url": "https://neetcode.io/problems/divide-two-integers"
   }
 ]
