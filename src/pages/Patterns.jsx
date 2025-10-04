@@ -25,10 +25,10 @@ return (
     <div className="max-w-6xl mx-auto">
       <div className="text-center mb-8">
         <div className="flex items-center justify-center gap-3 mb-3">
-          <Code2 size={36} className="text-blue-600" />
           <h1 className="text-4xl font-bold text-gray-800">
             LeetCode Patterns Cheat Sheet
           </h1>
+          <Code2 size={36} className="text-blue-600 ml-2" />
         </div>
         <p className="text-gray-600 text-lg">
           Master coding patterns in multiple languages

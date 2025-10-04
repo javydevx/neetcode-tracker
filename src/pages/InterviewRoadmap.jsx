@@ -72,10 +72,10 @@ const InterviewRoadmap = () => {
         {/* Header */}
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-3 mb-3">
-            <Rocket size={36} className="text-blue-600" />
             <h1 className="text-4xl font-bold text-gray-800">
               Interview Mastery Roadmap
             </h1>
+            <Rocket size={36} className="text-blue-600 ml-2" />
           </div>
           <p className="text-lg text-gray-600">
             Your complete guide from application to offer
@@ -130,7 +130,7 @@ const InterviewRoadmap = () => {
                           <Icon size={32} className="text-white" />
                         </div>
                         <div>
-                          <h2 className="text-xl font-bold text-white">
+                          <h2 className="text-lg font-bold text-white">
                             {idx + 1}. {section.title}
                           </h2>
                           <div className="flex items-center gap-2 mt-2">
@@ -214,10 +214,10 @@ const InterviewRoadmap = () => {
           <div className="space-y-6">
             <div className="bg-white rounded-lg shadow-lg py-4 px-6">
               <div className="flex items-center gap-3 mb-2">
-                <Brain size={32} className="text-blue-600" />
                 <h2 className="text-2xl font-bold text-gray-800">
                   {dsaMindmap.title}
                 </h2>
+                <Brain size={32} className="text-blue-600" />
               </div>
               <p className="text-gray-600">{dsaMindmap.description}</p>
             </div>
