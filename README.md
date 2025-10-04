@@ -38,7 +38,7 @@ A modern, interactive web application to track your progress through the famous 
 ## 🛠️ Installation
 
 ### Prerequisites
-- Node.js (v16 or higher)
+- Node.js
 - npm or yarn
 
 ### Setup
