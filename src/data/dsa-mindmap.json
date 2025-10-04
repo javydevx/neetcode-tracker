@@ -1,0 +1,184 @@
+{
+  "title": "Data Structures & Algorithms Decision Tree",
+  "description": "Follow the decision paths to choose the right approach",
+  "sections": [
+    {
+      "id": "arrays",
+      "title": "Arrays",
+      "color": "bg-blue-500",
+      "content": [
+        { "type": "info", "text": "Dynamic vs Static Arrays" },
+        { "type": "question", "text": "Searching - Is it sorted?" },
+        {
+          "type": "answer",
+          "text": "Yes → Divide and Conquer - Binary Search O(log N)"
+        },
+        {
+          "type": "answer",
+          "text": "No → Will sorting help? If not, Linear Search O(n)"
+        },
+        {
+          "type": "note",
+          "text": "Fast access O(1), but O(n) on expanding memory"
+        }
+      ]
+    },
+    {
+      "id": "hash-tables",
+      "title": "Hash Tables",
+      "color": "bg-green-500",
+      "content": [
+        {
+          "type": "info",
+          "text": "Fast Access O(1), tradeoff: more memory O(n)"
+        },
+        { "type": "question", "text": "Need to improve time complexity?" },
+        { "type": "answer", "text": "Yes → Use Hash Table for O(1) lookups" },
+        { "type": "question", "text": "Collision handling?" },
+        { "type": "answer", "text": "Chaining with Linked Lists" },
+        {
+          "type": "note",
+          "text": "Could be O(n) with collisions and resizing (unlikely)"
+        }
+      ]
+    },
+    {
+      "id": "linked-lists",
+      "title": "Linked Lists",
+      "color": "bg-purple-500",
+      "content": [
+        { "type": "info", "text": "Singly Linked List" },
+        { "type": "info", "text": "Doubly Linked List" },
+        {
+          "type": "use",
+          "text": "Good for: Stacks, Queues, collision handling"
+        },
+        {
+          "type": "note",
+          "text": "O(n) for search, O(1) for insertion/deletion at known position"
+        }
+      ]
+    },
+    {
+      "id": "stacks-queues",
+      "title": "Stacks & Queues",
+      "color": "bg-yellow-500",
+      "content": [
+        {
+          "type": "info",
+          "text": "Stack: LIFO - Array or Linked List implementation"
+        },
+        {
+          "type": "info",
+          "text": "Queue: FIFO - Linked List implementation (Array is BAD)"
+        },
+        { "type": "use", "text": "Stacks: DFS, function calls, undo/redo" },
+        { "type": "use", "text": "Queues: BFS, task scheduling" }
+      ]
+    },
+    {
+      "id": "trees",
+      "title": "Trees",
+      "color": "bg-red-500",
+      "content": [
+        { "type": "info", "text": "Binary Tree, Binary Search Tree (BST)" },
+        { "type": "info", "text": "Balanced BST: AVL Tree, Red-Black Tree" },
+        { "type": "question", "text": "Tree Traversal? O(n)" },
+        { "type": "answer", "text": "Inorder (left, root, right)" },
+        { "type": "answer", "text": "Preorder (root, left, right)" },
+        { "type": "answer", "text": "Postorder (left, right, root)" },
+        { "type": "info", "text": "Trie: For string/prefix problems" }
+      ]
+    },
+    {
+      "id": "graphs",
+      "title": "Graphs",
+      "color": "bg-indigo-500",
+      "content": [
+        { "type": "question", "text": "Graph Traversal? O(n)" },
+        {
+          "type": "answer",
+          "text": "DFS (Depth First Search) - Stack/Recursion"
+        },
+        { "type": "answer", "text": "BFS (Breadth First Search) - Queue" },
+        { "type": "question", "text": "Shortest Path?" },
+        { "type": "answer", "text": "Unweighted → BFS" },
+        { "type": "answer", "text": "Weighted → Dijkstra or Bellman-Ford" },
+        {
+          "type": "info",
+          "text": "Consider: Directed/Undirected, Cyclic/Acyclic"
+        }
+      ]
+    },
+    {
+      "id": "heaps",
+      "title": "Heaps & Priority Queues",
+      "color": "bg-pink-500",
+      "content": [
+        { "type": "info", "text": "Binary Heap (Min/Max Heap)" },
+        { "type": "info", "text": "Priority Queue implementation" },
+        { "type": "use", "text": "Finding K largest/smallest elements" },
+        { "type": "use", "text": "Median finding, scheduling problems" },
+        { "type": "note", "text": "Insert/Delete: O(log n), Get min/max: O(1)" }
+      ]
+    },
+    {
+      "id": "sorting",
+      "title": "Sorting Algorithms",
+      "color": "bg-orange-500",
+      "content": [
+        {
+          "type": "info",
+          "text": "O(N log N): Quick Sort, Merge Sort, Heap Sort"
+        },
+        {
+          "type": "info",
+          "text": "O(n²): Bubble Sort, Insertion Sort, Selection Sort"
+        },
+        {
+          "type": "info",
+          "text": "O(n): Counting Sort, Radix Sort (special cases)"
+        },
+        { "type": "question", "text": "When to sort?" },
+        {
+          "type": "answer",
+          "text": "If sorted data makes problem easier (binary search, etc.)"
+        }
+      ]
+    },
+    {
+      "id": "dp",
+      "title": "Dynamic Programming",
+      "color": "bg-teal-500",
+      "content": [
+        { "type": "info", "text": "Memoization (Top-Down)" },
+        { "type": "info", "text": "Tabulation (Bottom-Up)" },
+        { "type": "question", "text": "Can you use recursion?" },
+        { "type": "answer", "text": "Yes → Consider DP with memoization" },
+        {
+          "type": "note",
+          "text": "⚠️ Be mindful of Space Complexity (Stack overflow)"
+        },
+        {
+          "type": "use",
+          "text": "Optimal substructure + overlapping subproblems"
+        }
+      ]
+    },
+    {
+      "id": "strings",
+      "title": "String Problems",
+      "color": "bg-cyan-500",
+      "content": [
+        { "type": "question", "text": "String question?" },
+        { "type": "answer", "text": "Turn it into an Array ~ split()" },
+        {
+          "type": "answer",
+          "text": "Consider using Hash Table for character frequency"
+        },
+        { "type": "answer", "text": "Trie for prefix/suffix problems" },
+        { "type": "use", "text": "Sliding window for substrings" }
+      ]
+    }
+  ]
+}

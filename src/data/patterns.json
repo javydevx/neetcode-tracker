@@ -1,0 +1,139 @@
+[
+    {
+      "title": "Two Pointers",
+      "description": "Used for sorted arrays, reversing, removing elements, comparing ends. Great for reducing O(n²) to O(n).",
+      "templates": {
+        "python": "left, right = 0, len(arr) - 1\nwhile left < right:\n    # process values at arr[left] and arr[right]\n    if some_condition:\n        left += 1\n    else:\n        right -= 1",
+        "javascript": "let left = 0, right = arr.length - 1;\nwhile (left < right) {\n    // process values at arr[left] and arr[right]\n    if (someCondition) {\n        left++;\n    } else {\n        right--;\n    }\n}",
+        "java": "int left = 0, right = arr.length - 1;\nwhile (left < right) {\n    // process values at arr[left] and arr[right]\n    if (someCondition) {\n        left++;\n    } else {\n        right--;\n    }\n}",
+        "go": "left, right := 0, len(arr)-1\nfor left < right {\n    // process values at arr[left] and arr[right]\n    if someCondition {\n        left++\n    } else {\n        right--\n    }\n}"
+      },
+      "problems": [
+        "Valid Palindrome",
+        "Two Sum II",
+        "Remove Duplicates from Sorted Array"
+      ]
+    },
+    {
+      "title": "Sliding Window",
+      "description": "Used for subarrays, substrings, contiguous sequences. Track max/min/count in a window.",
+      "templates": {
+        "python": "left = 0\nmax_len = 0\ncount = {}\n\nfor right in range(len(s)):\n    # expand the window\n    char = s[right]\n    count[char] = count.get(char, 0) + 1\n    \n    while window_invalid:\n        count[s[left]] -= 1\n        left += 1\n    \n    max_len = max(max_len, right - left + 1)",
+        "javascript": "let left = 0;\nlet maxLen = 0;\nlet count = {};\n\nfor (let right = 0; right < s.length; right++) {\n    // expand the window\n    const char = s[right];\n    count[char] = (count[char] || 0) + 1;\n    \n    while (windowInvalid) {\n        count[s[left]]--;\n        left++;\n    }\n    \n    maxLen = Math.max(maxLen, right - left + 1);\n}",
+        "java": "int left = 0;\nint maxLen = 0;\nMap<Character, Integer> count = new HashMap<>();\n\nfor (int right = 0; right < s.length(); right++) {\n    // expand the window\n    char c = s.charAt(right);\n    count.put(c, count.getOrDefault(c, 0) + 1);\n    \n    while (windowInvalid) {\n        count.put(s.charAt(left), count.get(s.charAt(left)) - 1);\n        left++;\n    }\n    \n    maxLen = Math.max(maxLen, right - left + 1);\n}",
+        "go": "left := 0\nmaxLen := 0\ncount := make(map[rune]int)\n\nfor right, char := range s {\n    // expand the window\n    count[char]++\n    \n    for windowInvalid {\n        count[rune(s[left])]--\n        left++\n    }\n    \n    if right - left + 1 > maxLen {\n        maxLen = right - left + 1\n    }\n}"
+      },
+      "problems": [
+        "Longest Substring Without Repeating Characters",
+        "Minimum Size Subarray Sum",
+        "Permutation in String"
+      ]
+    },
+    {
+      "title": "Fast and Slow Pointers",
+      "description": "Used for cycle detection in linked lists or arrays.",
+      "templates": {
+        "python": "def hasCycle(head):\n    slow = fast = head\n    while fast and fast.next:\n        slow = slow.next\n        fast = fast.next.next\n        if slow == fast:\n            return True\n    return False",
+        "javascript": "function hasCycle(head) {\n    let slow = head, fast = head;\n    while (fast && fast.next) {\n        slow = slow.next;\n        fast = fast.next.next;\n        if (slow === fast) {\n            return true;\n        }\n    }\n    return false;\n}",
+        "java": "public boolean hasCycle(ListNode head) {\n    ListNode slow = head, fast = head;\n    while (fast != null && fast.next != null) {\n        slow = slow.next;\n        fast = fast.next.next;\n        if (slow == fast) {\n            return true;\n        }\n    }\n    return false;\n}",
+        "go": "func hasCycle(head *ListNode) bool {\n    slow, fast := head, head\n    for fast != nil && fast.Next != nil {\n        slow = slow.Next\n        fast = fast.Next.Next\n        if slow == fast {\n            return true\n        }\n    }\n    return false\n}"
+      },
+      "problems": [
+        "Linked List Cycle",
+        "Find Duplicate Number",
+        "Middle of the Linked List"
+      ]
+    },
+    {
+      "title": "Hashing (Set / Dictionary)",
+      "description": "Used for frequency counting, quick lookup.",
+      "templates": {
+        "python": "freq = {}\nfor num in arr:\n    freq[num] = freq.get(num, 0) + 1",
+        "javascript": "const freq = {};\nfor (const num of arr) {\n    freq[num] = (freq[num] || 0) + 1;\n}",
+        "java": "Map<Integer, Integer> freq = new HashMap<>();\nfor (int num : arr) {\n    freq.put(num, freq.getOrDefault(num, 0) + 1);\n}",
+        "go": "freq := make(map[int]int)\nfor _, num := range arr {\n    freq[num]++\n}"
+      },
+      "problems": ["Two Sum", "Group Anagrams", "Top K Frequent Elements"]
+    },
+    {
+      "title": "Binary Search",
+      "description": "Used for sorted arrays, search space problems.",
+      "templates": {
+        "python": "def binary_search(arr, target):\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1",
+        "javascript": "function binarySearch(arr, target) {\n    let left = 0, right = arr.length - 1;\n    while (left <= right) {\n        const mid = Math.floor((left + right) / 2);\n        if (arr[mid] === target) {\n            return mid;\n        } else if (arr[mid] < target) {\n            left = mid + 1;\n        } else {\n            right = mid - 1;\n        }\n    }\n    return -1;\n}",
+        "java": "public int binarySearch(int[] arr, int target) {\n    int left = 0, right = arr.length - 1;\n    while (left <= right) {\n        int mid = left + (right - left) / 2;\n        if (arr[mid] == target) {\n            return mid;\n        } else if (arr[mid] < target) {\n            left = mid + 1;\n        } else {\n            right = mid - 1;\n        }\n    }\n    return -1;\n}",
+        "go": "func binarySearch(arr []int, target int) int {\n    left, right := 0, len(arr)-1\n    for left <= right {\n        mid := left + (right-left)/2\n        if arr[mid] == target {\n            return mid\n        } else if arr[mid] < target {\n            left = mid + 1\n        } else {\n            right = mid - 1\n        }\n    }\n    return -1\n}"
+      },
+      "problems": [
+        "Binary Search",
+        "Search Insert Position",
+        "Find Minimum in Rotated Sorted Array"
+      ]
+    },
+    {
+      "title": "Prefix Sum",
+      "description": "Used for range sum, subarrays with given sum.",
+      "templates": {
+        "python": "prefix = [0] * (len(arr) + 1)\nfor i in range(len(arr)):\n    prefix[i + 1] = prefix[i] + arr[i]",
+        "javascript": "const prefix = new Array(arr.length + 1).fill(0);\nfor (let i = 0; i < arr.length; i++) {\n    prefix[i + 1] = prefix[i] + arr[i];\n}",
+        "java": "int[] prefix = new int[arr.length + 1];\nfor (int i = 0; i < arr.length; i++) {\n    prefix[i + 1] = prefix[i] + arr[i];\n}",
+        "go": "prefix := make([]int, len(arr)+1)\nfor i := 0; i < len(arr); i++ {\n    prefix[i+1] = prefix[i] + arr[i]\n}"
+      },
+      "problems": ["Subarray Sum Equals K", "Range Sum Query"]
+    },
+    {
+      "title": "Backtracking",
+      "description": "Used for generating combinations/permutations.",
+      "templates": {
+        "python": "def backtrack(path, options):\n    if base_case:\n        result.append(path[:])\n        return\n    for i in range(len(options)):\n        path.append(options[i])\n        backtrack(path, options[i+1:])\n        path.pop()",
+        "javascript": "function backtrack(path, options) {\n    if (baseCase) {\n        result.push([...path]);\n        return;\n    }\n    for (let i = 0; i < options.length; i++) {\n        path.push(options[i]);\n        backtrack(path, options.slice(i + 1));\n        path.pop();\n    }\n}",
+        "java": "public void backtrack(List<Integer> path, int[] options, int start) {\n    if (baseCase) {\n        result.add(new ArrayList<>(path));\n        return;\n    }\n    for (int i = start; i < options.length; i++) {\n        path.add(options[i]);\n        backtrack(path, options, i + 1);\n        path.remove(path.size() - 1);\n    }\n}",
+        "go": "func backtrack(path []int, options []int, start int) {\n    if baseCase {\n        result = append(result, append([]int{}, path...))\n        return\n    }\n    for i := start; i < len(options); i++ {\n        path = append(path, options[i])\n        backtrack(path, options, i+1)\n        path = path[:len(path)-1]\n    }\n}"
+      },
+      "problems": ["Subsets", "Permutations", "N-Queens"]
+    },
+    {
+      "title": "DFS for Trees",
+      "description": "Used for traversals, height calculation, path sums.",
+      "templates": {
+        "python": "def dfs_tree(node):\n    if not node:\n        return\n    # Preorder processing\n    dfs_tree(node.left)\n    dfs_tree(node.right)\n    # Postorder processing",
+        "javascript": "function dfsTree(node) {\n    if (!node) return;\n    // Preorder processing\n    dfsTree(node.left);\n    dfsTree(node.right);\n    // Postorder processing\n}",
+        "java": "public void dfsTree(TreeNode node) {\n    if (node == null) return;\n    // Preorder processing\n    dfsTree(node.left);\n    dfsTree(node.right);\n    // Postorder processing\n}",
+        "go": "func dfsTree(node *TreeNode) {\n    if node == nil {\n        return\n    }\n    // Preorder processing\n    dfsTree(node.Left)\n    dfsTree(node.Right)\n    // Postorder processing\n}"
+      },
+      "problems": [
+        "Max Depth of Binary Tree",
+        "Path Sum",
+        "Balanced Binary Tree"
+      ]
+    },
+    {
+      "title": "BFS for Trees",
+      "description": "Used for level order traversal, shortest path in trees.",
+      "templates": {
+        "python": "from collections import deque\n\ndef bfs_tree(root):\n    if not root:\n        return\n    queue = deque([root])\n    while queue:\n        node = queue.popleft()\n        # process node\n        if node.left:\n            queue.append(node.left)\n        if node.right:\n            queue.append(node.right)",
+        "javascript": "function bfsTree(root) {\n    if (!root) return;\n    const queue = [root];\n    while (queue.length > 0) {\n        const node = queue.shift();\n        // process node\n        if (node.left) queue.push(node.left);\n        if (node.right) queue.push(node.right);\n    }\n}",
+        "java": "public void bfsTree(TreeNode root) {\n    if (root == null) return;\n    Queue<TreeNode> queue = new LinkedList<>();\n    queue.offer(root);\n    while (!queue.isEmpty()) {\n        TreeNode node = queue.poll();\n        // process node\n        if (node.left != null) queue.offer(node.left);\n        if (node.right != null) queue.offer(node.right);\n    }\n}",
+        "go": "func bfsTree(root *TreeNode) {\n    if root == nil {\n        return\n    }\n    queue := []*TreeNode{root}\n    for len(queue) > 0 {\n        node := queue[0]\n        queue = queue[1:]\n        // process node\n        if node.Left != nil {\n            queue = append(queue, node.Left)\n        }\n        if node.Right != nil {\n            queue = append(queue, node.Right)\n        }\n    }\n}"
+      },
+      "problems": [
+        "Binary Tree Level Order Traversal",
+        "Minimum Depth of Binary Tree"
+      ]
+    },
+    {
+      "title": "Dynamic Programming (DP)",
+      "description": "Used for optimal substructure, overlapping subproblems.",
+      "templates": {
+        "python": "# Memoization approach\ndef dp(i, memo={}):\n    if i in memo:\n        return memo[i]\n    if base_case:\n        return result\n    memo[i] = compute_from_smaller(i)\n    return memo[i]\n\n# Tabulation approach\ndp = [0] * (n + 1)\ndp[0] = base_case\nfor i in range(1, n + 1):\n    dp[i] = compute_from_smaller(i)",
+        "javascript": "// Memoization approach\nfunction dp(i, memo = {}) {\n    if (i in memo) return memo[i];\n    if (baseCase) return result;\n    memo[i] = computeFromSmaller(i);\n    return memo[i];\n}\n\n// Tabulation approach\nconst dp = new Array(n + 1).fill(0);\ndp[0] = baseCase;\nfor (let i = 1; i <= n; i++) {\n    dp[i] = computeFromSmaller(i);\n}",
+        "java": "// Memoization approach\nMap<Integer, Integer> memo = new HashMap<>();\npublic int dp(int i) {\n    if (memo.containsKey(i)) return memo.get(i);\n    if (baseCase) return result;\n    int res = computeFromSmaller(i);\n    memo.put(i, res);\n    return res;\n}\n\n// Tabulation approach\nint[] dp = new int[n + 1];\ndp[0] = baseCase;\nfor (int i = 1; i <= n; i++) {\n    dp[i] = computeFromSmaller(i);\n}",
+        "go": "// Memoization approach\nmemo := make(map[int]int)\nfunc dp(i int) int {\n    if val, ok := memo[i]; ok {\n        return val\n    }\n    if baseCase {\n        return result\n    }\n    memo[i] = computeFromSmaller(i)\n    return memo[i]\n}\n\n// Tabulation approach\ndp := make([]int, n+1)\ndp[0] = baseCase\nfor i := 1; i <= n; i++ {\n    dp[i] = computeFromSmaller(i)\n}"
+      },
+      "problems": [
+        "Climbing Stairs",
+        "House Robber",
+        "Longest Increasing Subsequence"
+      ]
+    }
+]

@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
-import problemsData from "./data/problems.json";
-import StatsCard from "./components/StatsCard";
-import Filters from "./components/Filters";
-import ProblemTable from "./components/ProblemTable";
-import ExportImportControls from "./components/ExportImportControls";
 import { Info, ExternalLink, Map } from "lucide-react";
+import {
+  Filters,
+  StatsCard,
+  ProblemTable,
+  ExportImportControls,
+} from "../components";
+import { problems } from "../data";
+
+
 
 // --- Spaced repetition intervals ---
 const intervals = [1, 3, 7, 14, 30];
@@ -89,26 +93,26 @@ const NeetCodeTracker = () => {
 
   const categories = [
     "All",
-    ...Array.from(new Set(problemsData.map((p) => p.category))),
+    ...Array.from(new Set(problems.map((p) => p.category))),
   ];
   const difficulties = ["All", "Easy", "Medium", "Hard"];
 
   const stats = {
-    total: problemsData.length,
+    total: problems.length,
     solved: Object.values(progress).filter((p) => p.solved).length,
-    easy: problemsData.filter(
+    easy: problems.filter(
       (p) => p.difficulty === "Easy" && progress[p.id]?.solved
     ).length,
-    medium: problemsData.filter(
+    medium: problems.filter(
       (p) => p.difficulty === "Medium" && progress[p.id]?.solved
     ).length,
-    hard: problemsData.filter(
+    hard: problems.filter(
       (p) => p.difficulty === "Hard" && progress[p.id]?.solved
     ).length,
   };
 
   const getDueProblems = () => {
-    return problemsData.filter((problem) => {
+    return problems.filter((problem) => {
       const prob = progress[problem.id];
       if (!prob || !prob.solved) return false;
       const nextReviews = calculateNextReviews(prob.solvedDate);
@@ -242,7 +246,7 @@ const NeetCodeTracker = () => {
 
         {/* Problems Table */}
         <ProblemTable
-          problems={problemsData}
+          problems={problems}
           progress={progress}
           toggleComplete={toggleComplete}
           calculateNextReviews={calculateNextReviews}

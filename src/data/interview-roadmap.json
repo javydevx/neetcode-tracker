@@ -1,0 +1,154 @@
+[
+  {
+    "id": "getting-interview",
+    "title": "Getting the Interview",
+    "icon": "Briefcase",
+    "color": "bg-blue-500",
+    "items": [
+      {
+        "id": "resume",
+        "title": "Resume & Cover Letters",
+        "description": "Craft a compelling resume that gets past ATS and catches recruiters' attention"
+      },
+      {
+        "id": "linkedin",
+        "title": "LinkedIn Optimization",
+        "description": "Build a strong professional presence and network effectively"
+      },
+      {
+        "id": "portfolio",
+        "title": "Portfolio Projects",
+        "description": "Showcase your skills with impressive projects"
+      },
+      {
+        "id": "experience",
+        "title": "Making Up for Little Experience",
+        "description": "Strategies to compensate for lack of work experience"
+      },
+      {
+        "id": "job-search",
+        "title": "Where to Find Jobs",
+        "description": "Best platforms and strategies for job hunting"
+      },
+      {
+        "id": "email",
+        "title": "Email Outreach",
+        "description": "Cold emailing and networking techniques"
+      },
+      {
+        "id": "ready",
+        "title": "When Are You Ready to Apply?",
+        "description": "Know when you're prepared to start interviewing"
+      }
+    ]
+  },
+  {
+    "id": "technical",
+    "title": "Technical Interviews",
+    "icon": "Code",
+    "color": "bg-green-500",
+    "items": [
+      {
+        "id": "big-o",
+        "title": "Big O Notation",
+        "description": "Master time and space complexity analysis"
+      },
+      {
+        "id": "google",
+        "title": "Google Interview Questions",
+        "description": "Practice Google-style algorithm problems"
+      },
+      {
+        "id": "amazon",
+        "title": "Amazon Interview Questions",
+        "description": "Prepare for Amazon's leadership principles and coding rounds"
+      },
+      {
+        "id": "facebook",
+        "title": "Facebook/Meta Questions",
+        "description": "Tackle Meta's behavioral and technical challenges"
+      },
+      {
+        "id": "domain",
+        "title": "Domain Specific Questions",
+        "description": "Frontend, Backend, ML, or Systems Design specifics"
+      }
+    ]
+  },
+  {
+    "id": "non-technical",
+    "title": "Non-Technical Interviews",
+    "icon": "MessageSquare",
+    "color": "bg-purple-500",
+    "items": [
+      {
+        "id": "tell-me",
+        "title": "Tell Me About Yourself",
+        "description": "Craft your personal story and elevator pitch"
+      },
+      {
+        "id": "why-work",
+        "title": "Why Do You Want to Work Here?",
+        "description": "Research companies and show genuine interest"
+      },
+      {
+        "id": "weakness",
+        "title": "What Is Your Biggest Weakness?",
+        "description": "Turn weaknesses into growth opportunities"
+      },
+      {
+        "id": "problem-solved",
+        "title": "Tell Me About a Problem You Solved",
+        "description": "Use STAR method for behavioral questions"
+      },
+      {
+        "id": "questions",
+        "title": "What to Ask the Interviewer",
+        "description": "Prepare insightful questions that show interest"
+      },
+      {
+        "id": "top-questions",
+        "title": "Top Interview Questions",
+        "description": "Common behavioral questions and how to answer them"
+      },
+      {
+        "id": "secret-weapon",
+        "title": "Secret Weapon",
+        "description": "Stand out techniques and strategies"
+      }
+    ]
+  },
+  {
+    "id": "offer",
+    "title": "Offer & Negotiation",
+    "icon": "DollarSign",
+    "color": "bg-yellow-500",
+    "items": [
+      {
+        "id": "negotiation-101",
+        "title": "Negotiation 101",
+        "description": "Fundamentals of salary and equity negotiation"
+      },
+      {
+        "id": "handling-offer",
+        "title": "Handling an Offer",
+        "description": "What to do when you receive an offer"
+      },
+      {
+        "id": "multiple-offers",
+        "title": "Handling Multiple Offers",
+        "description": "Navigate competing offers strategically"
+      },
+      {
+        "id": "raise",
+        "title": "Getting a Raise",
+        "description": "Negotiate salary increases at your current job"
+      },
+      {
+        "id": "rejection",
+        "title": "Handling Rejection",
+        "description": "Turn rejection into learning and future success"
+      }
+    ]
+  }
+]
