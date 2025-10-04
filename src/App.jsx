@@ -1,4 +1,4 @@
-import NeetCodeTracker from "./components/NeetCodeTracker";
+import NeetCodeTracker from "./NeetCodeTracker";
 
 const App = () => {
   return (

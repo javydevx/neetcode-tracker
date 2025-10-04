@@ -1,4 +1,3 @@
-import React from "react";
 import { Filter } from "lucide-react";
 
 const Filters = ({
@@ -18,7 +17,7 @@ const Filters = ({
         Filters
       </h2>
     </div>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-center">
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-2">
           Category
@@ -42,7 +41,7 @@ const Filters = ({
         <select
           value={filterDifficulty}
           onChange={(e) => setFilterDifficulty(e.target.value)}
-          className="w-full p-2 border border-gray-300rounded bg-white text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+          className="w-full p-2 border border-gray-300 rounded bg-white text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
         >
           {difficulties.map((diff) => (
             <option
@@ -55,7 +54,7 @@ const Filters = ({
           ))}
         </select>
       </div>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 md:mt-6">
         <input
           type="checkbox"
           checked={showOnlyDueToday}

@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import problemsData from "../problems.json";
-import StatsCard from "../StatsCard";
-import Filters from "./Filters";
-import ProblemTable from "../ProblemTable";
-import ExportImportControls from "./ExportImportControls";
+import { useState, useEffect } from "react";
+import problemsData from "./data/problems.json";
+import StatsCard from "./components/StatsCard";
+import Filters from "./components/Filters";
+import ProblemTable from "./components/ProblemTable";
+import ExportImportControls from "./components/ExportImportControls";
 import { Info, ExternalLink, Map } from "lucide-react";
 
 // --- Spaced repetition intervals ---

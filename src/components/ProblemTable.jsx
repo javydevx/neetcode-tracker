@@ -1,4 +1,3 @@
-import React from "react";
 import { CheckCircle2, Circle, Calendar, ExternalLink } from "lucide-react";
 
 const difficultyColor = {
