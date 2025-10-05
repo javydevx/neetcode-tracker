@@ -95,31 +95,6 @@ The built files will be in the `dist/` directory, ready for deployment.
 - **Import**: Restore progress from a previously exported file
 - **Clear All**: Reset all progress (with confirmation dialog)
 
-## 🏗️ Project Structure
-
-```
-neetcode-tracker/
-├── public/
-│   └── vite.svg
-├── src/
-│   ├── components/
-│   │   ├── ExportImportControls.jsx
-│   │   ├── Filters.jsx
-│   │   ├── ProblemTable.jsx
-│   │   └── StatsCard.jsx
-│   ├── data/
-│   │   └── problems.json
-│   ├── App.jsx
-│   ├── NeetCodeTracker.jsx
-│   ├── main.jsx
-│   └── index.css
-├── index.html
-├── package.json
-├── tailwind.config.js
-├── vite.config.js
-└── README.md
-```
-
 ## 🔧 Technologies Used
 
 - **Frontend Framework**: React 19.1.1
