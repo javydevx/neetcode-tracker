@@ -37,7 +37,7 @@ const ExportImportControls = ({ progress, setProgress }) => {
   };
 
   return (
-    <div className="flex flex-wrap gap-2 mb-6">
+    <div className="flex flex-wrap gap-2 mb-6 dark:bg-gray-600">
       <button
         onClick={exportData}
         className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded transition-colors"
