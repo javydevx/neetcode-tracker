@@ -114,7 +114,7 @@ The built files will be in the `dist/` directory, ready for deployment.
 
 ## 📋 Roadmap
 
-- [ ] Dark mode support
+- [x] Dark mode support
 - [ ] Custom problem sets
 - [ ] Study streaks tracking
 - [ ] Performance analytics
