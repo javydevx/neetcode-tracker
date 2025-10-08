@@ -67,29 +67,29 @@ const InterviewRoadmap = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-6">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:bg-gradient-to-br dark:from-gray-500 dark:to-gray-700 p-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-3 mb-3">
-            <h1 className="text-4xl font-bold text-gray-800">
+            <h1 className="text-4xl font-bold text-gray-800 dark:text-white">
               Interview Mastery Roadmap
             </h1>
             <Rocket size={36} className="text-blue-600 ml-2" />
           </div>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-600 dark:text-gray-400">
             Your complete guide from application to offer
           </p>
         </div>
 
         {/* Tab Navigation */}
-        <div className="bg-white rounded-lg shadow-md p-2 mb-8 flex gap-2">
+        <div className="bg-white dark:bg-gray-700 rounded-lg shadow-md p-2 mb-8 flex gap-2">
           <button
             onClick={() => setActiveTab("interview")}
             className={`flex-1 py-3 px-6 rounded-lg font-semibold transition-all ${
               activeTab === "interview"
-                ? "bg-blue-600 text-white shadow-lg"
-                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                ? "bg-blue-600 dark:bg-blue-700 text-white shadow-lg"
+                : "bg-gray-100 dark:bg-gray-300 text-gray-700 dark:text-gray-600 hover:bg-gray-200"
             }`}
           >
             Interview Process
@@ -98,8 +98,8 @@ const InterviewRoadmap = () => {
             onClick={() => setActiveTab("dsa")}
             className={`flex-1 py-2 px-6 rounded-lg font-semibold transition-all ${
               activeTab === "dsa"
-                ? "bg-blue-600 text-white shadow-lg"
-                : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                ? "bg-blue-600 dark:bg-blue-700 text-white shadow-lg"
+                : "bg-gray-100 dark:bg-gray-300 text-gray-700 dark:text-gray-600 hover:bg-gray-200"
             }`}
           >
             DSA Mind Map
@@ -117,7 +117,7 @@ const InterviewRoadmap = () => {
               return (
                 <div
                   key={section.id}
-                  className="bg-white rounded-lg shadow-lg overflow-hidden"
+                  className="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden"
                 >
                   {/* Section Header */}
                   <div
@@ -126,7 +126,7 @@ const InterviewRoadmap = () => {
                   >
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-4">
-                        <div className="bg-white bg-opacity-20 p-2 rounded-lg">
+                        <div className="bg-white dark:bg-gray-700 bg-opacity-20 p-2 rounded-lg">
                           <Icon size={32} className="text-white" />
                         </div>
                         <div>
@@ -134,9 +134,9 @@ const InterviewRoadmap = () => {
                             {idx + 1}. {section.title}
                           </h2>
                           <div className="flex items-center gap-2 mt-2">
-                            <div className="bg-white bg-opacity-30 rounded-full h-2 w-24">
+                            <div className="bg-white dark:bg-gray-700 bg-opacity-30 rounded-full h-2 w-24">
                               <div
-                                className="bg-white rounded-full h-2 transition-all"
+                                className="bg-white dark:bg-gray-700 rounded-full h-2 transition-all"
                                 style={{ width: `${progress}%` }}
                               />
                             </div>
@@ -147,16 +147,16 @@ const InterviewRoadmap = () => {
                         </div>
                       </div>
                       {isExpanded ? (
-                        <ChevronDown size={24} className="text-white" />
+                        <ChevronDown size={24} className="text-white dark:text-gray-800" />
                       ) : (
-                        <ChevronRight size={24} className="text-white" />
+                        <ChevronRight size={24} className="text-white dark:text-gray-800" />
                       )}
                     </div>
                   </div>
 
                   {/* Section Content */}
                   {isExpanded && (
-                    <div className="p-6 bg-gray-50">
+                    <div className="p-6 bg-gray-50 dark:bg-gray-700">
                       <div className="grid gap-4">
                         {section.items.map((item) => {
                           const isCompleted = completedItems[item.id];
@@ -166,19 +166,19 @@ const InterviewRoadmap = () => {
                               onClick={() => toggleComplete(item.id)}
                               className={`p-4 rounded-lg border-2 cursor-pointer transition-all ${
                                 isCompleted
-                                  ? "bg-green-50 border-green-500"
-                                  : "bg-white border-gray-200 hover:border-gray-300"
+                                  ? "bg-green-50 dark:bg-green-400 border-green-500"
+                                  : "bg-white dark:bg-gray-200 border-gray-400 hover:border-gray-300"
                               }`}
                             >
                               <div className="flex items-start gap-3">
                                 {isCompleted ? (
                                   <CheckCircle
-                                    className="text-green-500 flex-shrink-0 mt-1"
+                                    className="text-green-500 dark:text-green-600 flex-shrink-0 mt-1"
                                     size={24}
                                   />
                                 ) : (
                                   <Circle
-                                    className="text-gray-400 flex-shrink-0 mt-1"
+                                    className="text-gray-400 dark:text-gray-800 flex-shrink-0 mt-1"
                                     size={24}
                                   />
                                 )}
@@ -186,8 +186,8 @@ const InterviewRoadmap = () => {
                                   <h3
                                     className={`font-semibold mb-1 ${
                                       isCompleted
-                                        ? "text-green-900 line-through"
-                                        : "text-gray-800"
+                                        ? "text-green-900 dark:text-green-600 line-through"
+                                        : "text-gray-800 dark:text-gray-800"
                                     }`}
                                   >
                                     {item.title}
@@ -212,21 +212,21 @@ const InterviewRoadmap = () => {
         {/* DSA Mind Map Tab */}
         {activeTab === "dsa" && (
           <div className="space-y-6">
-            <div className="bg-white rounded-lg shadow-lg py-4 px-6">
+            <div className="bg-white dark:bg-gray-700 rounded-lg shadow-lg py-4 px-6">
               <div className="flex items-center gap-3 mb-2">
-                <h2 className="text-2xl font-bold text-gray-800">
+                <h2 className="text-2xl font-bold text-gray-800 dark:text-white">
                   {dsaMindmap.title}
                 </h2>
-                <Brain size={32} className="text-blue-600" />
+                <Brain size={32} className="text-blue-600 dark:text-blue-400" />
               </div>
-              <p className="text-gray-600">{dsaMindmap.description}</p>
+              <p className="text-gray-600 dark:text-gray-400">{dsaMindmap.description}</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
               {dsaMindmap.sections.map((section) => (
                 <div
                   key={section.id}
-                  className="bg-white rounded-lg shadow-lg overflow-hidden"
+                  className="bg-white dark:bg-gray-700 rounded-lg shadow-lg overflow-hidden"
                 >
                   <div className={`${section.color} py-3 px-4`}>
                     <h3 className="text-lg font-bold text-white">
@@ -239,27 +239,27 @@ const InterviewRoadmap = () => {
                         key={idx}
                         className={`p-3 rounded-lg ${
                           item.type === "question"
-                            ? "bg-blue-50 border-l-4 border-blue-500"
+                            ? "bg-blue-50 dark:bg-blue-200 border-l-4 border-blue-500"
                             : item.type === "answer"
-                            ? "bg-green-50 border-l-4 border-green-500 ml-4"
+                            ? "bg-green-50 dark:bg-green-200 border-l-4 border-green-500 ml-4"
                             : item.type === "use"
-                            ? "bg-purple-50 border-l-4 border-purple-500"
+                            ? "bg-purple-50 dark:bg-purple-200 border-l-4 border-purple-500"
                             : item.type === "note"
-                            ? "bg-yellow-50 border-l-4 border-yellow-500"
-                            : "bg-gray-50 border-l-4 border-gray-300"
+                            ? "bg-yellow-50 dark:bg-yellow-200 border-l-4 border-yellow-500"
+                            : "bg-gray-50 dark:bg-gray-200 border-l-4 border-gray-300"
                         }`}
                       >
                         <p
                           className={`text-sm ${
                             item.type === "question"
-                              ? "font-semibold text-blue-900"
+                              ? "font-semibold text-blue-900 dark:text-blue-600"
                               : item.type === "answer"
-                              ? "text-green-900"
+                              ? "text-green-900 dark:text-green-800"
                               : item.type === "use"
-                              ? "text-purple-900"
+                              ? "text-purple-900 dark:text-purple-600"
                               : item.type === "note"
-                              ? "text-yellow-900"
-                              : "text-gray-700"
+                              ? "text-yellow-900 dark:text-yellow-600"
+                              : "text-gray-700 dark:text-gray-600"
                           }`}
                         >
                           {item.text}
