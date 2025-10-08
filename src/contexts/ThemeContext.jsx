@@ -35,7 +35,7 @@ export const ThemeProvider = ({ children }) => {
       try {
         window.localStorage.setItem('theme', theme);
       } catch (error) {
-        console.warn('No se pudo acceder a localStorage.');
+        console.warn('Error trying to save theme to localStorage: ', error);
       }
     }
   }, [theme]);

@@ -21,24 +21,24 @@ const copyToClipboard = (text, index) => {
 };
 
 return (
-  <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-6">
+  <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-6 dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800">
     <div className="max-w-6xl mx-auto">
       <div className="text-center mb-8">
         <div className="flex items-center justify-center gap-3 mb-3">
-          <h1 className="text-4xl font-bold text-gray-800">
+          <h1 className="text-4xl font-bold text-gray-800 dark:text-white">
             LeetCode Patterns Cheat Sheet
           </h1>
           <Code2 size={36} className="text-blue-600 ml-2" />
         </div>
-        <p className="text-gray-600 text-lg">
+        <p className="text-gray-600 text-lg dark:text-gray-400">
           Master coding patterns in multiple languages
         </p>
       </div>
 
       {/* Language Selector */}
-      <div className="bg-white rounded-lg shadow-md p-4 mb-8 sticky top-4 z-10">
+      <div className="bg-white rounded-lg shadow-md p-4 mb-8 sticky top-4 z-10 dark:bg-gray-600 dark:border-gray-700">
         <div className="flex items-center justify-center gap-3 flex-wrap">
-          <span className="text-gray-700 font-medium">Select Language:</span>
+          <span className="text-gray-700 dark:text-gray-200 font-medium">Select Language:</span>
           {languages.map((lang) => (
             <button
               key={lang.id}
@@ -64,18 +64,18 @@ return (
           >
             {/* <div className="bg-gradient-to-r from-blue-500 to-blue-600 py-3 px-4"> */}
             {/* <div className="bg-gradient-to-r from-purple-500 to-blue-500 py-3 px-4"> */}
-            <div className="bg-gradient-to-r from-indigo-500 to-blue-500 py-3 px-4">
+            <div className="bg-gradient-to-r from-indigo-500 to-blue-500 py-3 px-4 dark:bg-gradient-to-r dark:from-indigo-600 dark:to-blue-600">
               <h2 className="text-lg font-bold text-white mb-1">
                 {pattern.title}
               </h2>
               <p className="text-blue-50">{pattern.description}</p>
             </div>
 
-            <div className="p-6">
+            <div className="p-6 dark:bg-gray-600 dark:border-gray-700">
               {/* Code Block */}
               <div className="relative mb-4">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-sm font-semibold text-gray-600 uppercase">
+                  <span className="text-sm font-semibold text-gray-600 dark:text-gray-200 uppercase">
                     {languages.find((l) => l.id === selectedLanguage)?.name}{" "}
                     Template
                   </span>
@@ -83,7 +83,7 @@ return (
                     onClick={() =>
                       copyToClipboard(pattern.templates[selectedLanguage], idx)
                     }
-                    className="flex items-center gap-2 px-3 py-1 text-sm bg-gray-100 hover:bg-gray-200 rounded transition"
+                    className="flex items-center gap-2 px-3 py-1 text-sm bg-gray-100 dark:bg-gray-800 dark:text-gray-200 hover:bg-gray-200 rounded transition"
                   >
                     {copiedIndex === idx ? (
                       <>
@@ -106,15 +106,15 @@ return (
               </div>
 
               {/* Common Problems */}
-              <div className="bg-blue-50 rounded-lg p-4">
-                <span className="font-semibold text-blue-900 text-sm">
+              <div className="bg-blue-50 dark:bg-gray-800 dark:border-gray-700 rounded-lg p-4">
+                <span className="font-semibold text-blue-900 dark:text-blue-400 text-sm">
                   Common Problems:
                 </span>
                 <div className="flex flex-wrap gap-2 mt-2">
                   {pattern.problems.map((problem, pIdx) => (
                     <span
                       key={pIdx}
-                      className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium"
+                      className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium dark:bg-blue-800 dark:text-blue-50"
                     >
                       {problem}
                     </span>
@@ -127,7 +127,7 @@ return (
       </div>
 
       {/* Footer */}
-      <div className="mt-12 text-center text-gray-600">
+      <div className="mt-12 text-center text-gray-600 dark:text-gray-400">
         <p className="text-sm">
           💡 Practice these patterns regularly to build strong problem-solving
           intuition
