@@ -74,15 +74,7 @@
       "title": "Prefix Sum",
       "description": "Used for fast range sum queries and subarray sum problems. There are two common implementations: (1) with an extra 0 at the start, and (2) without it (0-based).",
       "templates": {
-        "python": "# Version 1: With extra 0 at the start (simpler range queries)\n"
-          "prefix = [0] * (len(arr) + 1)\n"
-          "for i in range(len(arr)):\n"
-          "    prefix[i + 1] = prefix[i] + arr[i]\n\n"
-          "# Version 2: Without extra 0 (0-based indexing)\n"
-          "prefix = [0] * len(arr)\n"
-          "prefix[0] = arr[0]\n"
-          "for i in range(1, len(arr)):\n"
-          "    prefix[i] = prefix[i - 1] + arr[i]",
+        "python": "# Version 1: With extra 0 at the start (simpler range queries)\\nprefix = [0] * (len(arr) + 1)\\nfor i in range(len(arr)):\\n    prefix[i + 1] = prefix[i] + arr[i]\\n\\n# Version 2: Without extra 0 (0-based indexing)\\nprefix = [0] * len(arr)\\nprefix[0] = arr[0]\\nfor i in range(1, len(arr)):\\n    prefix[i] = prefix[i - 1] + arr[i]",
         "javascript": "// Version 1: With extra 0 at the start (simpler range queries)\nconst prefix = new Array(arr.length + 1).fill(0);\nfor (let i = 0; i < arr.length; i++) {\n    prefix[i + 1] = prefix[i] + arr[i];\n}\n\n// Version 2: Without extra 0 (0-based indexing)\nconst prefix2 = new Array(arr.length).fill(0);\nprefix2[0] = arr[0];\nfor (let i = 1; i < arr.length; i++) {\n    prefix2[i] = prefix2[i - 1] + arr[i];",
         "java": "// Version 1: With extra 0 at the start (simpler range queries)\nint[] prefix = new int[arr.length + 1];\nfor (int i = 0; i < arr.length; i++) {\n    prefix[i + 1] = prefix[i] + arr[i];\n}\n\n// Version 2: Without extra 0 (0-based indexing)\nint[] prefix2 = new int[arr.length];\nprefix2[0] = arr[0];\nfor (int i = 1; i < arr.length; i++) {\n    prefix2[i] = prefix2[i - 1] + arr[i];",
         "go": "// Version 1: With extra 0 at the start (simpler range queries)\nprefix := make([]int, len(arr)+1)\nfor i := 0; i < len(arr); i++ {\n    prefix[i+1] = prefix[i] + arr[i]\n}\n\n// Version 2: Without extra 0 (0-based indexing)\nprefix2 := make([]int, len(arr))\nprefix2[0] = arr[0]\nfor i := 1; i < len(arr); i++ {\n    prefix2[i] = prefix2[i-1] + arr[i];"

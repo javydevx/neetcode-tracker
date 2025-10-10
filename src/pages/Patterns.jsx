@@ -100,7 +100,7 @@ return (
                 </div>
                 <pre className="bg-gray-800 text-gray-100 rounded-lg p-4 overflow-x-auto border-2 border-gray-700">
                   <code className="text-sm font-mono whitespace-pre">
-                    {pattern.templates[selectedLanguage]}
+                    {pattern.templates[selectedLanguage].replace(/\\n/g, "\n")}
                   </code>
                 </pre>
               </div>
