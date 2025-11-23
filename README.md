@@ -1,6 +1,3 @@
-<!-- Place this tag where you want the button to render. -->
-<GitHubButton href="https://github.com/javydevx/neetcode-tracker" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star javydevx/neetcode-tracker on GitHub">Star</GitHubButton>
-
 # 🧠 CodeTrack Pro - NeetCode 150 Progress Tracker
 
 A modern, interactive web application to track your progress through the famous NeetCode 150 problems with built-in spaced repetition system for long-term retention.
