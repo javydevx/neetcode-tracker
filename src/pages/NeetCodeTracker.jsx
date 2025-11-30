@@ -1,14 +1,13 @@
 import { useState, useEffect } from "react";
-import { Info, ExternalLink, Map } from "lucide-react";
+import { Info, ExternalLink, Map, ChevronDown, ChevronUp } from "lucide-react";
 import {
   Filters,
   StatsCard,
   ProblemTable,
   ExportImportControls,
+  CircularProgress,
 } from "../components";
 import { problems } from "../data";
-
-
 
 // --- Spaced repetition intervals ---
 const intervals = [1, 3, 7, 14, 30];
@@ -122,107 +121,124 @@ const NeetCodeTracker = () => {
     }).length;
   };
 
-  return (
-    <div className="min-h-screen bg-gray-50 p-4 transition-colors">
-      <div className="max-w-7xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-            <div>
-              <h1 className="text-3xl font-bold text-gray-800 mb-2">
-                CodeTrack Pro - NeetCode 150 Progress Tracker
-              </h1>
-              <p className="text-gray-600">
-                Track your progress with spaced repetition
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-2">
-              <a
-                href="https://neetcode.io/roadmap"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors"
-                title="View the official NeetCode roadmap"
-              >
-                <Map size={16} />
-                Official Roadmap
-                <ExternalLink size={14} />
-              </a>
-            </div>
-          </div>
+  const progressPercent = Math.round((stats.solved / stats.total) * 100);
 
-          <div className="mt-4">
+  return (
+    <div className="min-h-screen p-4 md:p-6 lg:p-8">
+      <div className="max-w-7xl mx-auto space-y-6">
+        {/* Header Section */}
+        <div className="card fade-in">
+          <div className="p-6 md:p-8">
+            <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+              {/* Left: Title and CircularProgress */}
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+                {/* Circular Progress */}
+                <div className="fade-in-up" style={{ animationDelay: '0.1s', opacity: 0 }}>
+                  <CircularProgress value={progressPercent} size={100} strokeWidth={8} />
+                </div>
+
+                {/* Title and subtitle */}
+                <div>
+                  <h1 className="text-2xl md:text-3xl font-bold text-lc-text-primary mb-1">
+                    NeetCode <span className="text-lc-accent">150</span>
+                  </h1>
+                  <p className="text-lc-text-secondary">
+                    Master algorithms with spaced repetition
+                  </p>
+                  <div className="flex items-center gap-4 mt-3 text-sm">
+                    <span className="text-lc-success font-medium">{stats.solved} solved</span>
+                    <span className="text-lc-text-tertiary">•</span>
+                    <span className="text-lc-text-secondary">{stats.total - stats.solved} remaining</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right: Actions */}
+              <div className="flex flex-wrap items-center gap-3">
+                <a
+                  href="https://neetcode.io/roadmap"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-secondary flex items-center gap-2"
+                  title="View the official NeetCode roadmap"
+                >
+                  <Map size={16} />
+                  <span className="hidden sm:inline">Official Roadmap</span>
+                  <ExternalLink size={14} className="opacity-60" />
+                </a>
+              </div>
+            </div>
+
+            {/* Explanation toggle */}
             <button
               onClick={() => setShowExplanation(!showExplanation)}
-              className="flex items-center gap-2 text-blue-600 hover:text-blue-800 text-sm"
+              className="mt-6 flex items-center gap-2 text-lc-accent hover:text-lc-accent-hover text-sm transition-colors"
             >
               <Info size={16} />
               {showExplanation ? "Hide" : "Show"} Spaced Repetition Info
+              {showExplanation ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
             </button>
           </div>
         </div>
 
         {/* Explanation Section */}
         {showExplanation && (
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
-            <h3 className="text-lg font-semibold text-blue-800 mb-3">
+          <div className="card p-6 fade-in border-l-4 border-l-lc-accent">
+            <h3 className="text-lg font-semibold text-lc-accent mb-4 flex items-center gap-2">
+              <Info size={20} />
               How Spaced Repetition Works
             </h3>
-            <div className="text-blue-700 space-y-2">
-              <p>
-                This tracker uses spaced repetition to help you retain coding
-                problems long-term.
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                <div>
-                  <h4 className="font-semibold mb-2">Review Schedule:</h4>
-                  <ul className="space-y-1 text-sm">
-                    <li>
-                      <strong>R1:</strong> Review after 1 day
+            <p className="text-lc-text-secondary mb-4">
+              This tracker uses spaced repetition to help you retain coding
+              problems long-term.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-3">
+                <h4 className="font-medium text-lc-text-primary">Review Schedule</h4>
+                <ul className="space-y-2 text-sm text-lc-text-secondary">
+                  {[
+                    { label: 'R1', time: 'After 1 day' },
+                    { label: 'R2', time: 'After 3 days' },
+                    { label: 'R3', time: 'After 7 days (1 week)' },
+                    { label: 'R4', time: 'After 14 days (2 weeks)' },
+                    { label: 'R5', time: 'After 30 days (1 month)' },
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-center gap-3 fade-in-up" style={{ animationDelay: `${i * 0.05}s`, opacity: 0 }}>
+                      <span className="w-8 h-8 rounded bg-lc-bg-elevated flex items-center justify-center text-lc-success font-mono text-xs font-bold">
+                        {item.label}
+                      </span>
+                      <span>{item.time}</span>
                     </li>
-                    <li>
-                      <strong>R2:</strong> Review after 3 days
-                    </li>
-                    <li>
-                      <strong>R3:</strong> Review after 7 days (1 week)
-                    </li>
-                    <li>
-                      <strong>R4:</strong> Review after 14 days (2 weeks)
-                    </li>
-                    <li>
-                      <strong>R5:</strong> Review after 30 days (1 month)
-                    </li>
-                  </ul>
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-2">How to Use:</h4>
-                  <ul className="space-y-1 text-sm">
-                    <li>1. Mark a problem as solved when you complete it</li>
-                    <li>2. Review buttons (R1-R5) will show required dates</li>
-                    <li>
-                      3. Click review buttons when you successfully review
-                    </li>
-                    <li>4. Use "Due Today" filter to see what needs review</li>
-                    <li>5. Check the Official Roadmap for study guidance</li>
-                  </ul>
-                </div>
+                  ))}
+                </ul>
+              </div>
+              <div className="space-y-3">
+                <h4 className="font-medium text-lc-text-primary">How to Use</h4>
+                <ol className="space-y-2 text-sm text-lc-text-secondary list-decimal list-inside">
+                  <li>Mark a problem as solved when you complete it</li>
+                  <li>Review dots will show your progress</li>
+                  <li>Click dots to mark reviews as complete</li>
+                  <li>Use "Due Today" filter to see what needs review</li>
+                  <li>Check the Official Roadmap for study guidance</li>
+                </ol>
               </div>
             </div>
           </div>
         )}
 
-        {/* Stats */}
-        <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+        {/* Stats Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+          <StatsCard
+            color="blue"
+            value={`${stats.solved}/${stats.total}`}
+            label="Total Solved"
+          />
+          <StatsCard color="green" value={stats.easy} label="Easy" />
+          <StatsCard color="yellow" value={stats.medium} label="Medium" />
+          <StatsCard color="red" value={stats.hard} label="Hard" />
+          <div className="col-span-2 md:col-span-1">
             <StatsCard
-              color="blue"
-              value={`${stats.solved}/${stats.total}`}
-              label="Total Solved"
-            />
-            <StatsCard color="green" value={stats.easy} label="Easy" />
-            <StatsCard color="yellow" value={stats.medium} label="Medium" />
-            <StatsCard color="red" value={stats.hard} label="Hard" />
-            <StatsCard
-              color="purple"
+              color="orange"
               value={getDueProblems()}
               label="Due Today"
             />

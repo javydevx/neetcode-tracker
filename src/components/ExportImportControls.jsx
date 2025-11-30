@@ -37,15 +37,18 @@ const ExportImportControls = ({ progress, setProgress }) => {
   };
 
   return (
-    <div className="flex flex-wrap gap-2 mb-6">
+    <div className="flex flex-wrap gap-2 fade-in">
       <button
         onClick={exportData}
-        className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded transition-colors"
+        className="btn-action blue group"
       >
-        <Download size={16} /> Export Progress
+        <Download size={16} />
+        <span className="hidden sm:inline">Export</span>
       </button>
-      <label className="flex items-center gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white rounded transition-colors cursor-pointer">
-        <Upload size={16} /> Import Progress
+
+      <label className="btn-action green cursor-pointer group">
+        <Upload size={16} />
+        <span className="hidden sm:inline">Import</span>
         <input
           type="file"
           accept=".json"
@@ -53,11 +56,13 @@ const ExportImportControls = ({ progress, setProgress }) => {
           className="hidden"
         />
       </label>
+
       <button
         onClick={clearAllData}
-        className="flex items-center gap-2 px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded transition-colors"
+        className="btn-action red group"
       >
-        <Trash2 size={16} /> Clear All
+        <Trash2 size={16} />
+        <span className="hidden sm:inline">Clear</span>
       </button>
     </div>
   );

@@ -1,10 +1,4 @@
-import { CheckCircle2, Circle, Calendar, ExternalLink } from "lucide-react";
-
-const difficultyColor = {
-  Easy: "text-green-600",
-  Medium: "text-yellow-600",
-  Hard: "text-red-600",
-};
+import { Check, ExternalLink } from "lucide-react";
 
 const ProblemTable = ({
   problems,
@@ -51,131 +45,143 @@ const ProblemTable = ({
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6">
-      <h2 className="text-xl font-semibold mb-4">Problems</h2>
+    <div className="card overflow-hidden fade-in">
+      {/* Header */}
+      <div className="px-6 py-4 border-b border-lc-border flex items-center justify-between">
+        <div>
+          <h2 className="text-lg font-semibold text-lc-text-primary">Problems</h2>
+          <p className="text-sm text-lc-text-secondary mt-0.5">
+            {filteredProblems.length} of {problems.length} problems
+          </p>
+        </div>
+        <div className="flex items-center gap-4 text-xs text-lc-text-tertiary">
+          <span className="flex items-center gap-1.5">
+            <span className="w-2 h-2 rounded-full bg-lc-success" /> Solved
+          </span>
+          <span className="flex items-center gap-1.5">
+            <span className="w-2 h-2 rounded-full bg-lc-error animate-pulse" /> Overdue
+          </span>
+        </div>
+      </div>
+
+      {/* Table */}
       <div className="overflow-x-auto">
-        <table className="min-w-full divide-y divide-gray-200">
-          <thead className="bg-gray-50">
-            <tr>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+        <table className="min-w-full">
+          <thead>
+            <tr className="bg-lc-bg-elevated/50">
+              <th className="px-6 py-3 text-left text-xs font-medium text-lc-text-tertiary uppercase tracking-wider">
                 #
               </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th className="px-6 py-3 text-left text-xs font-medium text-lc-text-tertiary uppercase tracking-wider">
                 Name
               </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th className="px-6 py-3 text-left text-xs font-medium text-lc-text-tertiary uppercase tracking-wider hidden md:table-cell">
                 Category
               </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th className="px-6 py-3 text-left text-xs font-medium text-lc-text-tertiary uppercase tracking-wider">
                 Difficulty
               </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <th className="px-6 py-3 text-left text-xs font-medium text-lc-text-tertiary uppercase tracking-wider">
                 Status
               </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                Reviews & Due Dates
+              <th className="px-6 py-3 text-left text-xs font-medium text-lc-text-tertiary uppercase tracking-wider hidden lg:table-cell">
+                Reviews
               </th>
             </tr>
           </thead>
-          <tbody className="bg-white divide-y divide-gray-200">
-            {filteredProblems.map((problem) => {
+          <tbody>
+            {filteredProblems.map((problem, index) => {
               const prob = progress[problem.id] || {};
               const nextReviews = calculateNextReviews(prob.solvedDate);
+
               return (
-                <tr key={problem.id} className="hover:bg-gray-50">
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                <tr
+                  key={problem.id}
+                  className="table-row fade-in-up"
+                  style={{ animationDelay: `${Math.min(index * 0.03, 0.3)}s`, opacity: 0 }}
+                >
+                  {/* ID */}
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-lc-text-tertiary font-mono">
                     {problem.id}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
-                    <div className="flex items-center gap-2">
-                      <a
-                        href={problem.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-600 hover:text-blue-800 hover:underline flex items-center gap-1"
-                        title={`Open ${problem.name} on NeetCode`}
-                      >
-                        {problem.name}
-                        <ExternalLink size={14} className="flex-shrink-0" />
-                      </a>
-                    </div>
+
+                  {/* Name - Orange accent link */}
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <a
+                      href={problem.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="problem-link flex items-center gap-2 group"
+                      title={`Open ${problem.name} on NeetCode`}
+                    >
+                      <span className="text-sm">{problem.name}</span>
+                      <ExternalLink
+                        size={14}
+                        className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity"
+                      />
+                    </a>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                    {problem.category}
+
+                  {/* Category */}
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-lc-text-secondary hidden md:table-cell">
+                    <span className="px-2 py-1 rounded bg-lc-bg-elevated text-xs">
+                      {problem.category}
+                    </span>
                   </td>
-                  <td
-                    className={`px-6 py-4 whitespace-nowrap text-sm font-semibold ${
-                      difficultyColor[problem.difficulty]
-                    }`}
-                  >
-                    {problem.difficulty}
+
+                  {/* Difficulty */}
+                  <td className="px-6 py-4 whitespace-nowrap">
+                    <span className={`text-sm font-medium text-lc-${problem.difficulty.toLowerCase()}`}>
+                      {problem.difficulty}
+                    </span>
                   </td>
+
+                  {/* Status */}
                   <td className="px-6 py-4 whitespace-nowrap">
                     <button
                       onClick={() => toggleComplete(problem.id)}
-                      className="flex items-center gap-2 text-gray-600 hover:text-gray-800"
+                      className="flex items-center gap-2 group"
                     >
-                      {prob.solved ? (
-                        <CheckCircle2 className="text-green-600" size={20} />
-                      ) : (
-                        <Circle size={20} />
-                      )}
-                      <span className="text-xs">
-                        {prob.solved ? "Solved" : "Not Solved"}
+                      <div className={`status-check ${prob.solved ? 'checked' : 'unchecked'}`}>
+                        {prob.solved && <Check size={12} strokeWidth={3} />}
+                      </div>
+                      <span className={`text-xs font-medium ${prob.solved ? 'text-lc-success' : 'text-lc-text-tertiary'}`}>
+                        {prob.solved ? "Solved" : "Todo"}
                       </span>
                     </button>
                   </td>
-                  <td className="px-6 py-4">
+
+                  {/* Reviews */}
+                  <td className="px-6 py-4 hidden lg:table-cell">
                     {prob.solved ? (
-                      <div className="flex flex-wrap gap-2">
+                      <div className="flex items-center gap-1.5">
                         {nextReviews.map((date, idx) => {
                           const isCompleted = prob.reviews?.[idx];
                           const overdue = !isCompleted && isOverdue(date);
                           const dueToday = !isCompleted && isDueToday(date);
 
+                          let dotClass = "review-dot";
+                          if (isCompleted) dotClass += " filled";
+                          else if (overdue) dotClass += " overdue";
+                          else if (dueToday) dotClass += " due";
+
                           return (
-                            <div
+                            <button
                               key={idx}
-                              className="flex flex-col items-center"
+                              onClick={() => toggleComplete(problem.id, idx)}
+                              className={dotClass}
+                              title={`Review ${idx + 1} - ${formatDate(date)}${
+                                isCompleted ? " (Done)" : overdue ? " (Overdue)" : dueToday ? " (Due Today)" : ""
+                              }`}
                             >
-                              <button
-                                onClick={() => toggleComplete(problem.id, idx)}
-                                className={`px-2 py-1 rounded text-xs border min-w-[60px] ${
-                                  isCompleted
-                                    ? "bg-green-100 text-green-700 border-green-300"
-                                    : overdue
-                                    ? "bg-red-100 text-red-700 border-red-300"
-                                    : dueToday
-                                    ? "bg-yellow-100 text-yellow-700 border-yellow-300"
-                                    : "bg-gray-100 text-gray-600 border-gray-300"
-                                }`}
-                                title={`Review ${idx + 1} - Due: ${formatDate(
-                                  date
-                                )}`}
-                              >
-                                {`R${idx + 1}`}
-                              </button>
-                              <div
-                                className={`text-xs mt-1 flex items-center gap-1 ${
-                                  isCompleted
-                                    ? "text-green-600"
-                                    : overdue
-                                    ? "text-red-600"
-                                    : dueToday
-                                    ? "text-yellow-600"
-                                    : "text-gray-500"
-                                }`}
-                              >
-                                <Calendar size={10} />
-                                {formatDate(date)}
-                              </div>
-                            </div>
+                              {idx + 1}
+                            </button>
                           );
                         })}
                       </div>
                     ) : (
-                      <span className="text-xs text-gray-400">
-                        Complete problem to see review schedule
+                      <span className="text-xs text-lc-text-tertiary">
+                        Complete to unlock
                       </span>
                     )}
                   </td>
@@ -184,6 +190,17 @@ const ProblemTable = ({
             })}
           </tbody>
         </table>
+
+        {/* Empty state */}
+        {filteredProblems.length === 0 && (
+          <div className="text-center py-16">
+            <div className="w-14 h-14 mx-auto mb-4 rounded-lg bg-lc-bg-elevated flex items-center justify-center">
+              <span className="text-2xl">🔍</span>
+            </div>
+            <p className="text-lc-text-secondary font-medium">No problems match your filters</p>
+            <p className="text-lc-text-tertiary text-sm mt-1">Try adjusting your filter criteria</p>
+          </div>
+        )}
       </div>
     </div>
   );

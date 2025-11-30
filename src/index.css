@@ -1,3 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-lc-bg-primary text-lc-text-primary font-sans antialiased;
+  }
+
+  /* Custom scrollbar - LeetCode style */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #3c3c3c;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #505050;
+  }
+}
+
+@layer components {
+  /* ============================================
+     SUBTLE GRADIENT BACKGROUND
+     ============================================ */
+  .gradient-bg {
+    @apply fixed inset-0 pointer-events-none;
+    z-index: -1;
+    background:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(255, 161, 22, 0.03), transparent),
+      radial-gradient(ellipse 60% 40% at 100% 100%, rgba(40, 40, 40, 0.8), transparent),
+      #1a1a1a;
+  }
+
+  /* Subtle noise texture overlay */
+  .gradient-bg::after {
+    content: '';
+    @apply absolute inset-0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    opacity: 0.02;
+    pointer-events: none;
+  }
+
+  /* ============================================
+     CARD STYLES - Clean & Elevated
+     ============================================ */
+  .card {
+    @apply bg-lc-bg-secondary rounded-lg border border-lc-border;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-out;
+  }
+
+  .card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .card-elevated {
+    @apply bg-lc-bg-elevated rounded-lg border border-lc-border;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  }
+
+  /* ============================================
+     FORM INPUTS - Clean style
+     ============================================ */
+  .input {
+    @apply bg-lc-bg-elevated border border-lc-border rounded-md
+           text-lc-text-primary placeholder-lc-text-tertiary
+           focus:outline-none focus:border-lc-accent focus:ring-1 focus:ring-lc-accent/30
+           transition-all duration-200;
+  }
+
+  .select {
+    @apply input appearance-none cursor-pointer pr-10;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%239ca3af' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+  }
+
+  .select:hover {
+    @apply border-lc-border-hover;
+  }
+
+  /* ============================================
+     BUTTONS
+     ============================================ */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2
+           rounded-md font-medium text-sm
+           transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply btn bg-lc-accent text-lc-bg-primary;
+  }
+
+  .btn-primary:hover {
+    @apply bg-lc-accent-hover;
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary {
+    @apply btn bg-lc-bg-elevated border border-lc-border text-lc-text-primary;
+  }
+
+  .btn-secondary:hover {
+    @apply bg-lc-bg-hover border-lc-border-hover;
+  }
+
+  .btn-outline {
+    @apply btn bg-transparent border border-lc-border text-lc-text-secondary;
+  }
+
+  .btn-outline:hover {
+    @apply border-lc-accent text-lc-accent;
+  }
+
+  .btn-success {
+    @apply btn bg-lc-success/15 border border-lc-success/40 text-lc-success;
+  }
+
+  .btn-success:hover {
+    @apply bg-lc-success/25 border-lc-success/60;
+    transform: translateY(-1px);
+  }
+
+  .btn-danger {
+    @apply btn bg-lc-error/15 border border-lc-error/40 text-lc-error;
+  }
+
+  .btn-danger:hover {
+    @apply bg-lc-error/25 border-lc-error/60;
+    transform: translateY(-1px);
+  }
+
+  /* ============================================
+     TOGGLE SWITCH
+     ============================================ */
+  .toggle {
+    @apply relative inline-flex h-6 w-11 items-center rounded-full
+           bg-lc-bg-hover cursor-pointer;
+    transition: all 0.2s ease-out;
+  }
+
+  .toggle.active {
+    @apply bg-lc-accent;
+  }
+
+  .toggle .toggle-thumb {
+    @apply inline-block h-4 w-4 transform rounded-full bg-white shadow-sm;
+    margin-left: 4px;
+    transition: transform 0.2s ease-out;
+  }
+
+  .toggle.active .toggle-thumb {
+    transform: translateX(20px);
+  }
+
+  /* ============================================
+     DIFFICULTY BADGES
+     ============================================ */
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-easy {
+    @apply badge bg-lc-easy/15 text-lc-easy;
+  }
+
+  .badge-medium {
+    @apply badge bg-lc-medium/15 text-lc-medium;
+  }
+
+  .badge-hard {
+    @apply badge bg-lc-hard/15 text-lc-hard;
+  }
+
+  /* ============================================
+     TABLE STYLES
+     ============================================ */
+  .table-row {
+    @apply border-b border-lc-border/50;
+    transition: all 0.15s ease-out;
+  }
+
+  .table-row:hover {
+    @apply bg-lc-bg-elevated;
+  }
+
+  .table-row:last-child {
+    @apply border-b-0;
+  }
+
+  /* Problem link - Orange accent */
+  .problem-link {
+    @apply text-lc-accent font-medium;
+    transition: all 0.15s ease-out;
+  }
+
+  .problem-link:hover {
+    @apply text-lc-accent-hover;
+    text-decoration: underline;
+  }
+
+  /* ============================================
+     STATUS CHECKBOX
+     ============================================ */
+  .status-check {
+    @apply w-5 h-5 rounded-full border-2 flex items-center justify-center cursor-pointer;
+    transition: all 0.2s ease-out;
+  }
+
+  .status-check.unchecked {
+    @apply border-lc-text-tertiary bg-transparent;
+  }
+
+  .status-check.unchecked:hover {
+    @apply border-lc-success;
+  }
+
+  .status-check.checked {
+    @apply border-lc-success bg-lc-success;
+    box-shadow: 0 0 8px rgba(44, 187, 93, 0.4);
+  }
+
+  .status-check.checked svg {
+    @apply text-lc-bg-primary;
+  }
+
+  /* ============================================
+     REVIEW DOTS
+     ============================================ */
+  .review-dot {
+    @apply w-6 h-6 rounded flex items-center justify-center cursor-pointer text-xs font-mono;
+    background: rgba(60, 60, 60, 0.5);
+    border: 1px solid rgba(80, 80, 80, 0.5);
+    color: #6b7280;
+    transition: all 0.2s ease-out;
+  }
+
+  .review-dot:hover {
+    @apply bg-lc-bg-hover border-lc-border-hover;
+    transform: scale(1.1);
+  }
+
+  .review-dot.filled {
+    @apply bg-lc-success border-lc-success text-lc-bg-primary;
+    box-shadow: 0 0 8px rgba(44, 187, 93, 0.3);
+  }
+
+  .review-dot.due {
+    @apply bg-lc-medium border-lc-medium text-lc-bg-primary;
+    animation: pulse-due 2s ease-in-out infinite;
+  }
+
+  .review-dot.overdue {
+    @apply bg-lc-error border-lc-error text-lc-bg-primary;
+    animation: pulse-overdue 1.5s ease-in-out infinite;
+  }
+
+  @keyframes pulse-due {
+    0%, 100% { box-shadow: 0 0 8px rgba(255, 192, 30, 0.4); }
+    50% { box-shadow: 0 0 16px rgba(255, 192, 30, 0.6); }
+  }
+
+  @keyframes pulse-overdue {
+    0%, 100% { box-shadow: 0 0 8px rgba(255, 55, 95, 0.4); transform: scale(1); }
+    50% { box-shadow: 0 0 16px rgba(255, 55, 95, 0.6); transform: scale(1.05); }
+  }
+
+  /* ============================================
+     SIDEBAR
+     ============================================ */
+  .sidebar {
+    @apply bg-lc-bg-secondary border-r border-lc-border;
+  }
+
+  .nav-item {
+    @apply flex items-center gap-3 px-4 py-3 mx-2 rounded-lg
+           text-lc-text-secondary;
+    transition: all 0.15s ease-out;
+  }
+
+  .nav-item:hover {
+    @apply bg-lc-bg-elevated text-lc-text-primary;
+  }
+
+  .nav-item.active {
+    @apply bg-lc-accent/10 text-lc-accent;
+  }
+
+  .nav-item.active::before {
+    content: '';
+    @apply absolute left-0 top-1/2 -translate-y-1/2 w-0.5 h-5 rounded-r-full bg-lc-accent;
+  }
+
+  /* Logo */
+  .logo {
+    @apply bg-lc-accent text-lc-bg-primary font-bold rounded-lg;
+  }
+
+  /* ============================================
+     STAT CARDS
+     ============================================ */
+  .stat-card {
+    @apply relative bg-lc-bg-secondary rounded-lg p-5 border-l-4;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-out;
+  }
+
+  .stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  .stat-card.green {
+    @apply border-l-lc-success;
+  }
+
+  .stat-card.yellow {
+    @apply border-l-lc-medium;
+  }
+
+  .stat-card.red {
+    @apply border-l-lc-error;
+  }
+
+  .stat-card.blue {
+    @apply border-l-lc-easy;
+  }
+
+  .stat-card.orange {
+    @apply border-l-lc-accent;
+  }
+
+  .stat-number {
+    @apply text-3xl font-bold font-mono text-lc-text-primary;
+  }
+
+  .stat-label {
+    @apply text-sm text-lc-text-secondary mt-1;
+  }
+
+  /* ============================================
+     CIRCULAR PROGRESS
+     ============================================ */
+  .circular-progress {
+    transform: rotate(-90deg);
+  }
+
+  .circular-progress-bg {
+    stroke: #3c3c3c;
+  }
+
+  .circular-progress-fill {
+    stroke: #ffa116;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.8s ease-out;
+  }
+
+  /* ============================================
+     ANIMATIONS
+     ============================================ */
+  .fade-in {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+
+  .fade-in-up {
+    animation: fadeInUp 0.4s ease-out forwards;
+  }
+
+  .stagger-1 { animation-delay: 0.05s; }
+  .stagger-2 { animation-delay: 0.1s; }
+  .stagger-3 { animation-delay: 0.15s; }
+  .stagger-4 { animation-delay: 0.2s; }
+  .stagger-5 { animation-delay: 0.25s; }
+  .stagger-6 { animation-delay: 0.3s; }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* ============================================
+     MOBILE MENU OVERLAY
+     ============================================ */
+  .menu-overlay {
+    @apply fixed inset-0 bg-lc-bg-primary/95 z-40;
+    backdrop-filter: blur(4px);
+  }
+
+  /* ============================================
+     TOOLTIP
+     ============================================ */
+  .tooltip {
+    @apply absolute left-full ml-3 px-2 py-1
+           bg-lc-bg-elevated text-lc-text-primary text-xs rounded
+           opacity-0 invisible whitespace-nowrap z-50 border border-lc-border;
+    transition: all 0.15s ease-out;
+  }
+
+  .nav-item:hover .tooltip {
+    @apply opacity-100 visible;
+  }
+
+  /* ============================================
+     FILTER CONTROLS
+     ============================================ */
+  .filter-select {
+    @apply bg-lc-bg-elevated border border-lc-border rounded-md
+           text-lc-text-primary text-sm px-3 py-2 pr-8
+           focus:outline-none focus:border-lc-accent focus:ring-1 focus:ring-lc-accent/30;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%239ca3af' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    transition: all 0.15s ease-out;
+  }
+
+  .filter-select:hover {
+    @apply border-lc-border-hover bg-lc-bg-hover;
+  }
+
+  /* ============================================
+     ACTION BUTTONS (Export/Import)
+     ============================================ */
+  .btn-action {
+    @apply inline-flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium
+           border transition-all duration-200;
+  }
+
+  .btn-action.blue {
+    @apply bg-lc-easy/10 border-lc-easy/30 text-lc-easy;
+  }
+
+  .btn-action.blue:hover {
+    @apply bg-lc-easy/20 border-lc-easy/50;
+    transform: translateY(-1px);
+  }
+
+  .btn-action.green {
+    @apply bg-lc-success/10 border-lc-success/30 text-lc-success;
+  }
+
+  .btn-action.green:hover {
+    @apply bg-lc-success/20 border-lc-success/50;
+    transform: translateY(-1px);
+  }
+
+  .btn-action.red {
+    @apply bg-lc-error/10 border-lc-error/30 text-lc-error;
+  }
+
+  .btn-action.red:hover {
+    @apply bg-lc-error/20 border-lc-error/50;
+    transform: translateY(-1px);
+  }
+}
+
+@layer utilities {
+  /* Text color utilities */
+  .text-muted {
+    @apply text-lc-text-secondary;
+  }
+
+  .text-dim {
+    @apply text-lc-text-tertiary;
+  }
+
+  /* Background utilities */
+  .bg-surface {
+    @apply bg-lc-bg-secondary;
+  }
+
+  .bg-elevated {
+    @apply bg-lc-bg-elevated;
+  }
+}

@@ -10,58 +10,67 @@ const Filters = ({
   showOnlyDueToday,
   setShowOnlyDueToday,
 }) => (
-  <div className="bg-white rounded-lg shadow-lg p-6 mb-6 transition-colors">
-    <div className="flex items-center gap-2 mb-4">
-      <Filter size={20} className="text-gray-600" />
-      <h2 className="text-xl font-semibold text-gray-800">Filters</h2>
-    </div>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-center">
-      <div>
-        <label className="block text-sm font-medium text-gray-700 mb-2">
-          Category
-        </label>
-        <select
-          title="Category"
-          value={filterCategory}
-          onChange={(e) => setFilterCategory(e.target.value)}
-          className="w-full p-2 border border-gray-300 rounded bg-white text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-        >
-          {categories.map((cat) => (
-            <option key={cat} value={cat} className="bg-white">
-              {cat}
-            </option>
-          ))}
-        </select>
+  <div className="card p-4 fade-in">
+    <div className="flex flex-col md:flex-row md:items-center gap-4">
+      {/* Filter icon and label */}
+      <div className="flex items-center gap-2 text-lc-text-secondary">
+        <div className="p-2 rounded-md bg-lc-bg-elevated">
+          <Filter size={16} />
+        </div>
+        <span className="text-sm font-medium hidden sm:inline">Filters</span>
       </div>
-      <div>
-        <label className="block text-sm font-medium text-gray-700 mb-2">
-          Difficulty
-        </label>
-        <select
-          title="Difficulty"
-          value={filterDifficulty}
-          onChange={(e) => setFilterDifficulty(e.target.value)}
-          className="w-full p-2 border border-gray-300 rounded bg-white text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-        >
-          {difficulties.map((diff) => (
-            <option key={diff} value={diff} className="bg-white">
-              {diff}
-            </option>
-          ))}
-        </select>
-      </div>
-      <div className="flex items-center gap-2 md:mt-6">
-        <input
-          id="due-today-checkbox"
-          type="checkbox"
-          title="Show Only Due Today"
-          checked={showOnlyDueToday}
-          onChange={() => setShowOnlyDueToday((prev) => !prev)}
-          className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded bg-white"
-        />
-        <label className="text-sm font-medium text-gray-700">
-          Show Only Due Today
-        </label>
+
+      {/* Filter controls */}
+      <div className="flex flex-1 flex-col sm:flex-row gap-3 sm:items-center">
+        {/* Category select */}
+        <div className="flex-1 min-w-0">
+          <select
+            title="Category"
+            value={filterCategory}
+            onChange={(e) => setFilterCategory(e.target.value)}
+            className="filter-select w-full"
+          >
+            {categories.map((cat) => (
+              <option key={cat} value={cat} className="bg-lc-bg-secondary text-lc-text-primary">
+                {cat}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* Difficulty select */}
+        <div className="flex-1 min-w-0">
+          <select
+            title="Difficulty"
+            value={filterDifficulty}
+            onChange={(e) => setFilterDifficulty(e.target.value)}
+            className="filter-select w-full"
+          >
+            {difficulties.map((diff) => (
+              <option key={diff} value={diff} className="bg-lc-bg-secondary text-lc-text-primary">
+                {diff}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* Due today toggle */}
+        <div className="flex items-center gap-3 pl-2">
+          <button
+            role="switch"
+            aria-checked={showOnlyDueToday}
+            onClick={() => setShowOnlyDueToday((prev) => !prev)}
+            className={`toggle ${showOnlyDueToday ? 'active' : ''}`}
+          >
+            <span className="toggle-thumb" />
+          </button>
+          <label
+            className="text-sm text-lc-text-secondary whitespace-nowrap cursor-pointer hover:text-lc-text-primary transition-colors"
+            onClick={() => setShowOnlyDueToday((prev) => !prev)}
+          >
+            Due Today
+          </label>
+        </div>
       </div>
     </div>
   </div>
