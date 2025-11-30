@@ -68,7 +68,7 @@ return (
               <h2 className="text-lg font-bold text-white mb-1">
                 {pattern.title}
               </h2>
-              <p className="text-blue-50">{pattern.description}</p>
+              <p className="text-gray-500">{pattern.description}</p>
             </div>
 
             <div className="p-6">
