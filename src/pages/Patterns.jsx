@@ -1,10 +1,19 @@
 import { useState } from "react";
 import { Check, Code2, Copy } from "lucide-react";
 import { patterns } from "../data";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import {
+  oneDark,
+  oneLight,
+} from "react-syntax-highlighter/dist/esm/styles/prism";
+import { useTheme } from "../context/ThemeContext";
+
 
 const Patterns = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("python");
   const [copiedIndex, setCopiedIndex] = useState(null);
+  const { isDark } = useTheme();
+
 
   const languages = [
     { id: "python", name: "Python", color: "bg-blue-500" },
@@ -110,16 +119,16 @@ const Patterns = () => {
                       )}
                     </button>
                   </div>
-                  <pre className="bg-gray-900 dark:bg-gray-950 text-gray-100 rounded-lg p-4 overflow-x-auto border-2 border-gray-700 dark:border-gray-600">
-                    <code className="text-sm font-mono whitespace-pre">
-                      {pattern.templates[selectedLanguage].replace(
-                        /\\n/g,
-                        "\n"
-                      )}
-                    </code>
-                  </pre>
+                  <SyntaxHighlighter
+                    language={selectedLanguage}
+                    style={isDark ? oneDark : oneLight}
+                    wrapLongLines={true}
+                    showLineNumbers={true}
+                    className="rounded-lg overflow-x-auto"
+                  >
+                    {pattern.templates[selectedLanguage].replace(/\\n/g, "\n")}
+                  </SyntaxHighlighter>
                 </div>
-
                 <div className="bg-blue-50 dark:bg-blue-900/30 rounded-lg p-4">
                   <span className="font-semibold text-blue-900 dark:text-blue-300 text-sm">
                     Common Problems:
