@@ -44,8 +44,8 @@ A modern, interactive web application to track your progress through the famous 
 ### Setup
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/neetcode-tracker.git
-   cd neetcode-tracker
+   git clone https://github.com/yourusername/leetcode-tracker.git
+   cd leetcode-tracker
    ```
 
 2. **Install dependencies**
