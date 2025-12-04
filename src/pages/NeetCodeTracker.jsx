@@ -8,8 +8,6 @@ import {
 } from "../components";
 import { problems } from "../data";
 
-
-
 // --- Spaced repetition intervals ---
 const intervals = [1, 3, 7, 14, 30];
 
@@ -123,15 +121,15 @@ const NeetCodeTracker = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 p-4 transition-colors">
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-4 transition-colors">
       <div className="max-w-7xl mx-auto">
-        <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 mb-6 transition-colors">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <div>
-              <h1 className="text-3xl font-bold text-gray-800 mb-2">
+              <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-2">
                 CodeTrack Pro - NeetCode 150 Progress Tracker
               </h1>
-              <p className="text-gray-600">
+              <p className="text-gray-600 dark:text-gray-300">
                 Track your progress with spaced repetition
               </p>
             </div>
@@ -140,7 +138,7 @@ const NeetCodeTracker = () => {
                 href="https://neetcode.io/roadmap"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 bg-orange-600 text-white rounded-lg hover:bg-orange-700 transition-colors"
+                className="flex items-center gap-2 px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-lg transition-colors"
                 title="View the official NeetCode roadmap"
               >
                 <Map size={16} />
@@ -153,7 +151,7 @@ const NeetCodeTracker = () => {
           <div className="mt-4">
             <button
               onClick={() => setShowExplanation(!showExplanation)}
-              className="flex items-center gap-2 text-blue-600 hover:text-blue-800 text-sm"
+              className="flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-sm transition-colors"
             >
               <Info size={16} />
               {showExplanation ? "Hide" : "Show"} Spaced Repetition Info
@@ -163,11 +161,11 @@ const NeetCodeTracker = () => {
 
         {/* Explanation Section */}
         {showExplanation && (
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
-            <h3 className="text-lg font-semibold text-blue-800 mb-3">
+          <div className="bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-lg p-6 mb-6 transition-colors">
+            <h3 className="text-lg font-semibold text-blue-800 dark:text-blue-300 mb-3">
               How Spaced Repetition Works
             </h3>
-            <div className="text-blue-700 space-y-2">
+            <div className="text-blue-700 dark:text-blue-200 space-y-2">
               <p>
                 This tracker uses spaced repetition to help you retain coding
                 problems long-term.
@@ -211,7 +209,7 @@ const NeetCodeTracker = () => {
         )}
 
         {/* Stats */}
-        <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 mb-6 transition-colors">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             <StatsCard
               color="blue"

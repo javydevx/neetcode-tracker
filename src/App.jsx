@@ -5,12 +5,14 @@ import { Navbar } from "./components";
 const App = () => {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<NeetCodeTracker />} />
-        <Route path="/patterns" element={<Patterns />} />
-        <Route path="/roadmap" element={<InterviewRoadmap />} />
-      </Routes>
+      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<NeetCodeTracker />} />
+          <Route path="/patterns" element={<Patterns />} />
+          <Route path="/roadmap" element={<InterviewRoadmap />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 };

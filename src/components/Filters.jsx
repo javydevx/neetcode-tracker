@@ -10,41 +10,51 @@ const Filters = ({
   showOnlyDueToday,
   setShowOnlyDueToday,
 }) => (
-  <div className="bg-white rounded-lg shadow-lg p-6 mb-6 transition-colors">
+  <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 mb-6 transition-colors">
     <div className="flex items-center gap-2 mb-4">
       <Filter size={20} className="text-gray-600" />
-      <h2 className="text-xl font-semibold text-gray-800">Filters</h2>
+      <h2 className="text-xl font-semibold text-gray-800 dark:text-white">
+        Filters
+      </h2>
     </div>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-center">
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-2">
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
           Category
         </label>
         <select
           title="Category"
           value={filterCategory}
           onChange={(e) => setFilterCategory(e.target.value)}
-          className="w-full p-2 border border-gray-300 rounded bg-white text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+          className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 transition-colors"
         >
           {categories.map((cat) => (
-            <option key={cat} value={cat} className="bg-white">
+            <option
+              key={cat}
+              value={cat}
+              className="bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
+            >
               {cat}
             </option>
           ))}
         </select>
       </div>
       <div>
-        <label className="block text-sm font-medium text-gray-700 mb-2">
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
           Difficulty
         </label>
         <select
           title="Difficulty"
           value={filterDifficulty}
           onChange={(e) => setFilterDifficulty(e.target.value)}
-          className="w-full p-2 border border-gray-300 rounded bg-white text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
+          className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 transition-colors"
         >
           {difficulties.map((diff) => (
-            <option key={diff} value={diff} className="bg-white">
+            <option
+              key={diff}
+              value={diff}
+              className="bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
+            >
               {diff}
             </option>
           ))}
@@ -59,7 +69,7 @@ const Filters = ({
           onChange={() => setShowOnlyDueToday((prev) => !prev)}
           className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded bg-white"
         />
-        <label className="text-sm font-medium text-gray-700">
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
           Show Only Due Today
         </label>
       </div>
