@@ -6,7 +6,21 @@ import {
   ProblemTable,
   ExportImportControls,
 } from "../components";
-import { problems } from "../data";
+import { blind75, leetcode75, neetcode150 } from "../data";
+
+const problemLists = {
+  "Blind 75": blind75,
+  "LeetCode 75": leetcode75,
+  "NeetCode 150": neetcode150,
+};
+
+// Roadmap URLs for each list
+const roadmapLinks = {
+  "Blind 75": "https://leetcode.com/problem-list/oizxjoit/",
+  "LeetCode 75": "https://leetcode.com/studyplan/leetcode-75/",
+  "NeetCode 150": "https://neetcode.io/roadmap",
+};
+
 
 // --- Spaced repetition intervals ---
 const intervals = [1, 3, 7, 14, 30];
@@ -15,7 +29,7 @@ const NeetCodeTracker = () => {
   // --- Local state with localStorage ---
   const [progress, setProgress] = useState(() => {
     try {
-      const savedProgress = localStorage.getItem("neetcode-progress");
+      const savedProgress = localStorage.getItem("leetcode-progress");
       return savedProgress ? JSON.parse(savedProgress) : {};
     } catch (error) {
       console.error("Error loading progress from localStorage:", error);
@@ -27,11 +41,13 @@ const NeetCodeTracker = () => {
   const [filterDifficulty, setFilterDifficulty] = useState("All");
   const [showOnlyDueToday, setShowOnlyDueToday] = useState(false);
   const [showExplanation, setShowExplanation] = useState(false);
+  const [selectedList, setSelectedList] = useState("NeetCode 150");
+
 
   // Save progress to localStorage whenever it changes
   useEffect(() => {
     try {
-      localStorage.setItem("neetcode-progress", JSON.stringify(progress));
+      localStorage.setItem("leetcode-progress", JSON.stringify(progress));
     } catch (error) {
       console.error("Error saving progress to localStorage:", error);
     }
@@ -89,6 +105,7 @@ const NeetCodeTracker = () => {
     });
   };
 
+  const problems = problemLists[selectedList];
   const categories = [
     "All",
     ...Array.from(new Set(problems.map((p) => p.category))),
@@ -127,15 +144,34 @@ const NeetCodeTracker = () => {
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <div>
               <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-2">
-                CodeTrack Pro - NeetCode 150 Progress Tracker
+                CodeTrack Pro - {selectedList} Progress Tracker
               </h1>
               <p className="text-gray-600 dark:text-gray-300">
                 Track your progress with spaced repetition
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-2">
+            <div className="flex flex-col sm:flex-row gap-2 items-start sm:items-center">
+              {/* Dropdown for problem list */}
+              <div>
+                <label className="text-gray-700 dark:text-gray-300 font-medium mr-2">
+                  Select List:
+                </label>
+                <select
+                  value={selectedList}
+                  onChange={(e) => setSelectedList(e.target.value)}
+                  className="px-4 py-2 cursor-pointer rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200"
+                >
+                  {Object.keys(problemLists).map((listName) => (
+                    <option key={listName} value={listName}>
+                      {listName}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {/* Official Roadmap */}
               <a
-                href="https://neetcode.io/roadmap"
+                href={roadmapLinks[selectedList]}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-lg transition-colors"
@@ -148,6 +184,7 @@ const NeetCodeTracker = () => {
             </div>
           </div>
 
+          {/* Toggle Explanation */}
           <div className="mt-4">
             <button
               onClick={() => setShowExplanation(!showExplanation)}

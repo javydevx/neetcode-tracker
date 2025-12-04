@@ -7,7 +7,7 @@ const ExportImportControls = ({ progress, setProgress }) => {
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
-    link.download = `neetcode-progress-${
+    link.download = `leetcode-progress-${
       new Date().toISOString().split("T")[0]
     }.json`;
     link.click();
