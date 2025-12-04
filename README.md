@@ -44,7 +44,7 @@ A modern, interactive web application to track your progress through the famous 
 ### Setup
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/leetcode-tracker.git
+   git clone https://github.com/javydevx/leetcode-tracker.git
    cd leetcode-tracker
    ```
 
