@@ -1,8 +1,8 @@
-# 🧠 CodeTrack Pro - NeetCode 150 Progress Tracker
+# 🧠 CodeTrack Pro - LeetCode Progress Tracker
 
-A modern, interactive web application to track your progress through the famous NeetCode 150 problems with built-in spaced repetition system for long-term retention.
+A modern, interactive web application to track your progress through the famous LeetCode problems with built-in spaced repetition system for long-term retention.
 
-![NeetCode Tracker](https://img.shields.io/badge/React-18.2.0-blue.svg)
+![LeetCode Tracker](https://img.shields.io/badge/React-18.2.0-blue.svg)
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4.0-38B2AC.svg)
 ![Vite](https://img.shields.io/badge/Vite-5.0.0-646CFF.svg)
 
@@ -33,7 +33,7 @@ A modern, interactive web application to track your progress through the famous 
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://neetcode-tracker.vercel.app/)
+[View Live Demo](https://track-leetcode.vercel.app)
 
 ## 🛠️ Installation
 
