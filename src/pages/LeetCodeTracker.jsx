@@ -179,7 +179,7 @@ const LeetCodeTracker = () => {
                 <select
                   value={selectedList}
                   onChange={(e) => setSelectedList(e.target.value)}
-                  className="px-4 py-2 cursor-pointer rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 focus:outline-none"
+                  className="px-4 py-2 cursor-pointer rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 focus:outline-none"
                 >
                   {Object.keys(problemLists).map((listName) => (
                     <option key={listName} value={listName}>
@@ -194,7 +194,7 @@ const LeetCodeTracker = () => {
                 href={roadmapLinks[selectedList]}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded-lg transition-colors"
+                className="flex items-center gap-2 px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded transition-colors"
                 title="View the official NeetCode roadmap"
               >
                 <Map size={16} />

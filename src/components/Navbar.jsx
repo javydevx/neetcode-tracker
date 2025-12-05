@@ -34,7 +34,7 @@ const Navbar = () => {
           {/* Theme Toggle Button */}
           <button
             onClick={toggleTheme}
-            className="h-10 w-10 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300"
+            className="h-10 w-10 flex items-center justify-center rounded bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300"
             aria-label="Toggle theme"
           >
             {isDark ? (
@@ -49,7 +49,7 @@ const Navbar = () => {
             href="https://github.com/javydevx/neetcode-tracker"
             target="_blank"
             rel="noopener noreferrer"
-            className="h-10 group relative flex items-center gap-2 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg overflow-hidden font-semibold transition-all duration-300 hover:shadow-xl"
+            className="h-10 group relative flex items-center gap-2 px-4 py-2 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-white rounded overflow-hidden font-semibold transition-all duration-300 hover:shadow-xl"
           >
             <span className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
             <Github
