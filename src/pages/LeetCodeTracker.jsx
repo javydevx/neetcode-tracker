@@ -5,6 +5,7 @@ import {
   StatsCard,
   ProblemTable,
   ExportImportControls,
+  CircularStatsCard,
 } from "../components";
 import { blind75, leetcode75, neetcode150 } from "../data";
 
@@ -264,23 +265,17 @@ const LeetCodeTracker = () => {
         )}
 
         {/* Stats */}
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 mb-6 transition-colors">
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-            <StatsCard
-              color="blue"
-              value={`${stats.solved}/${stats.total}`}
-              label="Total Solved"
-            />
-            <StatsCard color="green" value={stats.easy} label="Easy" />
-            <StatsCard color="yellow" value={stats.medium} label="Medium" />
-            <StatsCard color="red" value={stats.hard} label="Hard" />
-            <StatsCard
-              color="purple"
-              value={getDueProblems()}
-              label="Due Today"
-            />
-          </div>
-        </div>
+        <CircularStatsCard
+          stats={{
+            total: stats.total,
+            solved: stats.solved,
+            easy: stats.easy,
+            medium: stats.medium,
+            hard: stats.hard,
+            dueToday: getDueProblems(),
+          }}
+          problems={problems}
+        />
 
         {/* Export / Import / Clear */}
         <ExportImportControls progress={progress} setProgress={setProgress} />
