@@ -68,7 +68,7 @@ const ProblemTable = ({
                 Name
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                Category/Topic
+                Module / Topics
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
                 Difficulty
@@ -110,15 +110,21 @@ const ProblemTable = ({
                       </a>
                     </div>
                   </td>
-                  {/* <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                    {(problem.topics || []).join(", ")}
-                  </td> */}
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
                     <div className="flex flex-wrap gap-2">
+                      {problem.listMeta?.section || problem.listMeta?.module ? (
+                        <span
+                          className="px-2 py-1 text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded"
+                          title="Module / Section"
+                        >
+                          {problem.listMeta.section || problem.listMeta.module}
+                        </span>
+                      ) : null}
                       {(problem.topics || []).map((t, idx) => (
                         <span
                           key={idx}
                           className="px-2 py-1 text-xs bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded"
+                          title="Topic"
                         >
                           {t}
                         </span>
