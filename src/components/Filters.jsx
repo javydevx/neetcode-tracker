@@ -26,7 +26,7 @@ const Filters = ({
           title="Category"
           value={filterCategory}
           onChange={(e) => setFilterCategory(e.target.value)}
-          className="w-full p-2 cursor-pointer border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 transition-colors"
+          className="w-full p-2 cursor-pointer border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none transition-colors"
         >
           {categories.map((cat) => (
             <option
@@ -47,7 +47,7 @@ const Filters = ({
           title="Difficulty"
           value={filterDifficulty}
           onChange={(e) => setFilterDifficulty(e.target.value)}
-          className="w-full p-2 cursor-pointer border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 transition-colors"
+          className="w-full p-2 cursor-pointer border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none transition-colors"
         >
           {difficulties.map((diff) => (
             <option
@@ -69,7 +69,7 @@ const Filters = ({
           onChange={() => setShowOnlyDueToday((prev) => !prev)}
           className="h-4 w-4 cursor-pointer text-blue-600 focus:ring-blue-500 border-gray-300 rounded bg-white"
         />
-        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+        <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
           Show Only Due Today
         </label>
       </div>

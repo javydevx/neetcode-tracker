@@ -179,7 +179,7 @@ const LeetCodeTracker = () => {
                 <select
                   value={selectedList}
                   onChange={(e) => setSelectedList(e.target.value)}
-                  className="px-4 py-2 cursor-pointer rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200"
+                  className="px-4 py-2 cursor-pointer rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 focus:outline-none"
                 >
                   {Object.keys(problemLists).map((listName) => (
                     <option key={listName} value={listName}>
