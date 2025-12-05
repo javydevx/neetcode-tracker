@@ -25,7 +25,7 @@ const roadmapLinks = {
 // --- Spaced repetition intervals ---
 const intervals = [1, 3, 7, 14, 30];
 
-const NeetCodeTracker = () => {
+const LeetCodeTracker = () => {
   // --- Local state with localStorage ---
     const [progress, setProgress] = useState(() => {
       try {
@@ -314,4 +314,4 @@ const NeetCodeTracker = () => {
   );
 };
 
-export default NeetCodeTracker;
+export default LeetCodeTracker;

@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { NeetCodeTracker, Patterns, InterviewRoadmap } from "./pages";
+import { LeetCodeTracker, Patterns, InterviewRoadmap } from "./pages";
 import { Navbar } from "./components";
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 transition-colors">
         <Navbar />
         <Routes>
-          <Route path="/" element={<NeetCodeTracker />} />
+          <Route path="/" element={<LeetCodeTracker />} />
           <Route path="/patterns" element={<Patterns />} />
           <Route path="/roadmap" element={<InterviewRoadmap />} />
         </Routes>
