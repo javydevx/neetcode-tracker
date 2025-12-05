@@ -1,10 +1,1021 @@
 [
   {
-    "id": 1,
-    "name": "Contains Duplicate",
-    "category": "Arrays & Hashing",
+    "id": "lc75-1",
+    "title": "Merge Strings Alternately",
+    "slug": "merge-strings-alternately",
+    "url": "https://leetcode.com/problems/merge-strings-alternately/description/?envType=study-plan-v2&envId=leetcode-75",
     "difficulty": "Easy",
-    "day": 1,
-    "url": "https://neetcode.io/problems/duplicate-integer"
+    "topics": ["String", "Two Pointers"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 1,
+      "module": "Array / String"
+    }
+  },
+  {
+    "id": "lc75-2",
+    "title": "Greatest Common Divisor of Strings",
+    "slug": "greatest-common-divisor-of-strings",
+    "url": "https://leetcode.com/problems/greatest-common-divisor-of-strings/description/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Easy",
+    "topics": ["Math", "String"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 2,
+      "module": "Array / String"
+    }
+  },
+  {
+    "id": "lc75-3",
+    "title": "Kids With the Greatest Number of Candies",
+    "slug": "kids-with-the-greatest-number-of-candies",
+    "url": "https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Easy",
+    "topics": ["Array"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 3,
+      "module": "Array / String"
+    }
+  },
+  {
+    "id": "lc75-4",
+    "title": "Can Place Flowers",
+    "slug": "can-place-flowers",
+    "url": "https://leetcode.com/problems/can-place-flowers/description/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Easy",
+    "topics": ["Array", "Greedy"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 4,
+      "module": "Array / String"
+    }
+  },
+  {
+    "id": "lc75-5",
+    "title": "Reverse Vowels of a String",
+    "slug": "reverse-vowels-of-a-string",
+    "url": "https://leetcode.com/problems/reverse-vowels-of-a-string?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Easy",
+    "topics": ["Two Pointers", "String"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 5,
+      "module": "Array / String"
+    }
+  },
+  {
+    "id": "lc75-6",
+    "title": "Reverse Words in a String",
+    "slug": "reverse-words-in-a-string",
+    "url": "https://leetcode.com/problems/reverse-words-in-a-string?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Two Pointers", "String"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 6,
+      "module": "Array / String"
+    }
+  },
+  {
+    "id": "lc75-7",
+    "title": "Product of Array Except Self",
+    "slug": "product-of-array-except-self",
+    "url": "https://leetcode.com/problems/product-of-array-except-self/description/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "Prefix Sum"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 7,
+      "module": "Array / String"
+    }
+  },
+  {
+    "id": "lc75-8",
+    "title": "Increasing Triplet Subsequence",
+    "slug": "increasing-triplet-subsequence",
+    "url": "https://leetcode.com/problems/increasing-triplet-subsequence?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "Greedy"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 8,
+      "module": "Array / String"
+    }
+  },
+  {
+    "id": "lc75-9",
+    "title": "String Compression",
+    "slug": "string-compression",
+    "url": "https://leetcode.com/problems/string-compression/description/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Two Pointers", "String"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 9,
+      "module": "Array / String"
+    }
+  },
+  {
+    "id": "lc75-10",
+    "title": "Move Zeroes",
+    "slug": "move-zeroes",
+    "url": "https://leetcode.com/problems/move-zeroes?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Easy",
+    "topics": ["Array", "Two Pointers"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 10,
+      "module": "Two Pointers"
+    }
+  },
+  {
+    "id": "lc75-11",
+    "title": "Is Subsequence",
+    "slug": "is-subsequence",
+    "url": "https://leetcode.com/problems/is-subsequence/description/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Easy",
+    "topics": ["Two Pointers", "String", "Dynamic Programming"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 11,
+      "module": "Two Pointers"
+    }
+  },
+  {
+    "id": "lc75-12",
+    "title": "Container With Most Water",
+    "slug": "container-with-most-water",
+    "url": "https://leetcode.com/problems/container-with-most-water/description/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "Two Pointers", "Greedy"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 12,
+      "module": "Two Pointers"
+    }
+  },
+  {
+    "id": "lc75-13",
+    "title": "Max Number of K-Sum Pairs",
+    "slug": "max-number-of-k-sum-pairs",
+    "url": "https://leetcode.com/problems/max-number-of-k-sum-pairs/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "Hash Table", "Two Pointers", "Sorting"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 13,
+      "module": "Two Pointers"
+    }
+  },
+  {
+    "id": "lc75-14",
+    "title": "Maximum Average Subarray I",
+    "slug": "maximum-average-subarray-i",
+    "url": "https://leetcode.com/problems/maximum-average-subarray-i?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Easy",
+    "topics": ["Array", "Sliding Window"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 14,
+      "module": "Sliding Window"
+    }
+  },
+  {
+    "id": "lc75-15",
+    "title": "Maximum Number of Vowels in a Substring of Given Length",
+    "slug": "maximum-number-of-vowels-in-a-substring-of-given-length",
+    "url": "https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["String", "Sliding Window"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 15,
+      "module": "Sliding Window"
+    }
+  },
+  {
+    "id": "lc75-16",
+    "title": "Max Consecutive Ones III",
+    "slug": "max-consecutive-ones-iii",
+    "url": "https://leetcode.com/problems/max-consecutive-ones-iii?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "Binary Search", "Sliding Window", "Prefix Sum"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 16,
+      "module": "Sliding Window"
+    }
+  },
+  {
+    "id": "lc75-17",
+    "title": "Longest Subarray of 1's After Deleting One Element",
+    "slug": "longest-subarray-of-1s-after-deleting-one-element",
+    "url": "https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "Dynamic Programming", "Sliding Window"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 17,
+      "module": "Sliding Window"
+    }
+  },
+  {
+    "id": "lc75-18",
+    "title": "Find the Highest Altitude",
+    "slug": "find-the-highest-altitude",
+    "url": "https://leetcode.com/problems/find-the-highest-altitude/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Easy",
+    "topics": ["Array", "Prefix Sum"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 18,
+      "module": "Prefix Sum"
+    }
+  },
+  {
+    "id": "lc75-19",
+    "title": "Find Pivot Index",
+    "slug": "find-pivot-index",
+    "url": "https://leetcode.com/problems/find-pivot-index/description/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Easy",
+    "topics": ["Array", "Prefix Sum"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 19,
+      "module": "Prefix Sum"
+    }
+  },
+  {
+    "id": "lc75-20",
+    "title": "Find the Difference of Two Arrays",
+    "slug": "find-the-difference-of-two-arrays",
+    "url": "https://leetcode.com/problems/find-the-difference-of-two-arrays/description/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Easy",
+    "topics": ["Array", "Hash Table"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 20,
+      "module": "Hash Map / Set"
+    }
+  },
+  {
+    "id": "lc75-21",
+    "title": "Unique Number of Occurrences",
+    "slug": "unique-number-of-occurrences",
+    "url": "https://leetcode.com/problems/unique-number-of-occurrences?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Easy",
+    "topics": ["Array", "Hash Table"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 21,
+      "module": "Hash Map / Set"
+    }
+  },
+  {
+    "id": "lc75-22",
+    "title": "Determine if Two Strings Are Close",
+    "slug": "determine-if-two-strings-are-close",
+    "url": "https://leetcode.com/problems/determine-if-two-strings-are-close?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Hash Table", "String", "Sorting", "Counting"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 22,
+      "module": "Hash Map / Set"
+    }
+  },
+  {
+    "id": "lc75-23",
+    "title": "Equal Row and Column Pairs",
+    "slug": "equal-row-and-column-pairs",
+    "url": "https://leetcode.com/problems/equal-row-and-column-pairs?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "Hash Table", "Matrix", "Simulation"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 23,
+      "module": "Hash Map / Set"
+    }
+  },
+  {
+    "id": "lc75-24",
+    "title": "Removing Stars From a String",
+    "slug": "removing-stars-from-a-string",
+    "url": "https://leetcode.com/problems/removing-stars-from-a-string?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["String", "Stack", "Simulation"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 24,
+      "module": "Stack"
+    }
+  },
+  {
+    "id": "lc75-25",
+    "title": "Asteroid Collision",
+    "slug": "asteroid-collision",
+    "url": "https://leetcode.com/problems/asteroid-collision?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "Stack", "Simulation"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 25,
+      "module": "Stack"
+    }
+  },
+  {
+    "id": "lc75-26",
+    "title": "Decode String",
+    "slug": "decode-string",
+    "url": "https://leetcode.com/problems/decode-string?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["String", "Stack", "Recursion"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 26,
+      "module": "Stack"
+    }
+  },
+  {
+    "id": "lc75-27",
+    "title": "Number of Recent Calls",
+    "slug": "number-of-recent-calls",
+    "url": "https://leetcode.com/problems/number-of-recent-calls?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Easy",
+    "topics": ["Design", "Queue", "Data Stream"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 27,
+      "module": "Queue"
+    }
+  },
+  {
+    "id": "lc75-28",
+    "title": "Dota2 Senate",
+    "slug": "dota2-senate",
+    "url": "https://leetcode.com/problems/dota2-senate?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["String", "Greedy", "Queue"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 28,
+      "module": "Queue"
+    }
+  },
+  {
+    "id": "lc75-29",
+    "title": "Delete the Middle Node of a Linked List",
+    "slug": "delete-the-middle-node-of-a-linked-list",
+    "url": "https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Linked List", "Two Pointers"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 29,
+      "module": "Linked List"
+    }
+  },
+  {
+    "id": "lc75-30",
+    "title": "Odd Even Linked List",
+    "slug": "odd-even-linked-list",
+    "url": "https://leetcode.com/problems/odd-even-linked-list?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Linked List"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 30,
+      "module": "Linked List"
+    }
+  },
+  {
+    "id": "lc75-31",
+    "title": "Reverse Linked List",
+    "slug": "reverse-linked-list",
+    "url": "https://leetcode.com/problems/reverse-linked-list?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Easy",
+    "topics": ["Linked List", "Recursion"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 31,
+      "module": "Linked List"
+    }
+  },
+  {
+    "id": "lc75-32",
+    "title": "Maximum Twin Sum of a Linked List",
+    "slug": "maximum-twin-sum-of-a-linked-list",
+    "url": "https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Linked List", "Two Pointers", "Stack"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 32,
+      "module": "Linked List"
+    }
+  },
+  {
+    "id": "lc75-33",
+    "title": "Maximum Depth of Binary Tree",
+    "slug": "maximum-depth-of-binary-tree",
+    "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Easy",
+    "topics": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Binary Tree"
+    ],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 33,
+      "module": "Binary Tree - DFS"
+    }
+  },
+  {
+    "id": "lc75-34",
+    "title": "Leaf-Similar Trees",
+    "slug": "leaf-similar-trees",
+    "url": "https://leetcode.com/problems/leaf-similar-trees?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Easy",
+    "topics": ["Tree", "Depth-First Search", "Binary Tree"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 34,
+      "module": "Binary Tree - DFS"
+    }
+  },
+  {
+    "id": "lc75-35",
+    "title": "Count Good Nodes in Binary Tree",
+    "slug": "count-good-nodes-in-binary-tree",
+    "url": "https://leetcode.com/problems/count-good-nodes-in-binary-tree?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Binary Tree"
+    ],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 35,
+      "module": "Binary Tree - DFS"
+    }
+  },
+  {
+    "id": "lc75-36",
+    "title": "Path Sum III",
+    "slug": "path-sum-iii",
+    "url": "https://leetcode.com/problems/path-sum-iii?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Tree", "Depth-First Search", "Binary Tree"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 36,
+      "module": "Binary Tree - DFS"
+    }
+  },
+  {
+    "id": "lc75-37",
+    "title": "Longest ZigZag Path in a Binary Tree",
+    "slug": "longest-zigzag-path-in-a-binary-tree",
+    "url": "https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": [
+      "Dynamic Programming",
+      "Tree",
+      "Depth-First Search",
+      "Binary Tree"
+    ],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 37,
+      "module": "Binary Tree - DFS"
+    }
+  },
+  {
+    "id": "lc75-38",
+    "title": "Lowest Common Ancestor of a Binary Tree",
+    "slug": "lowest-common-ancestor-of-a-binary-tree",
+    "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Tree", "Depth-First Search", "Binary Tree"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 38,
+      "module": "Binary Tree - DFS"
+    }
+  },
+  {
+    "id": "lc75-39",
+    "title": "Binary Tree Right Side View",
+    "slug": "binary-tree-right-side-view",
+    "url": "https://leetcode.com/problems/binary-tree-right-side-view/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Binary Tree"
+    ],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 39,
+      "module": "Binary Tree - BFS"
+    }
+  },
+  {
+    "id": "lc75-40",
+    "title": "Maximum Level Sum of a Binary Tree",
+    "slug": "maximum-level-sum-of-a-binary-tree",
+    "url": "https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": [
+      "Tree",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Binary Tree"
+    ],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 40,
+      "module": "Binary Tree - BFS"
+    }
+  },
+  {
+    "id": "lc75-41",
+    "title": "Search in a Binary Search Tree",
+    "slug": "search-in-a-binary-search-tree",
+    "url": "https://leetcode.com/problems/search-in-a-binary-search-tree/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Easy",
+    "topics": ["Tree", "Binary Search Tree", "Binary Tree"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 41,
+      "module": "Binary Search Tree"
+    }
+  },
+  {
+    "id": "lc75-42",
+    "title": "Delete Node in a BST",
+    "slug": "delete-node-in-a-bst",
+    "url": "https://leetcode.com/problems/delete-node-in-a-bst/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Tree", "Binary Search Tree", "Binary Tree"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 42,
+      "module": "Binary Search Tree"
+    }
+  },
+  {
+    "id": "lc75-43",
+    "title": "Keys and Rooms",
+    "slug": "keys-and-rooms",
+    "url": "https://leetcode.com/problems/keys-and-rooms/description/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Depth-First Search", "Breadth-First Search", "Graph"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 43,
+      "module": "Graphs - DFS"
+    }
+  },
+  {
+    "id": "lc75-44",
+    "title": "Number of Provinces",
+    "slug": "number-of-provinces",
+    "url": "https://leetcode.com/problems/number-of-provinces/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": [
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Union Find",
+      "Graph"
+    ],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 44,
+      "module": "Graphs - DFS"
+    }
+  },
+  {
+    "id": "lc75-45",
+    "title": "Reorder Routes to Make All Paths Lead to the City Zero",
+    "slug": "reorder-routes-to-make-all-paths-lead-to-the-city-zero",
+    "url": "https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Depth-First Search", "Breadth-First Search", "Graph"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 45,
+      "module": "Graphs - DFS"
+    }
+  },
+  {
+    "id": "lc75-46",
+    "title": "Evaluate Division",
+    "slug": "evaluate-division",
+    "url": "https://leetcode.com/problems/evaluate-division?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "String",
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Union Find",
+      "Graph",
+      "Shortest Path"
+    ],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 46,
+      "module": "Graphs - DFS"
+    }
+  },
+  {
+    "id": "lc75-47",
+    "title": "Nearest Exit from Entrance in Maze",
+    "slug": "nearest-exit-from-entrance-in-maze",
+    "url": "https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "Depth-First Search", "Matrix"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 47,
+      "module": "Graphs - BFS"
+    }
+  },
+  {
+    "id": "lc75-48",
+    "title": "Rotting Oranges",
+    "slug": "rotting-oranges",
+    "url": "https://leetcode.com/problems/rotting-oranges?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "Breadth-First Search", "Matrix"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 48,
+      "module": "Graphs - BFS"
+    }
+  },
+  {
+    "id": "lc75-49",
+    "title": "Kth Largest Element in an Array",
+    "slug": "kth-largest-element-in-an-array",
+    "url": "https://leetcode.com/problems/kth-largest-element-in-an-array/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Divide and Conquer",
+      "Sorting",
+      "Heap (Priority Queue)",
+      "Quickselect"
+    ],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 49,
+      "module": "Heap / Priority Queue"
+    }
+  },
+  {
+    "id": "lc75-50",
+    "title": "Smallest Number in Infinite Set",
+    "slug": "smallest-number-in-infinite-set",
+    "url": "https://leetcode.com/problems/smallest-number-in-infinite-set?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Hash Table", "Design", "Heap (Priority Queue)", "Ordered Set"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 50,
+      "module": "Heap / Priority Queue"
+    }
+  },
+  {
+    "id": "lc75-51",
+    "title": "Maximum Subsequence Score",
+    "slug": "maximum-subsequence-score",
+    "url": "https://leetcode.com/problems/maximum-subsequence-score?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "Greedy", "Sorting", "Heap (Priority Queue)"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 51,
+      "module": "Heap / Priority Queue"
+    }
+  },
+  {
+    "id": "lc75-52",
+    "title": "Total Cost to Hire K Workers",
+    "slug": "total-cost-to-hire-k-workers",
+    "url": "https://leetcode.com/problems/total-cost-to-hire-k-workers?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "Two Pointers", "Heap (Priority Queue)", "Simulation"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 52,
+      "module": "Heap / Priority Queue"
+    }
+  },
+  {
+    "id": "lc75-53",
+    "title": "Guess Number Higher or Lower",
+    "slug": "guess-number-higher-or-lower",
+    "url": "https://leetcode.com/problems/guess-number-higher-or-lower/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Easy",
+    "topics": ["Binary Search", "Interactive"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 53,
+      "module": "Binary Search"
+    }
+  },
+  {
+    "id": "lc75-54",
+    "title": "Successful Pairs of Spells and Potions",
+    "slug": "successful-pairs-of-spells-and-potions",
+    "url": "https://leetcode.com/problems/successful-pairs-of-spells-and-potions?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "Two Pointers", "Binary Search", "Sorting"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 54,
+      "module": "Binary Search"
+    }
+  },
+  {
+    "id": "lc75-55",
+    "title": "Find Peak Element",
+    "slug": "find-peak-element",
+    "url": "https://leetcode.com/problems/find-peak-element/description/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "Binary Search"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 55,
+      "module": "Binary Search"
+    }
+  },
+  {
+    "id": "lc75-56",
+    "title": "Koko Eating Bananas",
+    "slug": "koko-eating-bananas",
+    "url": "https://leetcode.com/problems/koko-eating-bananas?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "Binary Search"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 56,
+      "module": "Binary Search"
+    }
+  },
+  {
+    "id": "lc75-57",
+    "title": "Letter Combinations of a Phone Number",
+    "slug": "letter-combinations-of-a-phone-number",
+    "url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Hash Table", "String", "Backtracking"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 57,
+      "module": "Backtracking"
+    }
+  },
+  {
+    "id": "lc75-58",
+    "title": "Combination Sum III",
+    "slug": "combination-sum-iii",
+    "url": "https://leetcode.com/problems/combination-sum-iii?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "Backtracking"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 58,
+      "module": "Backtracking"
+    }
+  },
+  {
+    "id": "lc75-59",
+    "title": "N-th Tribonacci Number",
+    "slug": "n-th-tribonacci-number",
+    "url": "https://leetcode.com/problems/n-th-tribonacci-number/description/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Easy",
+    "topics": ["Math", "Dynamic Programming", "Memoization"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 59,
+      "module": "DP - 1D"
+    }
+  },
+  {
+    "id": "lc75-60",
+    "title": "Min Cost Climbing Stairs",
+    "slug": "min-cost-climbing-stairs",
+    "url": "https://leetcode.com/problems/min-cost-climbing-stairs?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Easy",
+    "topics": ["Array", "Dynamic Programming"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 60,
+      "module": "DP - 1D"
+    }
+  },
+  {
+    "id": "lc75-61",
+    "title": "House Robber",
+    "slug": "house-robber",
+    "url": "https://leetcode.com/problems/house-robber/description/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "Dynamic Programming"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 61,
+      "module": "DP - 1D"
+    }
+  },
+  {
+    "id": "lc75-62",
+    "title": "Domino and Tromino Tiling",
+    "slug": "domino-and-tromino-tiling",
+    "url": "https://leetcode.com/problems/domino-and-tromino-tiling?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Dynamic Programming"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 62,
+      "module": "DP - 1D"
+    }
+  },
+  {
+    "id": "lc75-63",
+    "title": "Unique Paths",
+    "slug": "unique-paths",
+    "url": "https://leetcode.com/problems/unique-paths?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Math", "Dynamic Programming", "Combinatorics"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 63,
+      "module": "DP - Multidimensional"
+    }
+  },
+  {
+    "id": "lc75-64",
+    "title": "Longest Common Subsequence",
+    "slug": "longest-common-subsequence",
+    "url": "https://leetcode.com/problems/longest-common-subsequence?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["String", "Dynamic Programming"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 64,
+      "module": "DP - Multidimensional"
+    }
+  },
+  {
+    "id": "lc75-65",
+    "title": "Best Time to Buy and Sell Stock with Transaction Fee",
+    "slug": "best-time-to-buy-and-sell-stock-with-transaction-fee",
+    "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "Dynamic Programming", "Greedy"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 65,
+      "module": "DP - Multidimensional"
+    }
+  },
+  {
+    "id": "lc75-66",
+    "title": "Edit Distance",
+    "slug": "edit-distance",
+    "url": "https://leetcode.com/problems/edit-distance?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["String", "Dynamic Programming"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 66,
+      "module": "DP - Multidimensional"
+    }
+  },
+  {
+    "id": "lc75-67",
+    "title": "Counting Bits",
+    "slug": "counting-bits",
+    "url": "https://leetcode.com/problems/counting-bits?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Easy",
+    "topics": ["Dynamic Programming", "Bit Manipulation"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 67,
+      "module": "Bit Manipulation"
+    }
+  },
+  {
+    "id": "lc75-68",
+    "title": "Single Number",
+    "slug": "single-number",
+    "url": "https://leetcode.com/problems/single-number?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Easy",
+    "topics": ["Array", "Bit Manipulation"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 68,
+      "module": "Bit Manipulation"
+    }
+  },
+  {
+    "id": "lc75-69",
+    "title": "Minimum Flips to Make a OR b Equal to c",
+    "slug": "minimum-flips-to-make-a-or-b-equal-to-c",
+    "url": "https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Bit Manipulation"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 69,
+      "module": "Bit Manipulation"
+    }
+  },
+  {
+    "id": "lc75-70",
+    "title": "Implement Trie (Prefix Tree)",
+    "slug": "implement-trie-prefix-tree",
+    "url": "https://leetcode.com/problems/implement-trie-prefix-tree?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Hash Table", "String", "Design", "Trie"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 70,
+      "module": "Trie"
+    }
+  },
+  {
+    "id": "lc75-71",
+    "title": "Search Suggestions System",
+    "slug": "search-suggestions-system",
+    "url": "https://leetcode.com/problems/search-suggestions-system?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "String", "Binary Search", "Trie", "Sorting", "Heap (Priority Queue)"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 71,
+      "module": "Trie"
+    }
+  },
+  {
+    "id": "lc75-72",
+    "title": "Non-overlapping Intervals",
+    "slug": "non-overlapping-intervals",
+    "url": "https://leetcode.com/problems/non-overlapping-intervals?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "Dynamic Programming", "Greedy", "Sorting"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 72,
+      "module": "Intervals"
+    }
+  },
+  {
+    "id": "lc75-73",
+    "title": "Minimum Number of Arrows to Burst Balloons",
+    "slug": "minimum-number-of-arrows-to-burst-balloons",
+    "url": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "Greedy", "Sorting"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 73,
+      "module": "Intervals"
+    }
+  },
+  {
+    "id": "lc75-74",
+    "title": "Daily Temperatures",
+    "slug": "daily-temperatures",
+    "url": "https://leetcode.com/problems/daily-temperatures/description/?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Array", "Stack", "Monotonic Stack"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 74,
+      "module": "Monotonic Stack"
+    }
+  },
+  {
+    "id": "lc75-75",
+    "title": "Online Stock Span",
+    "slug": "online-stock-span",
+    "url": "https://leetcode.com/problems/online-stock-span?envType=study-plan-v2&envId=leetcode-75",
+    "difficulty": "Medium",
+    "topics": ["Stack", "Design", "Monotonic Stack", "Data Stream"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 75,
+      "module": "Monotonic Stack"
+    }
   }
 ]

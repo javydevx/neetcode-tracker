@@ -1,10 +1,28 @@
 [
   {
-    "id": 1,
-    "name": "Longest Consecutive Sequence",
-    "category": "Arrays & Hashing",
+    "id": "blind75-1",
+    "title": "Two Sum",
+    "slug": "two-sum",
+    "url": "https://leetcode.com/problems/two-sum/",
     "difficulty": "Easy",
-    "day": 1,
-    "url": "https://leetcode.com/problems/longest-consecutive-sequence/description/?envType=problem-list-v2&envId=oizxjoit"
+    "topics": ["Array", "Hash Table"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 1,
+      "section": "Arrays & Hashing"
+    }
+  },
+  {
+    "id": "blind75-2",
+    "title": "Add Two Numbers",
+    "slug": "add-two-numbers",
+    "url": "https://leetcode.com/problems/add-two-numbers/",
+    "difficulty": "Medium",
+    "topics": ["Linked List", "Math"],
+    "companies": [],
+    "listMeta": {
+      "originalIndex": 2,
+      "section": "Linked Lists"
+    }
   }
 ]

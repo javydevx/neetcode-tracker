@@ -19,7 +19,9 @@ const ProblemTable = ({
 
   const filteredProblems = problems.filter((problem) => {
     const categoryMatch =
-      filterCategory === "All" || problem.category === filterCategory;
+      filterCategory === "All" ||
+      (problem.topics || []).includes(filterCategory);
+
     const difficultyMatch =
       filterDifficulty === "All" || problem.difficulty === filterDifficulty;
 
@@ -66,7 +68,7 @@ const ProblemTable = ({
                 Name
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                Category
+                Category/Topic
               </th>
               <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
                 Difficulty
@@ -83,16 +85,16 @@ const ProblemTable = ({
             </tr>
           </thead>
           <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
-            {filteredProblems.map((problem) => {
+            {filteredProblems.map((problem, index) => {
               const prob = progress[problem.id] || {};
               const nextReviews = calculateNextReviews(prob.solvedDate);
               return (
                 <tr
-                  key={problem.id}
+                  key={index.id}
                   className="hover:bg-gray-50 dark:hover:bg-gray-700"
                 >
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                    {problem.id}
+                    {index + 1}
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
                     <div className="flex items-center gap-2">
@@ -103,14 +105,27 @@ const ProblemTable = ({
                         className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 hover:underline flex items-center gap-1"
                         title={`Open ${problem.name} on NeetCode`}
                       >
-                        {problem.name}
+                        {problem.title}
                         <ExternalLink size={14} className="flex-shrink-0" />
                       </a>
                     </div>
                   </td>
+                  {/* <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                    {(problem.topics || []).join(", ")}
+                  </td> */}
                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                    {problem.category}
+                    <div className="flex flex-wrap gap-2">
+                      {(problem.topics || []).map((t, idx) => (
+                        <span
+                          key={idx}
+                          className="px-2 py-1 text-xs bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded"
+                        >
+                          {t}
+                        </span>
+                      ))}
+                    </div>
                   </td>
+
                   <td
                     className={`px-6 py-4 whitespace-nowrap text-sm font-semibold ${
                       difficultyColor[problem.difficulty]

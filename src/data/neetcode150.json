@@ -1,11 +1,13 @@
 [
   {
-    "id": 1,
-    "name": "Contains Duplicate",
-    "category": "Arrays & Hashing",
-    "difficulty": "Easy",
-    "day": 1,
+    "id": "neet150-1",
+    "title": "Contains Duplicate",
+    "slug": "contains-duplicate",
     "url": "https://neetcode.io/problems/duplicate-integer",
+    "difficulty": "Easy",
+    "topics": [
+      "Arrays & Hashing"
+    ],
     "companies": [
       { "name": "Google", "logo": "/logos/google.png" },
       { "name": "Amazon", "logo": "/logos/amazon.png" },
@@ -15,1198 +17,2395 @@
       { "name": "Netflix", "logo": "/logos/netflix.png" },
       { "name": "IBM", "logo": "/logos/ibm.png" },
       { "name": "VISA", "logo": "/logos/visa.png" }
-    ]
+    ],
+    "listMeta": {
+      "day": 1,
+      "section": "Arrays & Hashing",
+      "originalIndex": 1
+    }
   },
   {
-    "id": 2,
-    "name": "Valid Anagram",
-    "category": "Arrays & Hashing",
+    "id": "neet150-2",
+    "title": "Valid Anagram",
+    "slug": "valid-anagram",
+    "url": "https://neetcode.io/problems/is-anagram",
     "difficulty": "Easy",
-    "day": 1,
-    "url": "https://neetcode.io/problems/is-anagram"
+    "topics": [
+      "Arrays & Hashing"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 1,
+      "section": "Arrays & Hashing",
+      "originalIndex": 2
+    }
   },
   {
-    "id": 3,
-    "name": "Two Sum",
-    "category": "Arrays & Hashing",
+    "id": "neet150-3",
+    "title": "Two Sum",
+    "slug": "two-sum",
+    "url": "https://neetcode.io/problems/two-integer-sum",
     "difficulty": "Easy",
-    "day": 1,
-    "url": "https://neetcode.io/problems/two-integer-sum"
+    "topics": [
+      "Arrays & Hashing"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 1,
+      "section": "Arrays & Hashing",
+      "originalIndex": 3
+    }
   },
   {
-    "id": 4,
-    "name": "Group Anagrams",
-    "category": "Arrays & Hashing",
+    "id": "neet150-4",
+    "title": "Group Anagrams",
+    "slug": "group-anagrams",
+    "url": "https://neetcode.io/problems/anagram-groups",
     "difficulty": "Medium",
-    "day": 2,
-    "url": "https://neetcode.io/problems/anagram-groups"
+    "topics": [
+      "Arrays & Hashing"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 2,
+      "section": "Arrays & Hashing",
+      "originalIndex": 4
+    }
   },
   {
-    "id": 5,
-    "name": "Top K Frequent Elements",
-    "category": "Arrays & Hashing",
+    "id": "neet150-5",
+    "title": "Top K Frequent Elements",
+    "slug": "top-k-frequent-elements",
+    "url": "https://neetcode.io/problems/top-k-elements-in-list",
     "difficulty": "Medium",
-    "day": 2,
-    "url": "https://neetcode.io/problems/top-k-elements-in-list"
+    "topics": [
+      "Arrays & Hashing"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 2,
+      "section": "Arrays & Hashing",
+      "originalIndex": 5
+    }
   },
   {
-    "id": 6,
-    "name": "Product of Array Except Self",
-    "category": "Arrays & Hashing",
+    "id": "neet150-6",
+    "title": "Product of Array Except Self",
+    "slug": "product-of-array-except-self",
+    "url": "https://neetcode.io/problems/products-of-array-discluding-self",
     "difficulty": "Medium",
-    "day": 3,
-    "url": "https://neetcode.io/problems/products-of-array-discluding-self"
+    "topics": [
+      "Arrays & Hashing"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 3,
+      "section": "Arrays & Hashing",
+      "originalIndex": 6
+    }
   },
   {
-    "id": 7,
-    "name": "Valid Sudoku",
-    "category": "Arrays & Hashing",
+    "id": "neet150-7",
+    "title": "Valid Sudoku",
+    "slug": "valid-sudoku",
+    "url": "https://neetcode.io/problems/valid-sudoku",
     "difficulty": "Medium",
-    "day": 3,
-    "url": "https://neetcode.io/problems/valid-sudoku"
+    "topics": [
+      "Arrays & Hashing"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 3,
+      "section": "Arrays & Hashing",
+      "originalIndex": 7
+    }
   },
   {
-    "id": 8,
-    "name": "Encode and Decode Strings",
-    "category": "Arrays & Hashing",
+    "id": "neet150-8",
+    "title": "Encode and Decode Strings",
+    "slug": "encode-and-decode-strings",
+    "url": "https://neetcode.io/problems/string-encode-and-decode",
     "difficulty": "Medium",
-    "day": 4,
-    "url": "https://neetcode.io/problems/string-encode-and-decode"
+    "topics": [
+      "Arrays & Hashing"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 4,
+      "section": "Arrays & Hashing",
+      "originalIndex": 8
+    }
   },
   {
-    "id": 9,
-    "name": "Longest Consecutive Sequence",
-    "category": "Arrays & Hashing",
+    "id": "neet150-9",
+    "title": "Longest Consecutive Sequence",
+    "slug": "longest-consecutive-sequence",
+    "url": "https://neetcode.io/problems/longest-consecutive-sequence",
     "difficulty": "Medium",
-    "day": 4,
-    "url": "https://neetcode.io/problems/longest-consecutive-sequence"
+    "topics": [
+      "Arrays & Hashing"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 4,
+      "section": "Arrays & Hashing",
+      "originalIndex": 9
+    }
   },
   {
-    "id": 10,
-    "name": "Valid Palindrome",
-    "category": "Two Pointers",
+    "id": "neet150-10",
+    "title": "Valid Palindrome",
+    "slug": "valid-palindrome",
+    "url": "https://neetcode.io/problems/is-palindrome",
     "difficulty": "Easy",
-    "day": 8,
-    "url": "https://neetcode.io/problems/is-palindrome"
+    "topics": [
+      "Two Pointers"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 8,
+      "section": "Two Pointers",
+      "originalIndex": 10
+    }
   },
   {
-    "id": 11,
-    "name": "Two Sum II",
-    "category": "Two Pointers",
+    "id": "neet150-11",
+    "title": "Two Sum II",
+    "slug": "two-sum-ii",
+    "url": "https://neetcode.io/problems/two-integer-sum-ii",
     "difficulty": "Medium",
-    "day": 8,
-    "url": "https://neetcode.io/problems/two-integer-sum-ii"
+    "topics": [
+      "Two Pointers"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 8,
+      "section": "Two Pointers",
+      "originalIndex": 11
+    }
   },
   {
-    "id": 12,
-    "name": "3Sum",
-    "category": "Two Pointers",
+    "id": "neet150-12",
+    "title": "3Sum",
+    "slug": "3sum",
+    "url": "https://neetcode.io/problems/three-integer-sum",
     "difficulty": "Medium",
-    "day": 8,
-    "url": "https://neetcode.io/problems/three-integer-sum"
+    "topics": [
+      "Two Pointers"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 8,
+      "section": "Two Pointers",
+      "originalIndex": 12
+    }
   },
   {
-    "id": 13,
-    "name": "Container With Most Water",
-    "category": "Two Pointers",
+    "id": "neet150-13",
+    "title": "Container With Most Water",
+    "slug": "container-with-most-water",
+    "url": "https://neetcode.io/problems/max-water-container",
     "difficulty": "Medium",
-    "day": 9,
-    "url": "https://neetcode.io/problems/max-water-container"
+    "topics": [
+      "Two Pointers"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 9,
+      "section": "Two Pointers",
+      "originalIndex": 13
+    }
   },
   {
-    "id": 14,
-    "name": "Trapping Rain Water",
-    "category": "Two Pointers",
+    "id": "neet150-14",
+    "title": "Trapping Rain Water",
+    "slug": "trapping-rain-water",
+    "url": "https://neetcode.io/problems/trapping-rain-water",
     "difficulty": "Hard",
-    "day": 9,
-    "url": "https://neetcode.io/problems/trapping-rain-water"
+    "topics": [
+      "Two Pointers"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 9,
+      "section": "Two Pointers",
+      "originalIndex": 14
+    }
   },
   {
-    "id": 15,
-    "name": "Best Time to Buy and Sell Stock",
-    "category": "Sliding Window",
+    "id": "neet150-15",
+    "title": "Best Time to Buy and Sell Stock",
+    "slug": "best-time-to-buy-and-sell-stock",
+    "url": "https://neetcode.io/problems/buy-and-sell-crypto",
     "difficulty": "Easy",
-    "day": 15,
-    "url": "https://neetcode.io/problems/buy-and-sell-crypto"
+    "topics": [
+      "Sliding Window"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 15,
+      "section": "Sliding Window",
+      "originalIndex": 15
+    }
   },
   {
-    "id": 16,
-    "name": "Longest Substring Without Repeating Characters",
-    "category": "Sliding Window",
+    "id": "neet150-16",
+    "title": "Longest Substring Without Repeating Characters",
+    "slug": "longest-substring-without-repeating-characters",
+    "url": "https://neetcode.io/problems/longest-substring-without-duplicates",
     "difficulty": "Medium",
-    "day": 15,
-    "url": "https://neetcode.io/problems/longest-substring-without-duplicates"
+    "topics": [
+      "Sliding Window"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 15,
+      "section": "Sliding Window",
+      "originalIndex": 16
+    }
   },
   {
-    "id": 17,
-    "name": "Longest Repeating Character Replacement",
-    "category": "Sliding Window",
+    "id": "neet150-17",
+    "title": "Longest Repeating Character Replacement",
+    "slug": "longest-repeating-character-replacement",
+    "url": "https://neetcode.io/problems/longest-repeating-substring-with-replacement",
     "difficulty": "Medium",
-    "day": 15,
-    "url": "https://neetcode.io/problems/longest-repeating-substring-with-replacement"
+    "topics": [
+      "Sliding Window"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 15,
+      "section": "Sliding Window",
+      "originalIndex": 17
+    }
   },
   {
-    "id": 18,
-    "name": "Permutation in String",
-    "category": "Sliding Window",
+    "id": "neet150-18",
+    "title": "Permutation in String",
+    "slug": "permutation-in-string",
+    "url": "https://neetcode.io/problems/permutation-string",
     "difficulty": "Medium",
-    "day": 16,
-    "url": "https://neetcode.io/problems/permutation-string"
+    "topics": [
+      "Sliding Window"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 16,
+      "section": "Sliding Window",
+      "originalIndex": 18
+    }
   },
   {
-    "id": 19,
-    "name": "Minimum Window Substring",
-    "category": "Sliding Window",
+    "id": "neet150-19",
+    "title": "Minimum Window Substring",
+    "slug": "minimum-window-substring",
+    "url": "https://neetcode.io/problems/minimum-window-with-characters",
     "difficulty": "Hard",
-    "day": 16,
-    "url": "https://neetcode.io/problems/minimum-window-with-characters"
+    "topics": [
+      "Sliding Window"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 16,
+      "section": "Sliding Window",
+      "originalIndex": 19
+    }
   },
   {
-    "id": 20,
-    "name": "Sliding Window Maximum",
-    "category": "Sliding Window",
+    "id": "neet150-20",
+    "title": "Sliding Window Maximum",
+    "slug": "sliding-window-maximum",
+    "url": "https://neetcode.io/problems/sliding-window-maximum",
     "difficulty": "Hard",
-    "day": 17,
-    "url": "https://neetcode.io/problems/sliding-window-maximum"
+    "topics": [
+      "Sliding Window"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 17,
+      "section": "Sliding Window",
+      "originalIndex": 20
+    }
   },
   {
-    "id": 21,
-    "name": "Valid Parentheses",
-    "category": "Stack",
+    "id": "neet150-21",
+    "title": "Valid Parentheses",
+    "slug": "valid-parentheses",
+    "url": "https://neetcode.io/problems/validate-parentheses",
     "difficulty": "Easy",
-    "day": 22,
-    "url": "https://neetcode.io/problems/validate-parentheses"
+    "topics": [
+      "Stack"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 22,
+      "section": "Stack",
+      "originalIndex": 21
+    }
   },
   {
-    "id": 22,
-    "name": "Min Stack",
-    "category": "Stack",
+    "id": "neet150-22",
+    "title": "Min Stack",
+    "slug": "min-stack",
+    "url": "https://neetcode.io/problems/minimum-stack",
     "difficulty": "Medium",
-    "day": 22,
-    "url": "https://neetcode.io/problems/minimum-stack"
+    "topics": [
+      "Stack"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 22,
+      "section": "Stack",
+      "originalIndex": 22
+    }
   },
   {
-    "id": 23,
-    "name": "Evaluate Reverse Polish Notation",
-    "category": "Stack",
+    "id": "neet150-23",
+    "title": "Evaluate Reverse Polish Notation",
+    "slug": "evaluate-reverse-polish-notation",
+    "url": "https://neetcode.io/problems/evaluate-reverse-polish-notation",
     "difficulty": "Medium",
-    "day": 22,
-    "url": "https://neetcode.io/problems/evaluate-reverse-polish-notation"
+    "topics": [
+      "Stack"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 22,
+      "section": "Stack",
+      "originalIndex": 23
+    }
   },
   {
-    "id": 24,
-    "name": "Generate Parentheses",
-    "category": "Stack",
+    "id": "neet150-24",
+    "title": "Generate Parentheses",
+    "slug": "generate-parentheses",
+    "url": "https://neetcode.io/problems/generate-parentheses",
     "difficulty": "Medium",
-    "day": 23,
-    "url": "https://neetcode.io/problems/generate-parentheses"
+    "topics": [
+      "Stack"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 23,
+      "section": "Stack",
+      "originalIndex": 24
+    }
   },
   {
-    "id": 25,
-    "name": "Daily Temperatures",
-    "category": "Stack",
+    "id": "neet150-25",
+    "title": "Daily Temperatures",
+    "slug": "daily-temperatures",
+    "url": "https://neetcode.io/problems/daily-temperatures",
     "difficulty": "Medium",
-    "day": 23,
-    "url": "https://neetcode.io/problems/daily-temperatures"
+    "topics": [
+      "Stack"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 23,
+      "section": "Stack",
+      "originalIndex": 25
+    }
   },
   {
-    "id": 26,
-    "name": "Car Fleet",
-    "category": "Stack",
+    "id": "neet150-26",
+    "title": "Car Fleet",
+    "slug": "car-fleet",
+    "url": "https://neetcode.io/problems/car-fleet",
     "difficulty": "Medium",
-    "day": 24,
-    "url": "https://neetcode.io/problems/car-fleet"
+    "topics": [
+      "Stack"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 24,
+      "section": "Stack",
+      "originalIndex": 26
+    }
   },
   {
-    "id": 27,
-    "name": "Largest Rectangle in Histogram",
-    "category": "Stack",
+    "id": "neet150-27",
+    "title": "Largest Rectangle in Histogram",
+    "slug": "largest-rectangle-in-histogram",
+    "url": "https://neetcode.io/problems/largest-rectangle-in-histogram",
     "difficulty": "Hard",
-    "day": 24,
-    "url": "https://neetcode.io/problems/largest-rectangle-in-histogram"
+    "topics": [
+      "Stack"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 24,
+      "section": "Stack",
+      "originalIndex": 27
+    }
   },
   {
-    "id": 28,
-    "name": "Binary Search",
-    "category": "Binary Search",
+    "id": "neet150-28",
+    "title": "Binary Search",
+    "slug": "binary-search",
+    "url": "https://neetcode.io/problems/binary-search",
     "difficulty": "Easy",
-    "day": 29,
-    "url": "https://neetcode.io/problems/binary-search"
+    "topics": [
+      "Binary Search"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 29,
+      "section": "Binary Search",
+      "originalIndex": 28
+    }
   },
   {
-    "id": 29,
-    "name": "Search a 2D Matrix",
-    "category": "Binary Search",
+    "id": "neet150-29",
+    "title": "Search a 2D Matrix",
+    "slug": "search-a-2d-matrix",
+    "url": "https://neetcode.io/problems/search-2d-matrix",
     "difficulty": "Medium",
-    "day": 29,
-    "url": "https://neetcode.io/problems/search-2d-matrix"
+    "topics": [
+      "Binary Search"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 29,
+      "section": "Binary Search",
+      "originalIndex": 29
+    }
   },
   {
-    "id": 30,
-    "name": "Koko Eating Bananas",
-    "category": "Binary Search",
+    "id": "neet150-30",
+    "title": "Koko Eating Bananas",
+    "slug": "koko-eating-bananas",
+    "url": "https://neetcode.io/problems/eating-bananas",
     "difficulty": "Medium",
-    "day": 29,
-    "url": "https://neetcode.io/problems/eating-bananas"
+    "topics": [
+      "Binary Search"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 29,
+      "section": "Binary Search",
+      "originalIndex": 30
+    }
   },
   {
-    "id": 31,
-    "name": "Find Minimum in Rotated Sorted Array",
-    "category": "Binary Search",
+    "id": "neet150-31",
+    "title": "Find Minimum in Rotated Sorted Array",
+    "slug": "find-minimum-in-rotated-sorted-array",
+    "url": "https://neetcode.io/problems/find-minimum-in-rotated-sorted-array",
     "difficulty": "Medium",
-    "day": 30,
-    "url": "https://neetcode.io/problems/find-minimum-in-rotated-sorted-array"
+    "topics": [
+      "Binary Search"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 30,
+      "section": "Binary Search",
+      "originalIndex": 31
+    }
   },
   {
-    "id": 32,
-    "name": "Search in Rotated Sorted Array",
-    "category": "Binary Search",
+    "id": "neet150-32",
+    "title": "Search in Rotated Sorted Array",
+    "slug": "search-in-rotated-sorted-array",
+    "url": "https://neetcode.io/problems/find-target-in-rotated-sorted-array",
     "difficulty": "Medium",
-    "day": 30,
-    "url": "https://neetcode.io/problems/find-target-in-rotated-sorted-array"
+    "topics": [
+      "Binary Search"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 30,
+      "section": "Binary Search",
+      "originalIndex": 32
+    }
   },
   {
-    "id": 33,
-    "name": "Time Based Key-Value Store",
-    "category": "Binary Search",
+    "id": "neet150-33",
+    "title": "Time Based Key-Value Store",
+    "slug": "time-based-key-value-store",
+    "url": "https://neetcode.io/problems/time-based-key-value-store",
     "difficulty": "Medium",
-    "day": 31,
-    "url": "https://neetcode.io/problems/time-based-key-value-store"
+    "topics": [
+      "Binary Search"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 31,
+      "section": "Binary Search",
+      "originalIndex": 33
+    }
   },
   {
-    "id": 34,
-    "name": "Median of Two Sorted Arrays",
-    "category": "Binary Search",
+    "id": "neet150-34",
+    "title": "Median of Two Sorted Arrays",
+    "slug": "median-of-two-sorted-arrays",
+    "url": "https://neetcode.io/problems/median-of-two-sorted-arrays",
     "difficulty": "Hard",
-    "day": 31,
-    "url": "https://neetcode.io/problems/median-of-two-sorted-arrays"
+    "topics": [
+      "Binary Search"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 31,
+      "section": "Binary Search",
+      "originalIndex": 34
+    }
   },
   {
-    "id": 35,
-    "name": "Reverse Linked List",
-    "category": "Linked Lists",
+    "id": "neet150-35",
+    "title": "Reverse Linked List",
+    "slug": "reverse-linked-list",
+    "url": "https://neetcode.io/problems/reverse-a-linked-list",
     "difficulty": "Easy",
-    "day": 36,
-    "url": "https://neetcode.io/problems/reverse-a-linked-list"
+    "topics": [
+      "Linked Lists"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 36,
+      "section": "Linked Lists",
+      "originalIndex": 35
+    }
   },
   {
-    "id": 36,
-    "name": "Merge Two Sorted Lists",
-    "category": "Linked Lists",
+    "id": "neet150-36",
+    "title": "Merge Two Sorted Lists",
+    "slug": "merge-two-sorted-lists",
+    "url": "https://neetcode.io/problems/merge-two-sorted-linked-lists",
     "difficulty": "Easy",
-    "day": 36,
-    "url": "https://neetcode.io/problems/merge-two-sorted-linked-lists"
+    "topics": [
+      "Linked Lists"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 36,
+      "section": "Linked Lists",
+      "originalIndex": 36
+    }
   },
   {
-    "id": 37,
-    "name": "Reorder List",
-    "category": "Linked Lists",
+    "id": "neet150-37",
+    "title": "Reorder List",
+    "slug": "reorder-list",
+    "url": "https://neetcode.io/problems/reorder-linked-list",
     "difficulty": "Medium",
-    "day": 36,
-    "url": "https://neetcode.io/problems/reorder-linked-list"
+    "topics": [
+      "Linked Lists"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 36,
+      "section": "Linked Lists",
+      "originalIndex": 37
+    }
   },
   {
-    "id": 38,
-    "name": "Remove Nth Node From End of List",
-    "category": "Linked Lists",
+    "id": "neet150-38",
+    "title": "Remove Nth Node From End of List",
+    "slug": "remove-nth-node-from-end-of-list",
+    "url": "https://neetcode.io/problems/remove-node-from-end-of-linked-list",
     "difficulty": "Medium",
-    "day": 37,
-    "url": "https://neetcode.io/problems/remove-node-from-end-of-linked-list"
+    "topics": [
+      "Linked Lists"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 37,
+      "section": "Linked Lists",
+      "originalIndex": 38
+    }
   },
   {
-    "id": 39,
-    "name": "Copy List with Random Pointer",
-    "category": "Linked Lists",
+    "id": "neet150-39",
+    "title": "Copy List with Random Pointer",
+    "slug": "copy-list-with-random-pointer",
+    "url": "https://neetcode.io/problems/copy-linked-list-with-random-pointer",
     "difficulty": "Medium",
-    "day": 37,
-    "url": "https://neetcode.io/problems/copy-linked-list-with-random-pointer"
+    "topics": [
+      "Linked Lists"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 37,
+      "section": "Linked Lists",
+      "originalIndex": 39
+    }
   },
   {
-    "id": 40,
-    "name": "Add Two Numbers",
-    "category": "Linked Lists",
+    "id": "neet150-40",
+    "title": "Add Two Numbers",
+    "slug": "add-two-numbers",
+    "url": "https://neetcode.io/problems/add-two-numbers",
     "difficulty": "Medium",
-    "day": 38,
-    "url": "https://neetcode.io/problems/add-two-numbers"
+    "topics": [
+      "Linked Lists"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 38,
+      "section": "Linked Lists",
+      "originalIndex": 40
+    }
   },
   {
-    "id": 41,
-    "name": "Linked List Cycle",
-    "category": "Linked Lists",
+    "id": "neet150-41",
+    "title": "Linked List Cycle",
+    "slug": "linked-list-cycle",
+    "url": "https://neetcode.io/problems/linked-list-cycle-detection",
     "difficulty": "Easy",
-    "day": 38,
-    "url": "https://neetcode.io/problems/linked-list-cycle-detection"
+    "topics": [
+      "Linked Lists"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 38,
+      "section": "Linked Lists",
+      "originalIndex": 41
+    }
   },
   {
-    "id": 42,
-    "name": "Find the Duplicate Number",
-    "category": "Linked Lists",
+    "id": "neet150-42",
+    "title": "Find the Duplicate Number",
+    "slug": "find-the-duplicate-number",
+    "url": "https://neetcode.io/problems/find-duplicate-integer",
     "difficulty": "Medium",
-    "day": 39,
-    "url": "https://neetcode.io/problems/find-duplicate-integer"
+    "topics": [
+      "Linked Lists"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 39,
+      "section": "Linked Lists",
+      "originalIndex": 42
+    }
   },
   {
-    "id": 43,
-    "name": "LRU Cache",
-    "category": "Linked Lists",
+    "id": "neet150-43",
+    "title": "LRU Cache",
+    "slug": "lru-cache",
+    "url": "https://neetcode.io/problems/lru-cache",
     "difficulty": "Medium",
-    "day": 39,
-    "url": "https://neetcode.io/problems/lru-cache"
+    "topics": [
+      "Linked Lists"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 39,
+      "section": "Linked Lists",
+      "originalIndex": 43
+    }
   },
   {
-    "id": 44,
-    "name": "Merge K Sorted Lists",
-    "category": "Linked Lists",
+    "id": "neet150-44",
+    "title": "Merge K Sorted Lists",
+    "slug": "merge-k-sorted-lists",
+    "url": "https://neetcode.io/problems/merge-k-sorted-linked-lists",
     "difficulty": "Hard",
-    "day": 40,
-    "url": "https://neetcode.io/problems/merge-k-sorted-linked-lists"
+    "topics": [
+      "Linked Lists"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 40,
+      "section": "Linked Lists",
+      "originalIndex": 44
+    }
   },
   {
-    "id": 45,
-    "name": "Reverse Nodes in K-Group",
-    "category": "Linked Lists",
+    "id": "neet150-45",
+    "title": "Reverse Nodes in K-Group",
+    "slug": "reverse-nodes-in-k-group",
+    "url": "https://neetcode.io/problems/reverse-nodes-in-k-group",
     "difficulty": "Hard",
-    "day": 40,
-    "url": "https://neetcode.io/problems/reverse-nodes-in-k-group"
+    "topics": [
+      "Linked Lists"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 40,
+      "section": "Linked Lists",
+      "originalIndex": 45
+    }
   },
   {
-    "id": 46,
-    "name": "Invert Binary Tree",
-    "category": "Trees",
+    "id": "neet150-46",
+    "title": "Invert Binary Tree",
+    "slug": "invert-binary-tree",
+    "url": "https://neetcode.io/problems/invert-a-binary-tree",
     "difficulty": "Easy",
-    "day": 43,
-    "url": "https://neetcode.io/problems/invert-a-binary-tree"
+    "topics": [
+      "Trees"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 43,
+      "section": "Trees",
+      "originalIndex": 46
+    }
   },
   {
-    "id": 47,
-    "name": "Maximum Depth of Binary Tree",
-    "category": "Trees",
+    "id": "neet150-47",
+    "title": "Maximum Depth of Binary Tree",
+    "slug": "maximum-depth-of-binary-tree",
+    "url": "https://neetcode.io/problems/depth-of-binary-tree",
     "difficulty": "Easy",
-    "day": 43,
-    "url": "https://neetcode.io/problems/depth-of-binary-tree"
+    "topics": [
+      "Trees"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 43,
+      "section": "Trees",
+      "originalIndex": 47
+    }
   },
   {
-    "id": 48,
-    "name": "Diameter of Binary Tree",
-    "category": "Trees",
+    "id": "neet150-48",
+    "title": "Diameter of Binary Tree",
+    "slug": "diameter-of-binary-tree",
+    "url": "https://neetcode.io/problems/binary-tree-diameter",
     "difficulty": "Easy",
-    "day": 43,
-    "url": "https://neetcode.io/problems/binary-tree-diameter"
+    "topics": [
+      "Trees"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 43,
+      "section": "Trees",
+      "originalIndex": 48
+    }
   },
   {
-    "id": 49,
-    "name": "Balanced Binary Tree",
-    "category": "Trees",
+    "id": "neet150-49",
+    "title": "Balanced Binary Tree",
+    "slug": "balanced-binary-tree",
+    "url": "https://neetcode.io/problems/balanced-binary-tree",
     "difficulty": "Easy",
-    "day": 44,
-    "url": "https://neetcode.io/problems/balanced-binary-tree"
+    "topics": [
+      "Trees"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 44,
+      "section": "Trees",
+      "originalIndex": 49
+    }
   },
   {
-    "id": 50,
-    "name": "Same Tree",
-    "category": "Trees",
+    "id": "neet150-50",
+    "title": "Same Tree",
+    "slug": "same-tree",
+    "url": "https://neetcode.io/problems/same-binary-tree",
     "difficulty": "Easy",
-    "day": 44,
-    "url": "https://neetcode.io/problems/same-binary-tree"
+    "topics": [
+      "Trees"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 44,
+      "section": "Trees",
+      "originalIndex": 50
+    }
   },
   {
-    "id": 51,
-    "name": "Subtree of Another Tree",
-    "category": "Trees",
+    "id": "neet150-51",
+    "title": "Subtree of Another Tree",
+    "slug": "subtree-of-another-tree",
+    "url": "https://neetcode.io/problems/subtree-of-a-binary-tree",
     "difficulty": "Easy",
-    "day": 44,
-    "url": "https://neetcode.io/problems/subtree-of-a-binary-tree"
+    "topics": [
+      "Trees"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 44,
+      "section": "Trees",
+      "originalIndex": 51
+    }
   },
   {
-    "id": 52,
-    "name": "Lowest Common Ancestor of a BST",
-    "category": "Trees",
+    "id": "neet150-52",
+    "title": "Lowest Common Ancestor of a BST",
+    "slug": "lowest-common-ancestor-of-a-bst",
+    "url": "https://neetcode.io/problems/lowest-common-ancestor-in-binary-search-tree",
     "difficulty": "Medium",
-    "day": 45,
-    "url": "https://neetcode.io/problems/lowest-common-ancestor-in-binary-search-tree"
+    "topics": [
+      "Trees"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 45,
+      "section": "Trees",
+      "originalIndex": 52
+    }
   },
   {
-    "id": 53,
-    "name": "Binary Tree Level Order Traversal",
-    "category": "Trees",
+    "id": "neet150-53",
+    "title": "Binary Tree Level Order Traversal",
+    "slug": "binary-tree-level-order-traversal",
+    "url": "https://neetcode.io/problems/level-order-traversal-of-binary-tree",
     "difficulty": "Medium",
-    "day": 45,
-    "url": "https://neetcode.io/problems/level-order-traversal-of-binary-tree"
+    "topics": [
+      "Trees"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 45,
+      "section": "Trees",
+      "originalIndex": 53
+    }
   },
   {
-    "id": 54,
-    "name": "Binary Tree Right Side View",
-    "category": "Trees",
+    "id": "neet150-54",
+    "title": "Binary Tree Right Side View",
+    "slug": "binary-tree-right-side-view",
+    "url": "https://neetcode.io/problems/binary-tree-right-side-view",
     "difficulty": "Medium",
-    "day": 46,
-    "url": "https://neetcode.io/problems/binary-tree-right-side-view"
+    "topics": [
+      "Trees"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 46,
+      "section": "Trees",
+      "originalIndex": 54
+    }
   },
   {
-    "id": 55,
-    "name": "Count Good Nodes in Binary Tree",
-    "category": "Trees",
+    "id": "neet150-55",
+    "title": "Count Good Nodes in Binary Tree",
+    "slug": "count-good-nodes-in-binary-tree",
+    "url": "https://neetcode.io/problems/count-good-nodes-in-binary-tree",
     "difficulty": "Medium",
-    "day": 46,
-    "url": "https://neetcode.io/problems/count-good-nodes-in-binary-tree"
+    "topics": [
+      "Trees"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 46,
+      "section": "Trees",
+      "originalIndex": 55
+    }
   },
   {
-    "id": 56,
-    "name": "Validate Binary Search Tree",
-    "category": "Trees",
+    "id": "neet150-56",
+    "title": "Validate Binary Search Tree",
+    "slug": "validate-binary-search-tree",
+    "url": "https://neetcode.io/problems/valid-binary-search-tree",
     "difficulty": "Medium",
-    "day": 47,
-    "url": "https://neetcode.io/problems/valid-binary-search-tree"
+    "topics": [
+      "Trees"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 47,
+      "section": "Trees",
+      "originalIndex": 56
+    }
   },
   {
-    "id": 57,
-    "name": "Kth Smallest Element in a BST",
-    "category": "Trees",
+    "id": "neet150-57",
+    "title": "Kth Smallest Element in a BST",
+    "slug": "kth-smallest-element-in-a-bst",
+    "url": "https://neetcode.io/problems/kth-smallest-integer-in-bst",
     "difficulty": "Medium",
-    "day": 47,
-    "url": "https://neetcode.io/problems/kth-smallest-integer-in-bst"
+    "topics": [
+      "Trees"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 47,
+      "section": "Trees",
+      "originalIndex": 57
+    }
   },
   {
-    "id": 58,
-    "name": "Construct Binary Tree from Preorder and Inorder",
-    "category": "Trees",
+    "id": "neet150-58",
+    "title": "Construct Binary Tree from Preorder and Inorder",
+    "slug": "construct-binary-tree-from-preorder-and-inorder",
+    "url": "https://neetcode.io/problems/binary-tree-from-preorder-and-inorder-traversal",
     "difficulty": "Medium",
-    "day": 48,
-    "url": "https://neetcode.io/problems/binary-tree-from-preorder-and-inorder-traversal"
+    "topics": [
+      "Trees"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 48,
+      "section": "Trees",
+      "originalIndex": 58
+    }
   },
   {
-    "id": 59,
-    "name": "Binary Tree Maximum Path Sum",
-    "category": "Trees",
+    "id": "neet150-59",
+    "title": "Binary Tree Maximum Path Sum",
+    "slug": "binary-tree-maximum-path-sum",
+    "url": "https://neetcode.io/problems/binary-tree-maximum-path-sum",
     "difficulty": "Hard",
-    "day": 48,
-    "url": "https://neetcode.io/problems/binary-tree-maximum-path-sum"
+    "topics": [
+      "Trees"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 48,
+      "section": "Trees",
+      "originalIndex": 59
+    }
   },
   {
-    "id": 60,
-    "name": "Serialize and Deserialize Binary Tree",
-    "category": "Trees",
+    "id": "neet150-60",
+    "title": "Serialize and Deserialize Binary Tree",
+    "slug": "serialize-and-deserialize-binary-tree",
+    "url": "https://neetcode.io/problems/serialize-and-deserialize-binary-tree",
     "difficulty": "Hard",
-    "day": 49,
-    "url": "https://neetcode.io/problems/serialize-and-deserialize-binary-tree"
+    "topics": [
+      "Trees"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 49,
+      "section": "Trees",
+      "originalIndex": 60
+    }
   },
   {
-    "id": 61,
-    "name": "Implement Trie",
-    "category": "Tries",
+    "id": "neet150-61",
+    "title": "Implement Trie",
+    "slug": "implement-trie",
+    "url": "https://neetcode.io/problems/implement-prefix-tree",
     "difficulty": "Medium",
-    "day": 50,
-    "url": "https://neetcode.io/problems/implement-prefix-tree"
+    "topics": [
+      "Tries"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 50,
+      "section": "Tries",
+      "originalIndex": 61
+    }
   },
   {
-    "id": 62,
-    "name": "Design Add and Search Words Data Structure",
-    "category": "Tries",
+    "id": "neet150-62",
+    "title": "Design Add and Search Words Data Structure",
+    "slug": "design-add-and-search-words-data-structure",
+    "url": "https://neetcode.io/problems/design-word-search-data-structure",
     "difficulty": "Medium",
-    "day": 50,
-    "url": "https://neetcode.io/problems/design-word-search-data-structure"
+    "topics": [
+      "Tries"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 50,
+      "section": "Tries",
+      "originalIndex": 62
+    }
   },
   {
-    "id": 63,
-    "name": "Word Search II",
-    "category": "Tries",
+    "id": "neet150-63",
+    "title": "Word Search II",
+    "slug": "word-search-ii",
+    "url": "https://neetcode.io/problems/search-for-word-ii",
     "difficulty": "Hard",
-    "day": 50,
-    "url": "https://neetcode.io/problems/search-for-word-ii"
+    "topics": [
+      "Tries"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 50,
+      "section": "Tries",
+      "originalIndex": 63
+    }
   },
   {
-    "id": 64,
-    "name": "Kth Largest Element in a Stream",
-    "category": "Heap/Priority Queue",
+    "id": "neet150-64",
+    "title": "Kth Largest Element in a Stream",
+    "slug": "kth-largest-element-in-a-stream",
+    "url": "https://neetcode.io/problems/kth-largest-integer-in-a-stream",
     "difficulty": "Easy",
-    "day": 51,
-    "url": "https://neetcode.io/problems/kth-largest-integer-in-a-stream"
+    "topics": [
+      "Heap/Priority Queue"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 51,
+      "section": "Heap/Priority Queue",
+      "originalIndex": 64
+    }
   },
   {
-    "id": 65,
-    "name": "Last Stone Weight",
-    "category": "Heap/Priority Queue",
+    "id": "neet150-65",
+    "title": "Last Stone Weight",
+    "slug": "last-stone-weight",
+    "url": "https://neetcode.io/problems/last-stone-weight",
     "difficulty": "Easy",
-    "day": 51,
-    "url": "https://neetcode.io/problems/last-stone-weight"
+    "topics": [
+      "Heap/Priority Queue"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 51,
+      "section": "Heap/Priority Queue",
+      "originalIndex": 65
+    }
   },
   {
-    "id": 66,
-    "name": "K Closest Points to Origin",
-    "category": "Heap/Priority Queue",
+    "id": "neet150-66",
+    "title": "K Closest Points to Origin",
+    "slug": "k-closest-points-to-origin",
+    "url": "https://neetcode.io/problems/k-closest-points-to-origin",
     "difficulty": "Medium",
-    "day": 51,
-    "url": "https://neetcode.io/problems/k-closest-points-to-origin"
+    "topics": [
+      "Heap/Priority Queue"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 51,
+      "section": "Heap/Priority Queue",
+      "originalIndex": 66
+    }
   },
   {
-    "id": 67,
-    "name": "Kth Largest Element in an Array",
-    "category": "Heap/Priority Queue",
+    "id": "neet150-67",
+    "title": "Kth Largest Element in an Array",
+    "slug": "kth-largest-element-in-an-array",
+    "url": "https://neetcode.io/problems/kth-largest-element-in-an-array",
     "difficulty": "Medium",
-    "day": 52,
-    "url": "https://neetcode.io/problems/kth-largest-element-in-an-array"
+    "topics": [
+      "Heap/Priority Queue"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 52,
+      "section": "Heap/Priority Queue",
+      "originalIndex": 67
+    }
   },
   {
-    "id": 68,
-    "name": "Task Scheduler",
-    "category": "Heap/Priority Queue",
+    "id": "neet150-68",
+    "title": "Task Scheduler",
+    "slug": "task-scheduler",
+    "url": "https://neetcode.io/problems/task-scheduling",
     "difficulty": "Medium",
-    "day": 52,
-    "url": "https://neetcode.io/problems/task-scheduling"
+    "topics": [
+      "Heap/Priority Queue"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 52,
+      "section": "Heap/Priority Queue",
+      "originalIndex": 68
+    }
   },
   {
-    "id": 69,
-    "name": "Design Twitter",
-    "category": "Heap/Priority Queue",
+    "id": "neet150-69",
+    "title": "Design Twitter",
+    "slug": "design-twitter",
+    "url": "https://neetcode.io/problems/design-twitter-feed",
     "difficulty": "Medium",
-    "day": 53,
-    "url": "https://neetcode.io/problems/design-twitter-feed"
+    "topics": [
+      "Heap/Priority Queue"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 53,
+      "section": "Heap/Priority Queue",
+      "originalIndex": 69
+    }
   },
   {
-    "id": 70,
-    "name": "Find Median from Data Stream",
-    "category": "Heap/Priority Queue",
+    "id": "neet150-70",
+    "title": "Find Median from Data Stream",
+    "slug": "find-median-from-data-stream",
+    "url": "https://neetcode.io/problems/find-median-in-a-data-stream",
     "difficulty": "Hard",
-    "day": 53,
-    "url": "https://neetcode.io/problems/find-median-in-a-data-stream"
+    "topics": [
+      "Heap/Priority Queue"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 53,
+      "section": "Heap/Priority Queue",
+      "originalIndex": 70
+    }
   },
   {
-    "id": 71,
-    "name": "Subsets",
-    "category": "Backtracking",
+    "id": "neet150-71",
+    "title": "Subsets",
+    "slug": "subsets",
+    "url": "https://neetcode.io/problems/subsets",
     "difficulty": "Medium",
-    "day": 57,
-    "url": "https://neetcode.io/problems/subsets"
+    "topics": [
+      "Backtracking"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 57,
+      "section": "Backtracking",
+      "originalIndex": 71
+    }
   },
   {
-    "id": 72,
-    "name": "Combination Sum",
-    "category": "Backtracking",
+    "id": "neet150-72",
+    "title": "Combination Sum",
+    "slug": "combination-sum",
+    "url": "https://neetcode.io/problems/combination-target-sum",
     "difficulty": "Medium",
-    "day": 57,
-    "url": "https://neetcode.io/problems/combination-target-sum"
+    "topics": [
+      "Backtracking"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 57,
+      "section": "Backtracking",
+      "originalIndex": 72
+    }
   },
   {
-    "id": 73,
-    "name": "Permutations",
-    "category": "Backtracking",
+    "id": "neet150-73",
+    "title": "Permutations",
+    "slug": "permutations",
+    "url": "https://neetcode.io/problems/permutations",
     "difficulty": "Medium",
-    "day": 57,
-    "url": "https://neetcode.io/problems/permutations"
+    "topics": [
+      "Backtracking"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 57,
+      "section": "Backtracking",
+      "originalIndex": 73
+    }
   },
   {
-    "id": 74,
-    "name": "Subsets II",
-    "category": "Backtracking",
+    "id": "neet150-74",
+    "title": "Subsets II",
+    "slug": "subsets-ii",
+    "url": "https://neetcode.io/problems/subsets-ii",
     "difficulty": "Medium",
-    "day": 58,
-    "url": "https://neetcode.io/problems/subsets-ii"
+    "topics": [
+      "Backtracking"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 58,
+      "section": "Backtracking",
+      "originalIndex": 74
+    }
   },
   {
-    "id": 75,
-    "name": "Combination Sum II",
-    "category": "Backtracking",
+    "id": "neet150-75",
+    "title": "Combination Sum II",
+    "slug": "combination-sum-ii",
+    "url": "https://neetcode.io/problems/combination-target-sum-ii",
     "difficulty": "Medium",
-    "day": 58,
-    "url": "https://neetcode.io/problems/combination-target-sum-ii"
+    "topics": [
+      "Backtracking"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 58,
+      "section": "Backtracking",
+      "originalIndex": 75
+    }
   },
   {
-    "id": 76,
-    "name": "Word Search",
-    "category": "Backtracking",
+    "id": "neet150-76",
+    "title": "Word Search",
+    "slug": "word-search",
+    "url": "https://neetcode.io/problems/search-for-word",
     "difficulty": "Medium",
-    "day": 59,
-    "url": "https://neetcode.io/problems/search-for-word"
+    "topics": [
+      "Backtracking"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 59,
+      "section": "Backtracking",
+      "originalIndex": 76
+    }
   },
   {
-    "id": 77,
-    "name": "Palindrome Partitioning",
-    "category": "Backtracking",
+    "id": "neet150-77",
+    "title": "Palindrome Partitioning",
+    "slug": "palindrome-partitioning",
+    "url": "https://neetcode.io/problems/palindrome-partitioning",
     "difficulty": "Medium",
-    "day": 59,
-    "url": "https://neetcode.io/problems/palindrome-partitioning"
+    "topics": [
+      "Backtracking"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 59,
+      "section": "Backtracking",
+      "originalIndex": 77
+    }
   },
   {
-    "id": 78,
-    "name": "Letter Combinations of a Phone Number",
-    "category": "Backtracking",
+    "id": "neet150-78",
+    "title": "Letter Combinations of a Phone Number",
+    "slug": "letter-combinations-of-a-phone-number",
+    "url": "https://neetcode.io/problems/combinations-of-a-phone-number",
     "difficulty": "Medium",
-    "day": 60,
-    "url": "https://neetcode.io/problems/combinations-of-a-phone-number"
+    "topics": [
+      "Backtracking"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 60,
+      "section": "Backtracking",
+      "originalIndex": 78
+    }
   },
   {
-    "id": 79,
-    "name": "N-Queens",
-    "category": "Backtracking",
+    "id": "neet150-79",
+    "title": "N-Queens",
+    "slug": "n-queens",
+    "url": "https://neetcode.io/problems/n-queens",
     "difficulty": "Hard",
-    "day": 60,
-    "url": "https://neetcode.io/problems/n-queens"
+    "topics": [
+      "Backtracking"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 60,
+      "section": "Backtracking",
+      "originalIndex": 79
+    }
   },
   {
-    "id": 80,
-    "name": "Number of Islands",
-    "category": "Graphs",
+    "id": "neet150-80",
+    "title": "Number of Islands",
+    "slug": "number-of-islands",
+    "url": "https://neetcode.io/problems/count-number-of-islands",
     "difficulty": "Medium",
-    "day": 64,
-    "url": "https://neetcode.io/problems/count-number-of-islands"
+    "topics": [
+      "Graphs"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 64,
+      "section": "Graphs",
+      "originalIndex": 80
+    }
   },
   {
-    "id": 81,
-    "name": "Max Area of Island",
-    "category": "Graphs",
+    "id": "neet150-81",
+    "title": "Max Area of Island",
+    "slug": "max-area-of-island",
+    "url": "https://neetcode.io/problems/max-area-of-island",
     "difficulty": "Medium",
-    "day": 64,
-    "url": "https://neetcode.io/problems/max-area-of-island"
+    "topics": [
+      "Graphs"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 64,
+      "section": "Graphs",
+      "originalIndex": 81
+    }
   },
   {
-    "id": 82,
-    "name": "Clone Graph",
-    "category": "Graphs",
+    "id": "neet150-82",
+    "title": "Clone Graph",
+    "slug": "clone-graph",
+    "url": "https://neetcode.io/problems/clone-graph",
     "difficulty": "Medium",
-    "day": 64,
-    "url": "https://neetcode.io/problems/clone-graph"
+    "topics": [
+      "Graphs"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 64,
+      "section": "Graphs",
+      "originalIndex": 82
+    }
   },
   {
-    "id": 83,
-    "name": "Walls and Gates",
-    "category": "Graphs",
+    "id": "neet150-83",
+    "title": "Walls and Gates",
+    "slug": "walls-and-gates",
+    "url": "https://neetcode.io/problems/islands-and-treasure",
     "difficulty": "Medium",
-    "day": 66,
-    "url": "https://neetcode.io/problems/islands-and-treasure"
+    "topics": [
+      "Graphs"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 66,
+      "section": "Graphs",
+      "originalIndex": 83
+    }
   },
   {
-    "id": 84,
-    "name": "Rotting Oranges",
-    "category": "Graphs",
+    "id": "neet150-84",
+    "title": "Rotting Oranges",
+    "slug": "rotting-oranges",
+    "url": "https://neetcode.io/problems/rotting-fruit",
     "difficulty": "Medium",
-    "day": 66,
-    "url": "https://neetcode.io/problems/rotting-fruit"
+    "topics": [
+      "Graphs"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 66,
+      "section": "Graphs",
+      "originalIndex": 84
+    }
   },
   {
-    "id": 85,
-    "name": "Pacific Atlantic Water Flow",
-    "category": "Graphs",
+    "id": "neet150-85",
+    "title": "Pacific Atlantic Water Flow",
+    "slug": "pacific-atlantic-water-flow",
+    "url": "https://neetcode.io/problems/pacific-atlantic-water-flow",
     "difficulty": "Medium",
-    "day": 65,
-    "url": "https://neetcode.io/problems/pacific-atlantic-water-flow"
+    "topics": [
+      "Graphs"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 65,
+      "section": "Graphs",
+      "originalIndex": 85
+    }
   },
   {
-    "id": 86,
-    "name": "Surrounded Regions",
-    "category": "Graphs",
+    "id": "neet150-86",
+    "title": "Surrounded Regions",
+    "slug": "surrounded-regions",
+    "url": "https://neetcode.io/problems/surrounded-regions",
     "difficulty": "Medium",
-    "day": 65,
-    "url": "https://neetcode.io/problems/surrounded-regions"
+    "topics": [
+      "Graphs"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 65,
+      "section": "Graphs",
+      "originalIndex": 86
+    }
   },
   {
-    "id": 87,
-    "name": "Course Schedule",
-    "category": "Graphs",
+    "id": "neet150-87",
+    "title": "Course Schedule",
+    "slug": "course-schedule",
+    "url": "https://neetcode.io/problems/course-schedule",
     "difficulty": "Medium",
-    "day": 67,
-    "url": "https://neetcode.io/problems/course-schedule"
+    "topics": [
+      "Graphs"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 67,
+      "section": "Graphs",
+      "originalIndex": 87
+    }
   },
   {
-    "id": 88,
-    "name": "Course Schedule II",
-    "category": "Graphs",
+    "id": "neet150-88",
+    "title": "Course Schedule II",
+    "slug": "course-schedule-ii",
+    "url": "https://neetcode.io/problems/course-schedule-ii",
     "difficulty": "Medium",
-    "day": 67,
-    "url": "https://neetcode.io/problems/course-schedule-ii"
+    "topics": [
+      "Graphs"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 67,
+      "section": "Graphs",
+      "originalIndex": 88
+    }
   },
   {
-    "id": 89,
-    "name": "Graph Valid Tree",
-    "category": "Graphs",
+    "id": "neet150-89",
+    "title": "Graph Valid Tree",
+    "slug": "graph-valid-tree",
+    "url": "https://leetcode.com/problems/graph-valid-tree/",
     "difficulty": "Medium",
-    "day": 68,
-    "url": "https://leetcode.com/problems/graph-valid-tree/"
+    "topics": [
+      "Graphs"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 68,
+      "section": "Graphs",
+      "originalIndex": 89
+    }
   },
   {
-    "id": 90,
-    "name": "Number of Connected Components In An Undirected Graph",
-    "category": "Graphs",
+    "id": "neet150-90",
+    "title": "Number of Connected Components In An Undirected Graph",
+    "slug": "number-of-connected-components-in-an-undirected-graph",
+    "url": "https://neetcode.io/problems/count-connected-components",
     "difficulty": "Medium",
-    "day": 68,
-    "url": "https://neetcode.io/problems/count-connected-components"
+    "topics": [
+      "Graphs"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 68,
+      "section": "Graphs",
+      "originalIndex": 90
+    }
   },
   {
-    "id": 91,
-    "name": "Redundant Connection",
-    "category": "Graphs",
+    "id": "neet150-91",
+    "title": "Redundant Connection",
+    "slug": "redundant-connection",
+    "url": "https://neetcode.io/problems/redundant-connection",
     "difficulty": "Medium",
-    "day": 68,
-    "url": "https://neetcode.io/problems/redundant-connection"
+    "topics": [
+      "Graphs"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 68,
+      "section": "Graphs",
+      "originalIndex": 91
+    }
   },
   {
-    "id": 92,
-    "name": "Word Ladder",
-    "category": "Graphs",
+    "id": "neet150-92",
+    "title": "Word Ladder",
+    "slug": "word-ladder",
+    "url": "https://neetcode.io/problems/word-ladder",
     "difficulty": "Hard",
-    "day": 69,
-    "url": "https://neetcode.io/problems/word-ladder"
+    "topics": [
+      "Graphs"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 69,
+      "section": "Graphs",
+      "originalIndex": 92
+    }
   },
   {
-    "id": 93,
-    "name": "Network Delay Time",
-    "category": "Advanced Graphs",
+    "id": "neet150-93",
+    "title": "Network Delay Time",
+    "slug": "network-delay-time",
+    "url": "https://neetcode.io/problems/network-delay-time",
     "difficulty": "Medium",
-    "day": 72,
-    "url": "https://neetcode.io/problems/network-delay-time"
+    "topics": [
+      "Advanced Graphs"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 72,
+      "section": "Advanced Graphs",
+      "originalIndex": 93
+    }
   },
   {
-    "id": 94,
-    "name": "Reconstruct Itinerary",
-    "category": "Advanced Graphs",
+    "id": "neet150-94",
+    "title": "Reconstruct Itinerary",
+    "slug": "reconstruct-itinerary",
+    "url": "https://neetcode.io/problems/reconstruct-flight-path",
     "difficulty": "Hard",
-    "day": 71,
-    "url": "https://neetcode.io/problems/reconstruct-flight-path"
+    "topics": [
+      "Advanced Graphs"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 71,
+      "section": "Advanced Graphs",
+      "originalIndex": 94
+    }
   },
   {
-    "id": 95,
-    "name": "Min Cost to Connect All Points",
-    "category": "Advanced Graphs",
+    "id": "neet150-95",
+    "title": "Min Cost to Connect All Points",
+    "slug": "min-cost-to-connect-all-points",
+    "url": "https://neetcode.io/problems/min-cost-to-connect-points",
     "difficulty": "Medium",
-    "day": 71,
-    "url": "https://neetcode.io/problems/min-cost-to-connect-points"
+    "topics": [
+      "Advanced Graphs"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 71,
+      "section": "Advanced Graphs",
+      "originalIndex": 95
+    }
   },
   {
-    "id": 96,
-    "name": "Swim in Rising Water",
-    "category": "Advanced Graphs",
+    "id": "neet150-96",
+    "title": "Swim in Rising Water",
+    "slug": "swim-in-rising-water",
+    "url": "https://neetcode.io/problems/swim-in-rising-water",
     "difficulty": "Hard",
-    "day": 72,
-    "url": "https://neetcode.io/problems/swim-in-rising-water"
+    "topics": [
+      "Advanced Graphs"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 72,
+      "section": "Advanced Graphs",
+      "originalIndex": 96
+    }
   },
   {
-    "id": 97,
-    "name": "Alien Dictionary",
-    "category": "Advanced Graphs",
+    "id": "neet150-97",
+    "title": "Alien Dictionary",
+    "slug": "alien-dictionary",
+    "url": "https://neetcode.io/problems/foreign-dictionary",
     "difficulty": "Hard",
-    "day": 73,
-    "url": "https://neetcode.io/problems/foreign-dictionary"
+    "topics": [
+      "Advanced Graphs"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 73,
+      "section": "Advanced Graphs",
+      "originalIndex": 97
+    }
   },
   {
-    "id": 98,
-    "name": "Cheapest Flights Within K Stops",
-    "category": "Advanced Graphs",
+    "id": "neet150-98",
+    "title": "Cheapest Flights Within K Stops",
+    "slug": "cheapest-flights-within-k-stops",
+    "url": "https://neetcode.io/problems/cheapest-flight-path",
     "difficulty": "Medium",
-    "day": 73,
-    "url": "https://neetcode.io/problems/cheapest-flight-path"
+    "topics": [
+      "Advanced Graphs"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 73,
+      "section": "Advanced Graphs",
+      "originalIndex": 98
+    }
   },
   {
-    "id": 99,
-    "name": "Climbing Stairs",
-    "category": "1-D DP",
+    "id": "neet150-99",
+    "title": "Climbing Stairs",
+    "slug": "climbing-stairs",
+    "url": "https://neetcode.io/problems/climbing-stairs",
     "difficulty": "Easy",
-    "day": 78,
-    "url": "https://neetcode.io/problems/climbing-stairs"
+    "topics": [
+      "1-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 78,
+      "section": "1-D DP",
+      "originalIndex": 99
+    }
   },
   {
-    "id": 100,
-    "name": "Min Cost Climbing Stairs",
-    "category": "1-D DP",
+    "id": "neet150-100",
+    "title": "Min Cost Climbing Stairs",
+    "slug": "min-cost-climbing-stairs",
+    "url": "https://neetcode.io/problems/min-cost-climbing-stairs",
     "difficulty": "Easy",
-    "day": 78,
-    "url": "https://neetcode.io/problems/min-cost-climbing-stairs"
+    "topics": [
+      "1-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 78,
+      "section": "1-D DP",
+      "originalIndex": 100
+    }
   },
   {
-    "id": 101,
-    "name": "House Robber",
-    "category": "1-D DP",
+    "id": "neet150-101",
+    "title": "House Robber",
+    "slug": "house-robber",
+    "url": "https://neetcode.io/problems/house-robber",
     "difficulty": "Medium",
-    "day": 78,
-    "url": "https://neetcode.io/problems/house-robber"
+    "topics": [
+      "1-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 78,
+      "section": "1-D DP",
+      "originalIndex": 101
+    }
   },
   {
-    "id": 102,
-    "name": "House Robber II",
-    "category": "1-D DP",
+    "id": "neet150-102",
+    "title": "House Robber II",
+    "slug": "house-robber-ii",
+    "url": "https://neetcode.io/problems/house-robber-ii",
     "difficulty": "Medium",
-    "day": 79,
-    "url": "https://neetcode.io/problems/house-robber-ii"
+    "topics": [
+      "1-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 79,
+      "section": "1-D DP",
+      "originalIndex": 102
+    }
   },
   {
-    "id": 103,
-    "name": "Longest Palindromic Substring",
-    "category": "1-D DP",
+    "id": "neet150-103",
+    "title": "Longest Palindromic Substring",
+    "slug": "longest-palindromic-substring",
+    "url": "https://neetcode.io/problems/longest-palindromic-substring",
     "difficulty": "Medium",
-    "day": 79,
-    "url": "https://neetcode.io/problems/longest-palindromic-substring"
+    "topics": [
+      "1-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 79,
+      "section": "1-D DP",
+      "originalIndex": 103
+    }
   },
   {
-    "id": 104,
-    "name": "Palindromic Substrings",
-    "category": "1-D DP",
+    "id": "neet150-104",
+    "title": "Palindromic Substrings",
+    "slug": "palindromic-substrings",
+    "url": "https://neetcode.io/problems/palindromic-substrings",
     "difficulty": "Medium",
-    "day": 80,
-    "url": "https://neetcode.io/problems/palindromic-substrings"
+    "topics": [
+      "1-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 80,
+      "section": "1-D DP",
+      "originalIndex": 104
+    }
   },
   {
-    "id": 105,
-    "name": "Decode Ways",
-    "category": "1-D DP",
+    "id": "neet150-105",
+    "title": "Decode Ways",
+    "slug": "decode-ways",
+    "url": "https://neetcode.io/problems/decode-ways",
     "difficulty": "Medium",
-    "day": 80,
-    "url": "https://neetcode.io/problems/decode-ways"
+    "topics": [
+      "1-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 80,
+      "section": "1-D DP",
+      "originalIndex": 105
+    }
   },
   {
-    "id": 106,
-    "name": "Coin Change",
-    "category": "1-D DP",
+    "id": "neet150-106",
+    "title": "Coin Change",
+    "slug": "coin-change",
+    "url": "https://neetcode.io/problems/coin-change",
     "difficulty": "Medium",
-    "day": 81,
-    "url": "https://neetcode.io/problems/coin-change"
+    "topics": [
+      "1-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 81,
+      "section": "1-D DP",
+      "originalIndex": 106
+    }
   },
   {
-    "id": 107,
-    "name": "Maximum Product Subarray",
-    "category": "1-D DP",
+    "id": "neet150-107",
+    "title": "Maximum Product Subarray",
+    "slug": "maximum-product-subarray",
+    "url": "https://neetcode.io/problems/maximum-product-subarray",
     "difficulty": "Medium",
-    "day": 81,
-    "url": "https://neetcode.io/problems/maximum-product-subarray"
+    "topics": [
+      "1-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 81,
+      "section": "1-D DP",
+      "originalIndex": 107
+    }
   },
   {
-    "id": 108,
-    "name": "Word Break",
-    "category": "1-D DP",
+    "id": "neet150-108",
+    "title": "Word Break",
+    "slug": "word-break",
+    "url": "https://neetcode.io/problems/word-break",
     "difficulty": "Medium",
-    "day": 82,
-    "url": "https://neetcode.io/problems/word-break"
+    "topics": [
+      "1-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 82,
+      "section": "1-D DP",
+      "originalIndex": 108
+    }
   },
   {
-    "id": 109,
-    "name": "Longest Increasing Subsequence",
-    "category": "1-D DP",
+    "id": "neet150-109",
+    "title": "Longest Increasing Subsequence",
+    "slug": "longest-increasing-subsequence",
+    "url": "https://neetcode.io/problems/longest-increasing-subsequence",
     "difficulty": "Medium",
-    "day": 82,
-    "url": "https://neetcode.io/problems/longest-increasing-subsequence"
+    "topics": [
+      "1-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 82,
+      "section": "1-D DP",
+      "originalIndex": 109
+    }
   },
   {
-    "id": 110,
-    "name": "Partition Equal Subset Sum",
-    "category": "1-D DP",
+    "id": "neet150-110",
+    "title": "Partition Equal Subset Sum",
+    "slug": "partition-equal-subset-sum",
+    "url": "https://neetcode.io/problems/partition-equal-subset-sum",
     "difficulty": "Medium",
-    "day": 83,
-    "url": "https://neetcode.io/problems/partition-equal-subset-sum"
+    "topics": [
+      "1-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 83,
+      "section": "1-D DP",
+      "originalIndex": 110
+    }
   },
   {
-    "id": 111,
-    "name": "Unique Paths",
-    "category": "2-D DP",
+    "id": "neet150-111",
+    "title": "Unique Paths",
+    "slug": "unique-paths",
+    "url": "https://neetcode.io/problems/count-paths",
     "difficulty": "Medium",
-    "day": 85,
-    "url": "https://neetcode.io/problems/count-paths"
+    "topics": [
+      "2-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 85,
+      "section": "2-D DP",
+      "originalIndex": 111
+    }
   },
   {
-    "id": 112,
-    "name": "Longest Common Subsequence",
-    "category": "2-D DP",
+    "id": "neet150-112",
+    "title": "Longest Common Subsequence",
+    "slug": "longest-common-subsequence",
+    "url": "https://neetcode.io/problems/longest-common-subsequence",
     "difficulty": "Medium",
-    "day": 85,
-    "url": "https://neetcode.io/problems/longest-common-subsequence"
+    "topics": [
+      "2-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 85,
+      "section": "2-D DP",
+      "originalIndex": 112
+    }
   },
   {
-    "id": 113,
-    "name": "Best Time to Buy and Sell Stock with Cooldown",
-    "category": "2-D DP",
+    "id": "neet150-113",
+    "title": "Best Time to Buy and Sell Stock with Cooldown",
+    "slug": "best-time-to-buy-and-sell-stock-with-cooldown",
+    "url": "https://neetcode.io/problems/buy-and-sell-crypto-with-cooldown",
     "difficulty": "Medium",
-    "day": 86,
-    "url": "https://neetcode.io/problems/buy-and-sell-crypto-with-cooldown"
+    "topics": [
+      "2-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 86,
+      "section": "2-D DP",
+      "originalIndex": 113
+    }
   },
   {
-    "id": 114,
-    "name": "Coin Change II",
-    "category": "2-D DP",
+    "id": "neet150-114",
+    "title": "Coin Change II",
+    "slug": "coin-change-ii",
+    "url": "https://neetcode.io/problems/coin-change-ii",
     "difficulty": "Medium",
-    "day": 86,
-    "url": "https://neetcode.io/problems/coin-change-ii"
+    "topics": [
+      "2-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 86,
+      "section": "2-D DP",
+      "originalIndex": 114
+    }
   },
   {
-    "id": 115,
-    "name": "Target Sum",
-    "category": "2-D DP",
+    "id": "neet150-115",
+    "title": "Target Sum",
+    "slug": "target-sum",
+    "url": "https://neetcode.io/problems/target-sum",
     "difficulty": "Medium",
-    "day": 87,
-    "url": "https://neetcode.io/problems/target-sum"
+    "topics": [
+      "2-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 87,
+      "section": "2-D DP",
+      "originalIndex": 115
+    }
   },
   {
-    "id": 116,
-    "name": "Interleaving String",
-    "category": "2-D DP",
+    "id": "neet150-116",
+    "title": "Interleaving String",
+    "slug": "interleaving-string",
+    "url": "https://neetcode.io/problems/interleaving-string",
     "difficulty": "Medium",
-    "day": 87,
-    "url": "https://neetcode.io/problems/interleaving-string"
+    "topics": [
+      "2-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 87,
+      "section": "2-D DP",
+      "originalIndex": 116
+    }
   },
   {
-    "id": 117,
-    "name": "Longest Increasing Path in a Matrix",
-    "category": "2-D DP",
+    "id": "neet150-117",
+    "title": "Longest Increasing Path in a Matrix",
+    "slug": "longest-increasing-path-in-a-matrix",
+    "url": "https://neetcode.io/problems/longest-increasing-path-in-matrix",
     "difficulty": "Hard",
-    "day": 88,
-    "url": "https://neetcode.io/problems/longest-increasing-path-in-matrix"
+    "topics": [
+      "2-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 88,
+      "section": "2-D DP",
+      "originalIndex": 117
+    }
   },
   {
-    "id": 118,
-    "name": "Distinct Subsequences",
-    "category": "2-D DP",
+    "id": "neet150-118",
+    "title": "Distinct Subsequences",
+    "slug": "distinct-subsequences",
+    "url": "https://neetcode.io/problems/count-subsequences",
     "difficulty": "Hard",
-    "day": 88,
-    "url": "https://neetcode.io/problems/count-subsequences"
+    "topics": [
+      "2-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 88,
+      "section": "2-D DP",
+      "originalIndex": 118
+    }
   },
   {
-    "id": 119,
-    "name": "Edit Distance",
-    "category": "2-D DP",
+    "id": "neet150-119",
+    "title": "Edit Distance",
+    "slug": "edit-distance",
+    "url": "https://neetcode.io/problems/edit-distance",
     "difficulty": "Medium",
-    "day": 89,
-    "url": "https://neetcode.io/problems/edit-distance"
+    "topics": [
+      "2-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 89,
+      "section": "2-D DP",
+      "originalIndex": 119
+    }
   },
   {
-    "id": 120,
-    "name": "Burst Balloons",
-    "category": "2-D DP",
+    "id": "neet150-120",
+    "title": "Burst Balloons",
+    "slug": "burst-balloons",
+    "url": "https://neetcode.io/problems/burst-balloons",
     "difficulty": "Hard",
-    "day": 89,
-    "url": "https://neetcode.io/problems/burst-balloons"
+    "topics": [
+      "2-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 89,
+      "section": "2-D DP",
+      "originalIndex": 120
+    }
   },
   {
-    "id": 121,
-    "name": "Regular Expression Matching",
-    "category": "2-D DP",
+    "id": "neet150-121",
+    "title": "Regular Expression Matching",
+    "slug": "regular-expression-matching",
+    "url": "https://neetcode.io/problems/regular-expression-matching",
     "difficulty": "Hard",
-    "day": 90,
-    "url": "https://neetcode.io/problems/regular-expression-matching"
+    "topics": [
+      "2-D DP"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 90,
+      "section": "2-D DP",
+      "originalIndex": 121
+    }
   },
   {
-    "id": 122,
-    "name": "Maximum Subarray",
-    "category": "Greedy",
+    "id": "neet150-122",
+    "title": "Maximum Subarray",
+    "slug": "maximum-subarray",
+    "url": "https://neetcode.io/problems/maximum-subarray",
     "difficulty": "Medium",
-    "day": 92,
-    "url": "https://neetcode.io/problems/maximum-subarray"
+    "topics": [
+      "Greedy"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 92,
+      "section": "Greedy",
+      "originalIndex": 122
+    }
   },
   {
-    "id": 123,
-    "name": "Jump Game",
-    "category": "Greedy",
+    "id": "neet150-123",
+    "title": "Jump Game",
+    "slug": "jump-game",
+    "url": "https://neetcode.io/problems/jump-game",
     "difficulty": "Medium",
-    "day": 92,
-    "url": "https://neetcode.io/problems/jump-game"
+    "topics": [
+      "Greedy"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 92,
+      "section": "Greedy",
+      "originalIndex": 123
+    }
   },
   {
-    "id": 124,
-    "name": "Jump Game II",
-    "category": "Greedy",
+    "id": "neet150-124",
+    "title": "Jump Game II",
+    "slug": "jump-game-ii",
+    "url": "https://neetcode.io/problems/jump-game-ii",
     "difficulty": "Medium",
-    "day": 92,
-    "url": "https://neetcode.io/problems/jump-game-ii"
+    "topics": [
+      "Greedy"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 92,
+      "section": "Greedy",
+      "originalIndex": 124
+    }
   },
   {
-    "id": 125,
-    "name": "Gas Station",
-    "category": "Greedy",
+    "id": "neet150-125",
+    "title": "Gas Station",
+    "slug": "gas-station",
+    "url": "https://neetcode.io/problems/gas-station",
     "difficulty": "Medium",
-    "day": 93,
-    "url": "https://neetcode.io/problems/gas-station"
+    "topics": [
+      "Greedy"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 93,
+      "section": "Greedy",
+      "originalIndex": 125
+    }
   },
   {
-    "id": 126,
-    "name": "Hand of Straights",
-    "category": "Greedy",
+    "id": "neet150-126",
+    "title": "Hand of Straights",
+    "slug": "hand-of-straights",
+    "url": "https://neetcode.io/problems/hand-of-straights",
     "difficulty": "Medium",
-    "day": 93,
-    "url": "https://neetcode.io/problems/hand-of-straights"
+    "topics": [
+      "Greedy"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 93,
+      "section": "Greedy",
+      "originalIndex": 126
+    }
   },
   {
-    "id": 127,
-    "name": "Merge Triplets",
-    "category": "Greedy",
+    "id": "neet150-127",
+    "title": "Merge Triplets",
+    "slug": "merge-triplets",
+    "url": "https://neetcode.io/problems/merge-triplets-to-form-target",
     "difficulty": "Medium",
-    "day": 94,
-    "url": "https://neetcode.io/problems/merge-triplets-to-form-target"
+    "topics": [
+      "Greedy"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 94,
+      "section": "Greedy",
+      "originalIndex": 127
+    }
   },
   {
-    "id": 128,
-    "name": "Partition Labels",
-    "category": "Greedy",
+    "id": "neet150-128",
+    "title": "Partition Labels",
+    "slug": "partition-labels",
+    "url": "https://neetcode.io/problems/partition-labels",
     "difficulty": "Medium",
-    "day": 94,
-    "url": "https://neetcode.io/problems/partition-labels"
+    "topics": [
+      "Greedy"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 94,
+      "section": "Greedy",
+      "originalIndex": 128
+    }
   },
   {
-    "id": 129,
-    "name": "Valid Parenthesis String",
-    "category": "Greedy",
+    "id": "neet150-129",
+    "title": "Valid Parenthesis String",
+    "slug": "valid-parenthesis-string",
+    "url": "https://neetcode.io/problems/valid-parenthesis-string",
     "difficulty": "Medium",
-    "day": 95,
-    "url": "https://neetcode.io/problems/valid-parenthesis-string"
+    "topics": [
+      "Greedy"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 95,
+      "section": "Greedy",
+      "originalIndex": 129
+    }
   },
   {
-    "id": 130,
-    "name": "Insert Interval",
-    "category": "Intervals",
+    "id": "neet150-130",
+    "title": "Insert Interval",
+    "slug": "insert-interval",
+    "url": "https://neetcode.io/problems/insert-new-interval",
     "difficulty": "Medium",
-    "day": 96,
-    "url": "https://neetcode.io/problems/insert-new-interval"
+    "topics": [
+      "Intervals"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 96,
+      "section": "Intervals",
+      "originalIndex": 130
+    }
   },
   {
-    "id": 131,
-    "name": "Merge Intervals",
-    "category": "Intervals",
+    "id": "neet150-131",
+    "title": "Merge Intervals",
+    "slug": "merge-intervals",
+    "url": "https://neetcode.io/problems/merge-intervals",
     "difficulty": "Medium",
-    "day": 96,
-    "url": "https://neetcode.io/problems/merge-intervals"
+    "topics": [
+      "Intervals"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 96,
+      "section": "Intervals",
+      "originalIndex": 131
+    }
   },
   {
-    "id": 132,
-    "name": "Non-overlapping Intervals",
-    "category": "Intervals",
+    "id": "neet150-132",
+    "title": "Non-overlapping Intervals",
+    "slug": "non-overlapping-intervals",
+    "url": "https://neetcode.io/problems/non-overlapping-intervals",
     "difficulty": "Medium",
-    "day": 96,
-    "url": "https://neetcode.io/problems/non-overlapping-intervals"
+    "topics": [
+      "Intervals"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 96,
+      "section": "Intervals",
+      "originalIndex": 132
+    }
   },
   {
-    "id": 133,
-    "name": "Meeting Rooms",
-    "category": "Intervals",
+    "id": "neet150-133",
+    "title": "Meeting Rooms",
+    "slug": "meeting-rooms",
+    "url": "https://neetcode.io/problems/meeting-schedule",
     "difficulty": "Easy",
-    "day": 97,
-    "url": "https://neetcode.io/problems/meeting-schedule"
+    "topics": [
+      "Intervals"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 97,
+      "section": "Intervals",
+      "originalIndex": 133
+    }
   },
   {
-    "id": 134,
-    "name": "Meeting Rooms II",
-    "category": "Intervals",
+    "id": "neet150-134",
+    "title": "Meeting Rooms II",
+    "slug": "meeting-rooms-ii",
+    "url": "https://neetcode.io/problems/meeting-schedule-ii",
     "difficulty": "Medium",
-    "day": 97,
-    "url": "https://neetcode.io/problems/meeting-schedule-ii"
+    "topics": [
+      "Intervals"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 97,
+      "section": "Intervals",
+      "originalIndex": 134
+    }
   },
   {
-    "id": 135,
-    "name": "Minimum Interval to Include Each Query",
-    "category": "Intervals",
+    "id": "neet150-135",
+    "title": "Minimum Interval to Include Each Query",
+    "slug": "minimum-interval-to-include-each-query",
+    "url": "https://neetcode.io/problems/minimum-interval-including-query",
     "difficulty": "Hard",
-    "day": 98,
-    "url": "https://neetcode.io/problems/minimum-interval-including-query"
+    "topics": [
+      "Intervals"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 98,
+      "section": "Intervals",
+      "originalIndex": 135
+    }
   },
   {
-    "id": 136,
-    "name": "Rotate Image",
-    "category": "Math & Geometry",
+    "id": "neet150-136",
+    "title": "Rotate Image",
+    "slug": "rotate-image",
+    "url": "https://neetcode.io/problems/rotate-matrix",
     "difficulty": "Medium",
-    "day": 99,
-    "url": "https://neetcode.io/problems/rotate-matrix"
+    "topics": [
+      "Math & Geometry"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 99,
+      "section": "Math & Geometry",
+      "originalIndex": 136
+    }
   },
   {
-    "id": 137,
-    "name": "Spiral Matrix",
-    "category": "Math & Geometry",
+    "id": "neet150-137",
+    "title": "Spiral Matrix",
+    "slug": "spiral-matrix",
+    "url": "https://neetcode.io/problems/spiral-matrix",
     "difficulty": "Medium",
-    "day": 99,
-    "url": "https://neetcode.io/problems/spiral-matrix"
+    "topics": [
+      "Math & Geometry"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 99,
+      "section": "Math & Geometry",
+      "originalIndex": 137
+    }
   },
   {
-    "id": 138,
-    "name": "Set Matrix Zeroes",
-    "category": "Math & Geometry",
+    "id": "neet150-138",
+    "title": "Set Matrix Zeroes",
+    "slug": "set-matrix-zeroes",
+    "url": "https://neetcode.io/problems/set-zeroes-in-matrix",
     "difficulty": "Medium",
-    "day": 99,
-    "url": "https://neetcode.io/problems/set-zeroes-in-matrix"
+    "topics": [
+      "Math & Geometry"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 99,
+      "section": "Math & Geometry",
+      "originalIndex": 138
+    }
   },
   {
-    "id": 139,
-    "name": "Happy Number",
-    "category": "Math & Geometry",
+    "id": "neet150-139",
+    "title": "Happy Number",
+    "slug": "happy-number",
+    "url": "https://neetcode.io/problems/non-cyclical-number",
     "difficulty": "Easy",
-    "day": 100,
-    "url": "https://neetcode.io/problems/non-cyclical-number"
+    "topics": [
+      "Math & Geometry"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 100,
+      "section": "Math & Geometry",
+      "originalIndex": 139
+    }
   },
   {
-    "id": 140,
-    "name": "Plus One",
-    "category": "Math & Geometry",
+    "id": "neet150-140",
+    "title": "Plus One",
+    "slug": "plus-one",
+    "url": "https://neetcode.io/problems/plus-one",
     "difficulty": "Easy",
-    "day": 100,
-    "url": "https://neetcode.io/problems/plus-one"
+    "topics": [
+      "Math & Geometry"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 100,
+      "section": "Math & Geometry",
+      "originalIndex": 140
+    }
   },
   {
-    "id": 141,
-    "name": "Pow(x, n)",
-    "category": "Math & Geometry",
+    "id": "neet150-141",
+    "title": "Pow(x, n)",
+    "slug": "powx-n",
+    "url": "https://neetcode.io/problems/pow-x-n",
     "difficulty": "Medium",
-    "day": 101,
-    "url": "https://neetcode.io/problems/pow-x-n"
+    "topics": [
+      "Math & Geometry"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 101,
+      "section": "Math & Geometry",
+      "originalIndex": 141
+    }
   },
   {
-    "id": 142,
-    "name": "Multiply Strings",
-    "category": "Math & Geometry",
+    "id": "neet150-142",
+    "title": "Multiply Strings",
+    "slug": "multiply-strings",
+    "url": "https://neetcode.io/problems/multiply-strings",
     "difficulty": "Medium",
-    "day": 101,
-    "url": "https://neetcode.io/problems/multiply-strings"
+    "topics": [
+      "Math & Geometry"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 101,
+      "section": "Math & Geometry",
+      "originalIndex": 142
+    }
   },
   {
-    "id": 143,
-    "name": "Detect Squares",
-    "category": "Math & Geometry",
+    "id": "neet150-143",
+    "title": "Detect Squares",
+    "slug": "detect-squares",
+    "url": "https://neetcode.io/problems/count-squares",
     "difficulty": "Medium",
-    "day": 102,
-    "url": "https://neetcode.io/problems/count-squares"
+    "topics": [
+      "Math & Geometry"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 102,
+      "section": "Math & Geometry",
+      "originalIndex": 143
+    }
   },
   {
-    "id": 144,
-    "name": "Single Number",
-    "category": "Bit Manipulation",
+    "id": "neet150-144",
+    "title": "Single Number",
+    "slug": "single-number",
+    "url": "https://neetcode.io/problems/single-number",
     "difficulty": "Easy",
-    "day": 103,
-    "url": "https://neetcode.io/problems/single-number"
+    "topics": [
+      "Bit Manipulation"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 103,
+      "section": "Bit Manipulation",
+      "originalIndex": 144
+    }
   },
   {
-    "id": 145,
-    "name": "Number of 1 Bits",
-    "category": "Bit Manipulation",
+    "id": "neet150-145",
+    "title": "Number of 1 Bits",
+    "slug": "number-of-1-bits",
+    "url": "https://neetcode.io/problems/number-of-one-bits",
     "difficulty": "Easy",
-    "day": 103,
-    "url": "https://neetcode.io/problems/number-of-one-bits"
+    "topics": [
+      "Bit Manipulation"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 103,
+      "section": "Bit Manipulation",
+      "originalIndex": 145
+    }
   },
   {
-    "id": 146,
-    "name": "Counting Bits",
-    "category": "Bit Manipulation",
+    "id": "neet150-146",
+    "title": "Counting Bits",
+    "slug": "counting-bits",
+    "url": "https://neetcode.io/problems/counting-bits",
     "difficulty": "Easy",
-    "day": 103,
-    "url": "https://neetcode.io/problems/counting-bits"
+    "topics": [
+      "Bit Manipulation"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 103,
+      "section": "Bit Manipulation",
+      "originalIndex": 146
+    }
   },
   {
-    "id": 147,
-    "name": "Reverse Bits",
-    "category": "Bit Manipulation",
+    "id": "neet150-147",
+    "title": "Reverse Bits",
+    "slug": "reverse-bits",
+    "url": "https://neetcode.io/problems/reverse-bits",
     "difficulty": "Easy",
-    "day": 104,
-    "url": "https://neetcode.io/problems/reverse-bits"
+    "topics": [
+      "Bit Manipulation"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 104,
+      "section": "Bit Manipulation",
+      "originalIndex": 147
+    }
   },
   {
-    "id": 148,
-    "name": "Missing Number",
-    "category": "Bit Manipulation",
+    "id": "neet150-148",
+    "title": "Missing Number",
+    "slug": "missing-number",
+    "url": "https://neetcode.io/problems/missing-number",
     "difficulty": "Easy",
-    "day": 104,
-    "url": "https://neetcode.io/problems/missing-number"
+    "topics": [
+      "Bit Manipulation"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 104,
+      "section": "Bit Manipulation",
+      "originalIndex": 148
+    }
   },
   {
-    "id": 149,
-    "name": "Sum of Two Integers",
-    "category": "Bit Manipulation",
+    "id": "neet150-149",
+    "title": "Sum of Two Integers",
+    "slug": "sum-of-two-integers",
+    "url": "https://neetcode.io/problems/sum-of-two-integers",
     "difficulty": "Medium",
-    "day": 105,
-    "url": "https://neetcode.io/problems/sum-of-two-integers"
+    "topics": [
+      "Bit Manipulation"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 105,
+      "section": "Bit Manipulation",
+      "originalIndex": 149
+    }
   },
   {
-    "id": 150,
-    "name": "Reverse Integer",
-    "category": "Bit Manipulation",
+    "id": "neet150-150",
+    "title": "Reverse Integer",
+    "slug": "reverse-integer",
+    "url": "https://neetcode.io/problems/reverse-integer",
     "difficulty": "Medium",
-    "day": 105,
-    "url": "https://neetcode.io/problems/reverse-integer"
+    "topics": [
+      "Bit Manipulation"
+    ],
+    "companies": [],
+    "listMeta": {
+      "day": 105,
+      "section": "Bit Manipulation",
+      "originalIndex": 150
+    }
   }
 ]

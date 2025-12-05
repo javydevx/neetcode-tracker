@@ -129,7 +129,7 @@ const LeetCodeTracker = () => {
 
   const categories = [
     "All",
-    ...Array.from(new Set(problems.map((p) => p.category))),
+    ...Array.from(new Set(problems.flatMap((p) => p.topics || []))),
   ];
   const difficulties = ["All", "Easy", "Medium", "Hard"];
 
