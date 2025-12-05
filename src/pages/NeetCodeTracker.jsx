@@ -27,15 +27,25 @@ const intervals = [1, 3, 7, 14, 30];
 
 const NeetCodeTracker = () => {
   // --- Local state with localStorage ---
-  const [progress, setProgress] = useState(() => {
-    try {
-      const savedProgress = localStorage.getItem("leetcode-progress");
-      return savedProgress ? JSON.parse(savedProgress) : {};
-    } catch (error) {
-      console.error("Error loading progress from localStorage:", error);
-      return {};
-    }
-  });
+    const [progress, setProgress] = useState(() => {
+      try {
+        const savedProgress = localStorage.getItem("leetcode-progress-v2");
+        return savedProgress
+          ? JSON.parse(savedProgress)
+          : {
+              "Blind 75": {},
+              "LeetCode 75": {},
+              "NeetCode 150": {},
+            };
+      } catch (error) {
+        console.error("Error loading progress from localStorage:", error);
+        return {
+          "Blind 75": {},
+          "LeetCode 75": {},
+          "NeetCode 150": {},
+        };
+      }
+    });
 
   const [filterCategory, setFilterCategory] = useState("All");
   const [filterDifficulty, setFilterDifficulty] = useState("All");
@@ -44,14 +54,15 @@ const NeetCodeTracker = () => {
   const [selectedList, setSelectedList] = useState("NeetCode 150");
 
 
-  // Save progress to localStorage whenever it changes
+// Save progress to localStorage whenever it changes
   useEffect(() => {
     try {
-      localStorage.setItem("leetcode-progress", JSON.stringify(progress));
+      localStorage.setItem("leetcode-progress-v2", JSON.stringify(progress));
     } catch (error) {
       console.error("Error saving progress to localStorage:", error);
     }
   }, [progress]);
+
 
   // --- Helpers ---
   const today = new Date().toISOString().split("T")[0];
@@ -70,7 +81,8 @@ const NeetCodeTracker = () => {
   const toggleComplete = (problemId, reviewIndex = null) => {
     const todayStr = new Date().toISOString().split("T")[0];
     setProgress((prev) => {
-      const current = prev[problemId] || {
+      const listProgress = prev[selectedList] || {};
+      const current = listProgress[problemId] || {
         solved: false,
         reviews: Array(5).fill(false),
         dates: {},
@@ -80,12 +92,15 @@ const NeetCodeTracker = () => {
         const newSolved = !current.solved;
         return {
           ...prev,
-          [problemId]: {
-            ...current,
-            solved: newSolved,
-            solvedDate: newSolved ? todayStr : null,
-            reviews: newSolved ? current.reviews : Array(5).fill(false),
-            dates: newSolved ? { ...current.dates, initial: todayStr } : {},
+          [selectedList]: {
+            ...listProgress,
+            [problemId]: {
+              ...current,
+              solved: newSolved,
+              solvedDate: newSolved ? todayStr : null,
+              reviews: newSolved ? current.reviews : Array(5).fill(false),
+              dates: newSolved ? { ...current.dates, initial: todayStr } : {},
+            },
           },
         };
       } else {
@@ -99,36 +114,41 @@ const NeetCodeTracker = () => {
         }
         return {
           ...prev,
-          [problemId]: { ...current, reviews: newReviews, dates: newDates },
+          [selectedList]: {
+            ...listProgress,
+            [problemId]: { ...current, reviews: newReviews, dates: newDates },
+          },
         };
       }
     });
   };
 
   const problems = problemLists[selectedList];
+  const currentProgress = progress[selectedList] || {};
+
   const categories = [
     "All",
     ...Array.from(new Set(problems.map((p) => p.category))),
   ];
   const difficulties = ["All", "Easy", "Medium", "Hard"];
 
-  const stats = {
-    total: problems.length,
-    solved: Object.values(progress).filter((p) => p.solved).length,
-    easy: problems.filter(
-      (p) => p.difficulty === "Easy" && progress[p.id]?.solved
-    ).length,
-    medium: problems.filter(
-      (p) => p.difficulty === "Medium" && progress[p.id]?.solved
-    ).length,
-    hard: problems.filter(
-      (p) => p.difficulty === "Hard" && progress[p.id]?.solved
-    ).length,
-  };
+   const stats = {
+     total: problems.length,
+     solved: problems.filter((p) => currentProgress[p.id]?.solved).length,
+     easy: problems.filter(
+       (p) => p.difficulty === "Easy" && currentProgress[p.id]?.solved
+     ).length,
+     medium: problems.filter(
+       (p) => p.difficulty === "Medium" && currentProgress[p.id]?.solved
+     ).length,
+     hard: problems.filter(
+       (p) => p.difficulty === "Hard" && currentProgress[p.id]?.solved
+     ).length,
+   };
 
   const getDueProblems = () => {
     return problems.filter((problem) => {
-      const prob = progress[problem.id];
+      const prob = currentProgress[problem.id];
       if (!prob || !prob.solved) return false;
       const nextReviews = calculateNextReviews(prob.solvedDate);
       return nextReviews.some(
@@ -282,7 +302,7 @@ const NeetCodeTracker = () => {
         {/* Problems Table */}
         <ProblemTable
           problems={problems}
-          progress={progress}
+          progress={currentProgress}
           toggleComplete={toggleComplete}
           calculateNextReviews={calculateNextReviews}
           filterCategory={filterCategory}

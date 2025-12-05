@@ -118,31 +118,38 @@ const ProblemTable = ({
                   >
                     {problem.difficulty}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100 flex gap-2 flex-wrap">
-                    {problem.companies?.map((company, idx) => (
-                      <div
-                        key={idx}
-                        className="flex items-center gap-1 relative group"
-                      >
-                        {company.logo ? (
-                          <img
-                            src={company.logo}
-                            alt={company.name}
-                            className="h-5 w-5 object-contain cursor-pointer"
-                            title={company.name}
-                          />
-                        ) : (
-                          <div className="h-5 w-5 bg-gray-300 dark:bg-gray-700 rounded flex items-center justify-center text-xs font-semibold text-gray-800 dark:text-gray-100 cursor-pointer group-hover:block relative">
-                            {company.name[0]}
-                            <span className="absolute bottom-full mb-1 hidden group-hover:block bg-gray-700 text-white text-xs px-2 py-1 rounded whitespace-nowrap">
-                              {company.name}
-                            </span>
+                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                    <div className="flex items-center gap-2 flex-wrap h-full">
+                      {problem.companies && problem.companies.length > 0 ? (
+                        problem.companies.map((company, idx) => (
+                          <div
+                            key={idx}
+                            className="flex items-center gap-1 relative group"
+                          >
+                            {company.logo ? (
+                              <img
+                                src={company.logo}
+                                alt={company.name}
+                                className="h-5 w-5 object-contain cursor-pointer"
+                                title={company.name}
+                              />
+                            ) : (
+                              <div className="h-5 w-5 bg-gray-300 dark:bg-gray-700 rounded flex items-center justify-center text-xs font-semibold text-gray-800 dark:text-gray-100 cursor-pointer group-hover:block relative">
+                                {company.name[0]}
+                                <span className="absolute bottom-full mb-1 hidden group-hover:block bg-gray-700 text-white text-xs px-2 py-1 rounded whitespace-nowrap">
+                                  {company.name}
+                                </span>
+                              </div>
+                            )}
                           </div>
-                        )}
-                      </div>
-                    ))}
+                        ))
+                      ) : (
+                        <span className="text-sm text-red-500 dark:text-red-400">
+                          No companies data yet
+                        </span>
+                      )}
+                    </div>
                   </td>
-
                   <td className="px-6 py-4 whitespace-nowrap">
                     <button
                       onClick={() => toggleComplete(problem.id)}

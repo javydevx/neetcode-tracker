@@ -9,23 +9,27 @@ A modern, interactive web application to track your progress through the famous 
 ## ✨ Features
 
 ### 📊 Progress Tracking
+
 - **Complete Problem Tracking**: Mark problems as solved with automatic date tracking
 - **Visual Progress Stats**: See your progress across Easy, Medium, and Hard difficulties
 - **Category Filtering**: Filter by problem categories (Arrays & Hashing, Two Pointers, etc.)
 - **Difficulty Filtering**: Filter by Easy, Medium, or Hard problems
 
 ### 🔄 Spaced Repetition System
+
 - **Scientifically-Based Intervals**: Review problems at optimal intervals (1, 3, 7, 14, 30 days)
 - **Smart Review Scheduling**: Automatic calculation of review due dates
 - **Due Today Filter**: Quickly see which problems need review today
 - **Visual Review Status**: Color-coded review buttons showing completion status
 
 ### 💾 Data Persistence
+
 - **Local Storage**: All progress automatically saved to browser's local storage
 - **Export/Import**: Backup your progress with JSON export/import functionality
 - **Cross-Session Persistence**: Progress survives browser restarts and refreshes
 
 ### 🎨 Modern UI/UX
+
 - **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
 - **Clean Interface**: Modern, distraction-free design using Tailwind CSS
 - **Interactive Elements**: Hover effects, color-coded status indicators
@@ -38,22 +42,27 @@ A modern, interactive web application to track your progress through the famous 
 ## 🛠️ Installation
 
 ### Prerequisites
+
 - Node.js
 - npm or yarn
 
 ### Setup
+
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/javydevx/leetcode-tracker.git
    cd leetcode-tracker
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start development server**
+
    ```bash
    npm run dev
    ```
@@ -72,12 +81,14 @@ The built files will be in the `dist/` directory, ready for deployment.
 ## 🎯 How to Use
 
 ### Getting Started
+
 1. **Mark Problems as Solved**: Click the circle icon next to any problem when you complete it
 2. **Review Schedule Appears**: Once solved, you'll see 5 review buttons (R1-R5) with due dates
 3. **Complete Reviews**: Click review buttons when you successfully review the problem
 4. **Track Progress**: Use filters and stats to monitor your overall progress
 
 ### Spaced Repetition Schedule
+
 - **R1**: Review after 1 day
 - **R2**: Review after 3 days  
 - **R3**: Review after 7 days (1 week)
@@ -85,12 +96,14 @@ The built files will be in the `dist/` directory, ready for deployment.
 - **R5**: Review after 30 days (1 month)
 
 ### Color Coding
+
 - 🟢 **Green**: Review completed
 - 🟡 **Yellow**: Due today
 - 🔴 **Red**: Overdue
 - ⚪ **Gray**: Future review
 
 ### Data Management
+
 - **Export**: Download your progress as a JSON file for backup
 - **Import**: Restore progress from a previously exported file
 - **Clear All**: Reset all progress (with confirmation dialog)
@@ -114,7 +127,7 @@ The built files will be in the `dist/` directory, ready for deployment.
 
 ## 📋 Roadmap
 
-- [ ] Dark mode support
+- [x] Dark mode support
 - [ ] Custom problem sets
 - [ ] Study streaks tracking
 - [ ] Performance analytics

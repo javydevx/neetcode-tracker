@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "name": "Contains Duplicate",
+    "name": "Longest Consecutive Sequence",
     "category": "Arrays & Hashing",
     "difficulty": "Easy",
     "day": 1,
-    "url": "https://neetcode.io/problems/duplicate-integer"
+    "url": "https://leetcode.com/problems/longest-consecutive-sequence/description/?envType=problem-list-v2&envId=oizxjoit"
   }
 ]
