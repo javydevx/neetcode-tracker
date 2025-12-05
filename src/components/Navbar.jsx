@@ -30,7 +30,7 @@ const Navbar = () => {
         </div>
 
         {/* Buttons */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2">
           {/* Theme Toggle Button */}
           <button
             onClick={toggleTheme}
