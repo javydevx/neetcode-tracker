@@ -51,7 +51,7 @@ const LeetCodeTracker = () => {
   const [filterDifficulty, setFilterDifficulty] = useState("All");
   const [showOnlyDueToday, setShowOnlyDueToday] = useState(false);
   const [showExplanation, setShowExplanation] = useState(false);
-  const [selectedList, setSelectedList] = useState("NeetCode 150");
+  const [selectedList, setSelectedList] = useState("");
 
 
 // Save progress to localStorage whenever it changes
@@ -123,7 +123,7 @@ const LeetCodeTracker = () => {
     });
   };
 
-  const problems = problemLists[selectedList];
+  const problems = problemLists[selectedList] || [];
   const currentProgress = progress[selectedList] || {};
 
   const categories = [
@@ -170,24 +170,24 @@ const LeetCodeTracker = () => {
                 Track your progress with spaced repetition
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-2 items-start sm:items-center">
+            <div className="flex sm:flex-row gap-2 items-start sm:items-center">
               {/* Dropdown for problem list */}
-              <div>
-                <label className="text-gray-700 dark:text-gray-300 font-medium mr-2">
-                  Select List:
-                </label>
-                <select
-                  value={selectedList}
-                  onChange={(e) => setSelectedList(e.target.value)}
-                  className="px-4 py-2 cursor-pointer rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 focus:outline-none"
-                >
-                  {Object.keys(problemLists).map((listName) => (
-                    <option key={listName} value={listName}>
-                      {listName}
-                    </option>
-                  ))}
-                </select>
-              </div>
+              <select
+                id="problem-list"
+                value={selectedList}
+                title="Select a problem list"
+                onChange={(e) => setSelectedList(e.target.value)}
+                className="px-4 py-2 cursor-pointer rounded border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-800 dark:text-gray-200 focus:outline-none"
+              >
+                <option value="" disabled>
+                  Select List
+                </option>
+                {Object.keys(problemLists).map((listName) => (
+                  <option key={listName} value={listName}>
+                    {listName}
+                  </option>
+                ))}
+              </select>
 
               {/* Official Roadmap */}
               <a
@@ -197,9 +197,7 @@ const LeetCodeTracker = () => {
                 className="flex items-center gap-2 px-4 py-2 bg-orange-600 hover:bg-orange-700 text-white rounded transition-colors"
                 title="View the official NeetCode roadmap"
               >
-                <Map size={16} />
-                Official Roadmap
-                <ExternalLink size={14} />
+                <Map size={16} /> Roadmap <ExternalLink size={14} />
               </a>
             </div>
           </div>
