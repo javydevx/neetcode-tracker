@@ -1,4 +1,4 @@
-import { CheckCircle2, Circle, Calendar, ExternalLink } from "lucide-react";
+ import { CheckCircle2, Circle, Calendar, ExternalLink, Minus } from "lucide-react";
 
 const difficultyColor = {
   Easy: "text-green-600",
@@ -61,25 +61,25 @@ const ProblemTable = ({
         <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
           <thead className="bg-gray-50 dark:bg-gray-700">
             <tr className="hover:bg-gray-50 dark:hover:bg-gray-700">
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-16">
                 #
               </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider min-w-[200px]">
                 Name
               </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
-                Module / Topics
+              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-40">
+                Category
               </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-24">
                 Difficulty
               </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-40">
                 Companies
               </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider w-32">
                 Status
               </th>
-              <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+              <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider min-w-[200px]">
                 Reviews & Due Dates
               </th>
             </tr>
@@ -93,10 +93,10 @@ const ProblemTable = ({
                   key={index.id}
                   className="hover:bg-gray-50 dark:hover:bg-gray-700"
                 >
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                  <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
                     {index + 1}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                  <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
                     <div className="flex items-center gap-2">
                       <a
                         href={problem.url}
@@ -110,7 +110,7 @@ const ProblemTable = ({
                       </a>
                     </div>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                  <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
                     <div className="flex flex-wrap gap-2">
                       {problem.listMeta?.section || problem.listMeta?.module ? (
                         <span
@@ -133,45 +133,52 @@ const ProblemTable = ({
                   </td>
 
                   <td
-                    className={`px-6 py-4 whitespace-nowrap text-sm font-semibold ${
+                    className={`px-4 py-4 whitespace-nowrap text-sm font-semibold ${
                       difficultyColor[problem.difficulty]
                     }`}
                   >
                     {problem.difficulty}
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                    <div className="flex items-center gap-2 flex-wrap h-full">
+                  <td className="px-4 py-4">
+                    <div className="flex items-center gap-1.5 flex-wrap max-w-[192px]">
                       {problem.companies && problem.companies.length > 0 ? (
                         problem.companies.map((company, idx) => (
                           <div
                             key={idx}
-                            className="flex items-center gap-1 relative group"
+                            className="relative group"
+                            title={company.name}
                           >
                             {company.logo ? (
                               <img
                                 src={company.logo}
                                 alt={company.name}
-                                className="h-5 w-5 object-contain cursor-pointer"
-                                title={company.name}
+                                className="h-6 w-6 object-contain cursor-pointer hover:scale-110 transition-transform"
                               />
                             ) : (
-                              <div className="h-5 w-5 bg-gray-300 dark:bg-gray-700 rounded flex items-center justify-center text-xs font-semibold text-gray-800 dark:text-gray-100 cursor-pointer group-hover:block relative">
+                              <div className="h-6 w-6 bg-gray-300 dark:bg-gray-700 rounded flex items-center justify-center text-xs font-semibold text-gray-800 dark:text-gray-100 cursor-pointer hover:scale-110 transition-transform">
                                 {company.name[0]}
-                                <span className="absolute bottom-full mb-1 hidden group-hover:block bg-gray-700 text-white text-xs px-2 py-1 rounded whitespace-nowrap">
-                                  {company.name}
-                                </span>
                               </div>
                             )}
+                            {/* Tooltip */}
+                            <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs text-white bg-gray-900 dark:bg-gray-700 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-10">
+                              {company.name}
+                            </span>
                           </div>
                         ))
                       ) : (
-                        <span className="text-sm text-red-500 dark:text-red-400">
-                          No companies data yet
-                        </span>
+                        <div
+                          className="flex items-center gap-1 text-gray-400 dark:text-gray-500"
+                          title="No company data available"
+                        >
+                          <Minus
+                            size={16}
+                            className="text-gray-300 dark:text-gray-600"
+                          />
+                        </div>
                       )}
                     </div>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap">
+                  <td className="px-4 py-4 whitespace-nowrap">
                     <button
                       onClick={() => toggleComplete(problem.id)}
                       className="flex items-center gap-2 text-gray-600 hover:text-gray-800"
@@ -186,7 +193,7 @@ const ProblemTable = ({
                       </span>
                     </button>
                   </td>
-                  <td className="px-6 py-4">
+                  <td className="px-4 py-4">
                     {prob.solved ? (
                       <div className="flex flex-wrap gap-2">
                         {nextReviews.map((date, idx) => {
