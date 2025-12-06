@@ -96,7 +96,7 @@ const ProblemTable = ({
                   <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
                     {index + 1}
                   </td>
-                  <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                  <td className="px-4 py-4 text-sm text-gray-900 dark:text-gray-100">
                     <div className="flex items-center gap-2">
                       <a
                         href={problem.url}
@@ -105,17 +105,17 @@ const ProblemTable = ({
                         className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 hover:underline flex items-center gap-1"
                         title={`Open ${problem.name} on NeetCode`}
                       >
-                        {problem.title}
+                        <span className="line-clamp-2">{problem.title}</span>
                         <ExternalLink size={14} className="flex-shrink-0" />
                       </a>
                     </div>
                   </td>
                   <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-1.5 max-w-[192px]">
                       {problem.listMeta?.section || problem.listMeta?.module ? (
                         <span
                           className="px-2 py-1 text-xs bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded"
-                          title="Module / Section"
+                          title="Category"
                         >
                           {problem.listMeta.section || problem.listMeta.module}
                         </span>
@@ -131,7 +131,6 @@ const ProblemTable = ({
                       ))}
                     </div>
                   </td>
-
                   <td
                     className={`px-4 py-4 whitespace-nowrap text-sm font-semibold ${
                       difficultyColor[problem.difficulty]
@@ -181,10 +180,13 @@ const ProblemTable = ({
                   <td className="px-4 py-4 whitespace-nowrap">
                     <button
                       onClick={() => toggleComplete(problem.id)}
-                      className="flex items-center gap-2 text-gray-600 hover:text-gray-800"
+                      className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-colors"
                     >
                       {prob.solved ? (
-                        <CheckCircle2 className="text-green-600" size={20} />
+                        <CheckCircle2
+                          className="text-green-600 dark:text-green-500"
+                          size={20}
+                        />
                       ) : (
                         <Circle size={20} />
                       )}
@@ -208,7 +210,7 @@ const ProblemTable = ({
                             >
                               <button
                                 onClick={() => toggleComplete(problem.id, idx)}
-                                className={`px-2 py-1 rounded text-xs border min-w-[60px] ${
+                                className={`px-2 py-1 rounded text-xs border min-w-[50px] transition-colors ${
                                   isCompleted
                                     ? "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 border-green-300 dark:border-green-600"
                                     : overdue
@@ -224,7 +226,7 @@ const ProblemTable = ({
                                 {`R${idx + 1}`}
                               </button>
                               <div
-                                className={`text-xs mt-1 flex items-center gap-1 ${
+                                className={`text-[10px] mt-1 flex items-center gap-0.5 ${
                                   isCompleted
                                     ? "text-green-600 dark:text-green-400"
                                     : overdue
@@ -242,7 +244,7 @@ const ProblemTable = ({
                         })}
                       </div>
                     ) : (
-                      <span className="text-xs text-gray-400">
+                      <span className="text-xs text-gray-400 dark:text-gray-500">
                         Complete problem to see review schedule
                       </span>
                     )}
