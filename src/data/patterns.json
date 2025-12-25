@@ -166,6 +166,69 @@
     ]
   },
   {
+    "title": "Topological Sort",
+    "description": "Kahn’s Algorithm for ordering nodes in a Directed Acyclic Graph (DAG) based on dependencies. Used for task scheduling.",
+    "templates": {
+      "python": "from collections import deque\nindegree = {u: 0 for u in range(n)}\nfor u, v in edges: indegree[v] += 1\nqueue = deque([u for u in indegree if indegree[u] == 0])\norder = []\nwhile queue:\n    u = queue.popleft()\n    order.append(u)\n    for v in adj[u]:\n        indegree[v] -= 1\n        if indegree[v] == 0: queue.append(v)\nreturn order if len(order) == n else []",
+      "javascript": "const indegree = new Array(n).fill(0);\nfor (const [u, v] of edges) indegree[v]++;\nconst queue = [], order = [];\nfor (let i = 0; i < n; i++) if (indegree[i] === 0) queue.push(i);\nwhile (queue.length) {\n    const u = queue.shift();\n    order.push(u);\n    for (const v of adj[u]) {\n        if (--indegree[v] === 0) queue.push(v);\n    }\n}\nreturn order.length === n ? order : [];",
+      "java": "int[] indegree = new int[n];\nfor (int[] e : edges) indegree[e[1]]++;\nQueue<Integer> q = new LinkedList<>();\nfor (int i = 0; i < n; i++) if (indegree[i] == 0) q.offer(i);\nList<Integer> order = new ArrayList<>();\nwhile (!q.isEmpty()) {\n    int u = q.poll(); order.add(u);\n    for (int v : adj.get(u)) {\n        if (--indegree[v] == 0) q.offer(v);\n    }\n}\nreturn order.size() == n ? order : new ArrayList<>();",
+      "go": "indegree := make([]int, n)\nfor _, e := range edges { indegree[e[1]]++ }\nqueue := []int{}\nfor i, deg := range indegree { if deg == 0 { queue = append(queue, i) } }\norder := []int{}\nfor len(queue) > 0 {\n    u := queue[0]; queue = queue[1:]; order = append(order, u)\n    for _, v := range adj[u] {\n        indegree[v]--\n        if indegree[v] == 0 { queue = append(queue, v) }\n    }\n}\nif len(order) != n { return []int{} }; return order"
+    },
+    "problems": [
+      "Course Schedule I & II",
+      "Alien Dictionary",
+      "Sequence Reconstruction"
+    ]
+  },
+  {
+    "title": "Union Find (Disjoint Set)",
+    "description": "Efficiently manages connected components. Features path compression and union by rank/size for nearly O(1) operations.",
+    "templates": {
+      "python": "class UnionFind:\n    def __init__(self, n):\n        self.parent = list(range(n))\n    def find(self, i):\n        if self.parent[i] == i: return i\n        self.parent[i] = self.find(self.parent[i]) # path compression\n        return self.parent[i]\n    def union(self, i, j):\n        root_i, root_j = self.find(i), self.find(j)\n        if root_i != root_j: self.parent[root_i] = root_j",
+      "javascript": "class UnionFind {\n    constructor(n) { this.parent = Array.from({length: n}, (_, i) => i); }\n    find(i) {\n        if (this.parent[i] === i) return i;\n        return this.parent[i] = this.find(this.parent[i]);\n    }\n    union(i, j) {\n        let rootI = this.find(i), rootJ = this.find(j);\n        if (rootI !== rootJ) this.parent[rootI] = rootJ;\n    }\n}",
+      "java": "class UnionFind {\n    int[] parent;\n    public UnionFind(int n) {\n        parent = new int[n];\n        for (int i = 0; i < n; i++) parent[i] = i;\n    }\n    public int find(int i) {\n        if (parent[i] == i) return i;\n        return parent[i] = find(parent[i]);\n    }\n    public void union(int i, int j) {\n        int rootI = find(i), rootJ = find(j);\n        if (rootI != rootJ) parent[rootI] = rootJ;\n    }\n}",
+      "go": "type UnionFind struct { parent []int }\nfunc NewUF(n int) *UnionFind {\n    p := make([]int, n); for i := range p { p[i] = i }\n    return &UnionFind{p}\n}\nfunc (uf *UnionFind) Find(i int) int {\n    if uf.parent[i] == i { return i }\n    uf.parent[i] = uf.Find(uf.parent[i]); return uf.parent[i]\n}\nfunc (uf *UnionFind) Union(i, j int) {\n    rootI, rootJ := uf.Find(i), uf.Find(j)\n    if rootI != rootJ { uf.parent[rootI] = rootJ }\n}"
+    },
+    "problems": [
+      "Number of Connected Components",
+      "Graph Valid Tree",
+      "Redundant Connection",
+      "Kruskal's MST"
+    ]
+  },
+  {
+    "title": "Trie (Prefix Tree)",
+    "description": "Used for efficient string prefix matching and search. Each node contains a map/array of children and an 'isEndOfWord' flag.",
+    "templates": {
+      "python": "class TrieNode:\n    def __init__(self): \n        self.children = {}\n        self.is_word = False\n\nclass Trie:\n    def insert(self, word):\n        curr = self.root\n        for char in word:\n            if char not in curr.children: curr.children[char] = TrieNode()\n            curr = curr.children[char]\n        curr.is_word = True",
+      "javascript": "class TrieNode {\n    constructor() { this.children = {}; this.isWord = false; }\n}\nclass Trie {\n    insert(word) {\n        let curr = this.root;\n        for (let char of word) {\n            if (!curr.children[char]) curr.children[char] = new TrieNode();\n            curr = curr.children[char];\n        }\n        curr.isWord = true;\n    }\n}",
+      "java": "class TrieNode {\n    TrieNode[] children = new TrieNode[26];\n    boolean isWord = false;\n}\nclass Trie {\n    public void insert(String word) {\n        TrieNode curr = root;\n        for (char c : word.toCharArray()) {\n            if (curr.children[c-'a'] == null) curr.children[c-'a'] = new TrieNode();\n            curr = curr.children[c-'a'];\n        }\n        curr.isWord = true;\n    }\n}",
+      "go": "type TrieNode struct {\n    children map[rune]*TrieNode\n    isWord   bool\n}\nfunc (t *TrieNode) Insert(word string) {\n    curr := t\n    for _, char := range word {\n        if curr.children[char] == nil { curr.children[char] = &TrieNode{children: make(map[rune]*TrieNode)} }\n        curr = curr.children[char]\n    }\n    curr.isWord = true\n}"
+    },
+    "problems": [
+      "Implement Trie",
+      "Word Search II",
+      "Replace Words",
+      "Design Add and Search Words Data Structure"
+    ]
+  },
+  {
+    "title": "Heap / Priority Queue",
+    "description": "Maintains a running 'top K' elements. Min-heap for K largest elements, Max-heap for K smallest elements. Python and Java have built-in support; JS requires a manual implementation or sorted array for simple cases.",
+    "templates": {
+      "python": "import heapq\n# Min-Heap (K largest elements)\nheap = []\nfor num in nums:\n    heapq.heappush(heap, num)\n    if len(heap) > k: heapq.heappop(heap)\nreturn heap[0] # The Kth largest",
+      "javascript": "// JS lacks built-in Heap. For Kth largest, maintain sorted array length K\nlet minHeap = [];\nfor (let num of nums) {\n    minHeap.push(num);\n    minHeap.sort((a, b) => a - b);\n    if (minHeap.length > k) minHeap.shift();\n}\nreturn minHeap[0];",
+      "java": "PriorityQueue<Integer> minHeap = new PriorityQueue<>();\nfor (int num : nums) {\n    minHeap.offer(num);\n    if (minHeap.size() > k) minHeap.poll();\n}\nreturn minHeap.peek();",
+      "go": "// Go requires implementing container/heap. Interface\ntype IntHeap []int\nfunc (h IntHeap) Len() int           { return len(h) }\nfunc (h IntHeap) Less(i, j int) bool { return h[i] < h[j] }\nfunc (h IntHeap) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }\nfunc (h *IntHeap) Push(x any)        { *h = append(*h, x.(int)) }\nfunc (h *IntHeap) Pop() any          { old := *h; n := len(old); x := old[n-1]; *h = old[0 : n-1]; return x }"
+    },
+    "problems": [
+      "Kth Largest Element in an Array",
+      "Top K Frequent Elements",
+      "Merge K Sorted Lists",
+      "Find Median from Data Stream"
+    ]
+  },
+  {
     "title": "DFS for Graphs",
     "description": "Used for connectivity, path finding, and cycle detection. Unlike trees, graphs can have cycles, so a 'visited' set is required to avoid infinite loops.",
     "templates": {
