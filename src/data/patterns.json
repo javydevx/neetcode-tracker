@@ -164,5 +164,65 @@
       "House Robber",
       "Longest Increasing Subsequence"
     ]
+  },
+  {
+    "title": "DFS for Graphs",
+    "description": "Used for connectivity, path finding, and cycle detection. Unlike trees, graphs can have cycles, so a 'visited' set is required to avoid infinite loops.",
+    "templates": {
+      "python": "visited = set()\ndef dfs(node):\n    if node in visited:\n        return\n    visited.add(node)\n    # Process node\n    for neighbor in adj[node]:\n        dfs(neighbor)",
+      "javascript": "const visited = new Set();\nfunction dfs(node) {\n    if (visited.has(node)) return;\n    visited.add(node);\n    // Process node\n    for (let neighbor of adj[node]) {\n        dfs(neighbor);\n    }\n}",
+      "java": "Set<Integer> visited = new HashSet<>();\npublic void dfs(int node, Map<Integer, List<Integer>> adj) {\n    if (visited.contains(node)) return;\n    visited.add(node);\n    // Process node\n    for (int neighbor : adj.getOrDefault(node, new ArrayList<>())) {\n        dfs(neighbor, adj);\n    }\n}",
+      "go": "visited := make(map[int]bool)\nfunc dfs(node int, adj map[int][]int) {\n    if visited[node] {\n        return\n    }\n    visited[node] = true\n    // Process node\n    for _, neighbor := range adj[node] {\n        dfs(neighbor, adj)\n    }\n}"
+    },
+    "problems": [
+      "Number of Islands",
+      "Clone Graph",
+      "Course Schedule (Cycle Detection)",
+      "All Paths From Source to Target"
+    ]
+  },
+  {
+    "title": "BFS for Graphs",
+    "description": "Used for finding the shortest path in unweighted graphs and level-order traversal. Uses a queue and a 'visited' set.",
+    "templates": {
+      "python": "from collections import deque\n\ndef bfs(start_node):\n    queue = deque([start_node])\n    visited = {start_node}\n    \n    while queue:\n        node = queue.popleft()\n        # Process node\n        for neighbor in adj[node]:\n            if neighbor not in visited:\n                visited.add(neighbor)\n                queue.append(neighbor)",
+      "javascript": "function bfs(startNode) {\n    const queue = [startNode];\n    const visited = new Set([startNode]);\n\n    while (queue.length > 0) {\n        const node = queue.shift();\n        // Process node\n        for (let neighbor of adj[node]) {\n            if (!visited.has(neighbor)) {\n                visited.add(neighbor);\n                queue.push(neighbor);\n            }\n        }\n    }\n}",
+      "java": "public void bfs(int startNode, Map<Integer, List<Integer>> adj) {\n    Queue<Integer> queue = new LinkedList<>();\n    Set<Integer> visited = new HashSet<>();\n\n    queue.offer(startNode);\n    visited.add(startNode);\n\n    while (!queue.isEmpty()) {\n        int node = queue.poll();\n        // Process node\n        for (int neighbor : adj.getOrDefault(node, new ArrayList<>())) {\n            if (!visited.contains(neighbor)) {\n                visited.add(neighbor);\n                queue.offer(neighbor);\n            }\n        }\n    }\n}",
+      "go": "func bfs(startNode int, adj map[int][]int) {\n    queue := []int{startNode}\n    visited := map[int]bool{startNode: true}\n\n    for len(queue) > 0 {\n        node := queue[0]\n        queue = queue[1:]\n        // Process node\n        for _, neighbor := range adj[node] {\n            if !visited[neighbor] {\n                visited[neighbor] = true\n                queue = append(queue, neighbor)\n            }\n        }\n    }\n}"
+    },
+    "problems": [
+      "Shortest Path in Binary Matrix",
+      "Rotting Oranges",
+      "Word Ladder"
+    ]
+  },
+  {
+    "title": "Dijkstra's Algorithm",
+    "description": "Finds the shortest path from a source to all other nodes in a weighted graph with non-negative edge weights. Uses a Priority Queue (Min-Heap).",
+    "templates": {
+      "python": "import heapq\n\ndef dijkstra(start, nodes_count, adj):\n    distances = {i: float('inf') for i in range(nodes_count)}\n    distances[start] = 0\n    pq = [(0, start)]  # (distance, node)\n\n    while pq:\n        d, u = heapq.heappop(pq)\n        if d > distances[u]: continue\n\n        for v, weight in adj[u]:\n            if distances[u] + weight < distances[v]:\n                distances[v] = distances[u] + weight\n                heapq.heappush(pq, (distances[v], v))\n    return distances",
+      "javascript": "// Note: JS doesn't have a built-in Priority Queue. \n// In interviews, you may need to implement a simple one or use a sorted array.\nfunction dijkstra(start, adj) {\n    const distances = {};\n    for (let node in adj) distances[node] = Infinity;\n    distances[start] = 0;\n    const pq = [[0, start]]; // [distance, node]\n\n    while (pq.length > 0) {\n        pq.sort((a, b) => a[0] - b[0]);\n        const [d, u] = pq.shift();\n\n        if (d > distances[u]) continue;\n\n        for (let [v, weight] of adj[u]) {\n            if (distances[u] + weight < distances[v]) {\n                distances[v] = distances[u] + weight;\n                pq.push([distances[v], v]);\n            }\n        }\n    }\n    return distances;\n}",
+      "java": "public int[] dijkstra(int n, List<int[]>[] adj, int start) {\n    int[] dist = new int[n];\n    Arrays.fill(dist, Integer.MAX_VALUE);\n    dist[start] = 0;\n    PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[0] - b[0]);\n    pq.offer(new int[]{0, start});\n\n    while (!pq.isEmpty()) {\n        int[] curr = pq.poll();\n        int d = curr[0], u = curr[1];\n        if (d > dist[u]) continue;\n\n        for (int[] edge : adj[u]) {\n            int v = edge[0], weight = edge[1];\n            if (dist[u] + weight < dist[v]) {\n                dist[v] = dist[u] + weight;\n                pq.offer(new int[]{dist[v], v});\n            }\n        }\n    }\n    return dist;\n}",
+      "go": "// Go requires implementing heap.Interface for a Priority Queue\nfunc dijkstra(start int, n int, adj map[int][][2]int) []int {\n    dist := make([]int, n)\n    for i := range dist { dist[i] = 1e9 }\n    dist[start] = 0\n    // Using a simple slice as a dummy PQ for logic demonstration\n    pq := [][2]int{{0, start}}\n\n    for len(pq) > 0 {\n        // In real Go code, use container/heap to pop the minimum\n        u := pq[0][1]; d := pq[0][0]; pq = pq[1:]\n        if d > dist[u] { continue }\n\n        for _, edge := range adj[u] {\n            v, weight := edge[0], edge[1]\n            if dist[u]+weight < dist[v] {\n                dist[v] = dist[u] + weight\n                pq = append(pq, [2]int{dist[v], v})\n            }\n        }\n    }\n    return dist\n}"
+    },
+    "problems": [
+      "Network Delay Time",
+      "Path with Maximum Probability",
+      "Cheapest Flights Within K Stops"
+    ]
+  },
+  {
+    "title": "Bellman-Ford",
+    "description": "Finds the shortest path from a source to all nodes in a graph that can have negative edge weights. Can also detect negative cycles.",
+    "templates": {
+      "python": "def bellman_ford(n, edges, start):\n    dist = [float('inf')] * n\n    dist[start] = 0\n\n    # Relax all edges n-1 times\n    for _ in range(n - 1):\n        for u, v, w in edges:\n            if dist[u] != float('inf') and dist[u] + w < dist[v]:\n                dist[v] = dist[u] + w\n\n    # Check for negative cycles\n    for u, v, w in edges:\n        if dist[u] != float('inf') and dist[u] + w < dist[v]:\n            print(\"Graph contains a negative weight cycle\")\n    \n    return dist",
+      "javascript": "function bellmanFord(n, edges, start) {\n    let dist = new Array(n).fill(Infinity);\n    dist[start] = 0;\n\n    for (let i = 0; i < n - 1; i++) {\n        for (let [u, v, w] of edges) {\n            if (dist[u] !== Infinity && dist[u] + w < dist[v]) {\n                dist[v] = dist[u] + w;\n            }\n        }\n    }\n    return dist;\n}",
+      "java": "public int[] bellmanFord(int n, int[][] edges, int start) {\n    int[] dist = new int[n];\n    Arrays.fill(dist, Integer.MAX_VALUE);\n    dist[start] = 0;\n\n    for (int i = 0; i < n - 1; i++) {\n        for (int[] edge : edges) {\n            int u = edge[0], v = edge[1], w = edge[2];\n            if (dist[u] != Integer.MAX_VALUE && dist[u] + w < dist[v]) {\n                dist[v] = dist[u] + w;\n            }\n        }\n    }\n    return dist;\n}",
+      "go": "func bellmanFord(n int, edges [][]int, start int) []int {\n    dist := make([]int, n)\n    for i := range dist { dist[i] = 1e9 }\n    dist[start] = 0\n\n    for i := 0; i < n-1; i++ {\n        for _, edge := range edges {\n            u, v, w := edge[0], edge[1], edge[2]\n            if dist[u] != 1e9 && dist[u]+w < dist[v] {\n                dist[v] = dist[u] + w\n            }\n        }\n    }\n    return dist\n}"
+    },
+    "problems": [
+      "Cheapest Flights Within K Stops",
+      "Find the City With the Smallest Number of Neighbors at a Threshold Distance"
+    ]
   }
 ]
